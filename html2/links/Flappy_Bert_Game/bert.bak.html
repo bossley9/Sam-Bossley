@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flappy Bert</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <style>
+
+  body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-transform: lowercase;
+    background: url(assets/images/page-bg.png);
+
+  }
+  #bert canvas{
+    margin: 0 auto;
+	max-width: 576px;
+	max-height: 768px;
+  }
+ 
+
+  </style>
+  
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-4680963-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript';
+ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+
+</head>
+<body>
+<div id="bert"></div>
+
+<script src="js/phaser.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
