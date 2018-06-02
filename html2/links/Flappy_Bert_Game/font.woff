@@ -1,6 +1,0 @@
-@font-face {
-  font-family: 'Press Start 2P';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://127.0.0.1/Flappy_Bert_Game/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
-}
