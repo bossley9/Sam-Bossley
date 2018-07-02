@@ -1,14 +1,5 @@
 /* Created by Sam Bossley. All Rights Reserved. */
 
-/*
-@mixin transform($property) {
-  -webkit-transform: $property;
-      -ms-transform: $property;
-          transform: $property;
-}
-
-.box { @include transform(rotate(30deg)); }
-*/
 $green: #50958a;
 $white: #fff;
 $gray: #444;
@@ -16,27 +7,47 @@ $gray: #444;
 html, body {
   height: 100%;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
   color: $gray;
+  font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-
 }
 
-#content-menu {
-  height: 100%;
-  width: 100%;
-  background-color: red;
+.html-main {
+  background-color: $gray;
+  color: $white;
+  overflow: hidden;
 }
 
-#content-main {
-  position: absolute;
-  display: block;
-  top: 10%;
-  left: 50%;
-  background-color: blue;
-}
+/*
+ * MENU
+ */
 
 #main-menu {
+  ol {
 
+  }
+  li {
+
+  }
+}
+
+/*
+ * MAIN
+ */
+
+#main-container {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  background-color: $gray;
+  color: $white;
+  overflow-y: scroll;
 }
 
 .page {
@@ -46,24 +57,79 @@ html, body {
   width: 100%;
 }
 
+
 /*
  * INDEX.HTML
  */
 
 #landing-page {
-
-}
-
-.project-page {
-
-}
-/*
-#projects-page {
-  min-width: 100%;
-  background-color: $green;
-}
-
-.project {
   background-color: $white;
+  color: $gray;
+  z-index: 1;
 }
-*/
+
+.page-fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $gray;
+  -webkit-clip: rect(auto, auto, auto, auto);
+          clip: rect(auto, auto, auto, auto);
+}
+
+.project-background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.project-number {
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  font-size: 20rem;
+  font-weight: 800;
+  color: $green;
+  opacity: 0.7;
+  -webkit-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
+  z-index: 0;
+}
+
+.project-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-style: normal;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    vertical-align: 0rem;
+    color: red;
+  }
+
+  span {
+    font-weight: 800;
+    font-size: 4rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+#contact-page {
+
+}
