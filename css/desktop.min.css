@@ -1,0 +1,1 @@
+input#menu-button:checked ~ #main-container{top:10%;left:25%;height:80%;width:75%}#main-menu ol{width:25%}

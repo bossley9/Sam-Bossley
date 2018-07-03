@@ -3,19 +3,15 @@
 $green: #50958a;
 $white: #fff;
 $gray: #444;
+$lightgray: #999;
 
 html, body {
   height: 100%;
   min-height: 100%;
   margin: 0;
   padding: 0;
-  background-color: $white;
-  color: $gray;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-}
-
-.html-main {
   background-color: $gray;
   color: $white;
   overflow: hidden;
@@ -24,13 +20,67 @@ html, body {
 /*
  * MENU
  */
+label[for='menu-button'] {
+  color: red;
+  position: absolute;
+  display: block;
+  top: 10%;
+  left: 10%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+input#menu-button {
+  display: none;
+
+  &:checked ~ #main-container {
+    top: 15%;
+    left: 40%;
+    height: 70%;
+    width: 60%;
+  }
+
+  &:checked ~ #main-container .project-number {
+    opacity: 0;
+  }
+
+}
 
 #main-menu {
+
   ol {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    width: 40%;
+    /**/
+    list-style-type: none;
+    /**/
+    padding: 0;
 
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
-  li {
 
+  a {
+    color: $white;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  a li {
+    margin: 0.5rem 0;
+    border-bottom: 1px solid $lightgray;
+  }
+
+  a:nth-child(1) li {
+    border-top: 1px solid $lightgray;
   }
 }
 
@@ -48,6 +98,16 @@ html, body {
   background-color: $gray;
   color: $white;
   overflow-y: scroll;
+
+  -webkit-transition: top 0.3s,
+              left 0.3s,
+              height 0.3s,
+              width 0.3s;
+
+  transition: top 0.3s,
+              left 0.3s,
+              height 0.3s,
+              width 0.3s;
 }
 
 .page {
@@ -66,6 +126,24 @@ html, body {
   background-color: $white;
   color: $gray;
   z-index: 1;
+}
+
+.landing-title {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+
+  font-style: normal;
+  /*font-weight: 800;*/
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 .page-fixed {
@@ -101,6 +179,10 @@ html, body {
   -webkit-transform: translateX(-50%) translateY(50%);
           transform: translateX(-50%) translateY(50%);
   z-index: 0;
+
+  -webkit-transition: opacity 0.3s;
+
+  transition: opacity 0.3s;
 }
 
 .project-title {
@@ -117,17 +199,38 @@ html, body {
     text-decoration: none;
   }
 
-  a:hover {
-    vertical-align: 0rem;
-    color: red;
-  }
-
   span {
     font-weight: 800;
     font-size: 4rem;
     letter-spacing: 1rem;
     text-transform: uppercase;
   }
+
+  span::before, span::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+  }
+
+  span::before {
+    color: lightgreen;
+  }
+
+  span::after {
+    color: indianred;
+  }
+
+  span:hover::before {
+    left: -5px;
+  }
+
+  span:hover::after {
+    left: 5px;
+  }
+
 }
 
 #contact-page {

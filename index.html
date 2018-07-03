@@ -13,23 +13,30 @@
     <link rel="stylesheet" type="text/css" href="css/base.min.css" />
     <link rel="stylesheet" type="text/css" media="screen and (orientation: landscape)" href="css/desktop.min.css" />
   </head>
-  <body class="html-main">
+  <body>
 
     <!--MENU-->
     <nav id="main-menu">
-
       <ol>
-        <li>Home</li>
-        <li>About</li>
+        <a href=""><li>Home</li></a>
+        <a href="about/index.html"><li>About</li></a>
+        <a href="projects/1.html"><li>MAASU</li></a>
+        <a href="projects/2.html"><li>Morrill Tower Defense</li></a>
+        <a href="projects/3.html"><li>Hi-V RX-93 ver. 2</li></a>
+        <a href="projects/4.html"><li>Advanced Energy Vehicle</li></a>
       </ol>
     </nav>
+
+    <!--MENU BUTTON-->
+    <label for="menu-button">click me!</label>
+    <input id="menu-button" type="checkbox" />
 
     <!--CONTENT-->
     <div id="main-container">
 
       <!--LANDING-->
       <div id="landing-page" class="page">
-        Sam Bossley
+        <em class="landing-title"><span>Sam Bossley</span></em>
       </div>
 
       <!--MAASU-->
@@ -40,7 +47,7 @@
           <span class="project-number">1</span>
 
           <div class="page">
-            <em class="project-title"><a href="projects/1.html"><span>MAASU</span></a></em>
+            <em class="project-title"><a href="projects/1.html"><span data-text="MAASU">MAASU</span></a></em>
           </div>
 
         </div>
@@ -54,7 +61,7 @@
           <span class="project-number">2</span>
 
           <div class="page">
-            <em class="project-title"><a href="projects/2.html"><span>Morrill Tower Defense</span></a></em>
+            <em class="project-title"><a href="projects/2.html"><span data-text="Morrill Tower Defense">Morrill Tower Defense</span></a></em>
           </div>
 
         </div>
@@ -68,7 +75,7 @@
           <span class="project-number">3</span>
 
           <div class="page">
-            <em class="project-title"><a href="projects/3.html"><span>Hi-V RX-93 ver. 2</span></a></em>
+            <em class="project-title"><a href="projects/3.html"><span data-text="Hi-V RX-93 ver. 2">Hi-V RX-93 ver. 2</span></a></em>
           </div>
 
         </div>
@@ -82,7 +89,7 @@
           <span class="project-number">4</span>
 
           <div class="page">
-            <em class="project-title"><a href="projects/4.html"><span>Advanced Energy Vehicle</span></a></em>
+            <em class="project-title"><a href="projects/4.html"><span data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</span></a></em>
           </div>
 
         </div>
@@ -90,16 +97,18 @@
 
       <!--CONTACT-->
       <div id="contact-page" class="page">
-        <p>Tagline maybe?</p>
+        <h3>Contact me!</h3>
         <p>Sam Bossley</p>
-        <p>Phone number</p>
-        <p>email</p>
+        <a href="tel:1-614-695-2563"><p>+1 614.695.2563</p></a>
+        <a href="http://www.github.com/bossley9"><p>github.com/bossley9</p></a>
+        <a href="http://www.linkedin.com/in/bossleysamuel/"><p>linkedin.com/in/bossleysamuel/</p></a>
+        <a href="mailto:bossley.samuel@gmail.com"><p>bossley.samuel@gmail.com</p></a>
         <a href="assets/Sam_Bossley.pdf" download target="_blank">Resume</a>
 
       </div>
 
     </div>
 
-    <script src="js/base.js"></script>
+    <!--<script src="js/base.js"></script>-->
   </body>
 </html>
