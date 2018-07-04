@@ -20,12 +20,19 @@ html, body {
 /*
  * MENU
  */
+
 label[for='menu-button'] {
-  color: red;
   position: absolute;
   display: block;
-  top: 10%;
-  left: 10%;
+  top: 10px;
+  left: 10px;
+  /*
+  top: 0;
+  left: 0;
+  font-size: 12rem;
+  */
+  font-size: 6rem;
+  color: $green;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -37,11 +44,17 @@ label[for='menu-button'] {
 input#menu-button {
   display: none;
 
+  /*
+   * MENU CLICK
+   */
+
   &:checked ~ #main-container {
     top: 15%;
     left: 40%;
     height: 70%;
     width: 60%;
+
+    opacity: 0.7;
   }
 
   &:checked ~ #main-container .project-number {
@@ -57,7 +70,8 @@ input#menu-button {
     display: block;
     top: 50%;
     left: 0;
-    width: 40%;
+    /*width: 40%;*/
+    width: 100%;
     /**/
     list-style-type: none;
     /**/
@@ -69,19 +83,30 @@ input#menu-button {
 
   a {
     color: $white;
-    font-size: 2rem;
+    font-weight: 800;
+    font-size: 5rem;
+    /* 2rem */
     text-decoration: none;
     text-transform: uppercase;
   }
 
   a li {
-    margin: 0.5rem 0;
+    position: relative;
+    margin: 1.5rem 0;
+    /*
     border-bottom: 1px solid $lightgray;
+    */
   }
 
+  a:hover li {
+    color: $green;
+  }
+
+  /*
   a:nth-child(1) li {
     border-top: 1px solid $lightgray;
   }
+  */
 }
 
 /*
@@ -102,12 +127,14 @@ input#menu-button {
   -webkit-transition: top 0.3s,
               left 0.3s,
               height 0.3s,
-              width 0.3s;
+              width 0.3s,
+              opacity 0.3s;
 
   transition: top 0.3s,
               left 0.3s,
               height 0.3s,
-              width 0.3s;
+              width 0.3s,
+              opacity 0.3s;
 }
 
 .page {
@@ -128,19 +155,20 @@ input#menu-button {
   z-index: 1;
 }
 
+.title {
+  width: 100%;
+  font-style: normal;
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .landing-title {
   position: absolute;
   display: block;
   top: 50%;
   left: 50%;
-  width: 100%;
-
-  font-style: normal;
-  /*font-weight: 800;*/
-  letter-spacing: 0.5rem;
-  font-size: 3rem;
-  text-transform: uppercase;
-  text-align: center;
 
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
@@ -175,14 +203,14 @@ input#menu-button {
   font-size: 20rem;
   font-weight: 800;
   color: $green;
-  opacity: 0.7;
+  opacity: 0;
+
   -webkit-transform: translateX(-50%) translateY(50%);
           transform: translateX(-50%) translateY(50%);
   z-index: 0;
 
   -webkit-transition: opacity 0.3s;
-
-  transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 
 .project-title {
@@ -224,15 +252,91 @@ input#menu-button {
   }
 
   span:hover::before {
-    left: -5px;
+    top: -4px;
+    left: -4px;
   }
 
   span:hover::after {
-    left: 5px;
+    top: 4px;
+    left: 4px;
   }
 
 }
 
 #contact-page {
+}
+
+#contact-table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 95%;
+  width: 95%;
+
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+
+  tr {
+    height: 70%;
+  }
+
+  td {
+    width: 20%;
+    text-align: center;
+  }
+
+  a {
+    color: $gray;
+    text-decoration: none;
+  }
+
+  /*
+  tr, td {
+    border: 1px solid $white;
+  }
+  */
+}
+
+.contact-link {
+  background-color: $white;
+
+  &:hover {
+    background-color: $green;
+  }
+
+  a div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  i {
+
+  }
 
 }
+
+.contact-title {
+  height: inherit !important;
+
+  h2 {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  div {
+    padding-top: 3rem;
+  }
+}
+
+.contact-resume {
+  height: 10% !important;
+
+  td em a {
+    color: $white !important;
+  }
+}
+
+/*
+ * PROJECTS
+ */

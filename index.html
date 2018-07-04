@@ -8,6 +8,7 @@
     <meta name="author" content="Sam Bossley" />
 
     <title>Sam Bossley</title>
+    <link rel="stylesheet" type="text/css" href="css/icomoon.min.css" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:500,800">
     <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />-->
     <link rel="stylesheet" type="text/css" href="css/base.min.css" />
@@ -18,17 +19,24 @@
     <!--MENU-->
     <nav id="main-menu">
       <ol>
-        <a href=""><li>Home</li></a>
-        <a href="about/index.html"><li>About</li></a>
-        <a href="projects/1.html"><li>MAASU</li></a>
-        <a href="projects/2.html"><li>Morrill Tower Defense</li></a>
-        <a href="projects/3.html"><li>Hi-V RX-93 ver. 2</li></a>
-        <a href="projects/4.html"><li>Advanced Energy Vehicle</li></a>
+        <a href=""><li data-text="Home">Home</li></a>
+        <a href="about/index.html">
+          <li data-text="About">About</li></a>
+        <a href="projects/project-1.html">
+          <li data-text="MAASU">MAASU</li></a>
+        <a href="projects/project-2.html">
+          <li data-text="Morrill Tower Defense">Morrill Tower Defense</li></a>
+        <a href="projects/project-3.html">
+          <li data-text="Hi-V RX-93 ver. 2">Hi-V RX-93 ver. 2</li></a>
+        <a href="projects/project-4.html">
+          <li data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</li></a>
+        <a href="#contact-page">
+          <li data-text="Contact">Contact</li></a>
       </ol>
     </nav>
 
     <!--MENU BUTTON-->
-    <label for="menu-button">click me!</label>
+    <label for="menu-button"><i class="icon-linemenu-thick"></i></label>
     <input id="menu-button" type="checkbox" />
 
     <!--CONTENT-->
@@ -36,11 +44,11 @@
 
       <!--LANDING-->
       <div id="landing-page" class="page">
-        <em class="landing-title"><span>Sam Bossley</span></em>
+        <em class="title landing-title"><span>Sam Bossley</span></em>
       </div>
 
       <!--MAASU-->
-      <div id="maasu" class="page">
+      <div name="maasu" id="project-1" class="page">
         <div class="page-fixed">
 
           <img class="project-background" src="assets/img/maasu.png" />
@@ -54,7 +62,7 @@
       </div>
 
       <!--MTD-->
-      <div id="mtd" class="page project-page">
+      <div name="mtd" id="project-2" class="page project-page">
         <div class="page-fixed">
 
           <img class="project-background" src="assets/img/maasu.png" />
@@ -68,7 +76,7 @@
       </div>
 
       <!--HI-V-->
-      <div id="hi-v" class="page project-page">
+      <div name="hi-v" id="project-3" class="page project-page">
         <div class="page-fixed">
 
           <img class="project-background" src="assets/img/maasu.png" />
@@ -82,7 +90,7 @@
       </div>
 
       <!--AEV-->
-      <div id="aev" class="page project-page">
+      <div name="aev" id="project-4" class="page project-page">
         <div class="page-fixed">
 
           <img class="project-background" src="assets/img/maasu.png" />
@@ -97,18 +105,54 @@
 
       <!--CONTACT-->
       <div id="contact-page" class="page">
-        <h3>Contact me!</h3>
-        <p>Sam Bossley</p>
-        <a href="tel:1-614-695-2563"><p>+1 614.695.2563</p></a>
-        <a href="http://www.github.com/bossley9"><p>github.com/bossley9</p></a>
-        <a href="http://www.linkedin.com/in/bossleysamuel/"><p>linkedin.com/in/bossleysamuel/</p></a>
-        <a href="mailto:bossley.samuel@gmail.com"><p>bossley.samuel@gmail.com</p></a>
-        <a href="assets/Sam_Bossley.pdf" download target="_blank">Resume</a>
+
+        <table id="contact-table">
+          <thead></thead>
+          <tbody>
+            <tr class="contact-title">
+              <td colspan="4">
+                <h2 class="title"><div>Sam Bossley</div></h2>
+              </td>
+            </tr>
+            <tr>
+              <!--phone-->
+              <td class="contact-link">
+                <a href="tel:1-614-695-2563">
+                  <div><i class="icon-phone"></i></div>
+                </a>
+              </td>
+              <!--github-->
+              <td class="contact-link">
+                <a href="http://www.github.com/bossley9">
+                  <div><i class="icon-github"></i></div>
+                </a>
+              </td>
+              <!--linkedin-->
+              <td class="contact-link">
+                <a href="http://www.linkedin.com/in/bossleysamuel/">
+                  <div><i class="icon-linkedin"></i></div>
+                </a>
+              </td>
+              <!--email-->
+              <td class="contact-link">
+                <a href="mailto:bossley.samuel@gmail.com">
+                  <div><i class="icon-mail"></i></div>
+                </a>
+              </td>
+            </tr>
+            <tr class="contact-resume">
+              <td colspan="4">
+                <em class="title"><a href="assets/Sam_Bossley.pdf" download target="_blank">Resume</a></em>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
 
       </div>
 
     </div>
 
-    <!--<script src="js/base.js"></script>-->
+    <script src="js/base.js"></script>
   </body>
 </html>
