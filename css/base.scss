@@ -77,6 +77,7 @@ input#menu-button {
     /**/
     padding: 0;
 
+    /*z-index: 0;*/
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
@@ -123,6 +124,7 @@ input#menu-button {
   background-color: $gray;
   color: $white;
   overflow-y: scroll;
+  /*border: 3px solid $green;*/
 
   -webkit-transition: top 0.3s,
               left 0.3s,
@@ -272,6 +274,7 @@ input#menu-button {
   left: 50%;
   height: 95%;
   width: 95%;
+  border-collapse: collapse;
 
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
@@ -281,14 +284,26 @@ input#menu-button {
   }
 
   td {
+    position: relative;
+    padding: 0 1rem;
     width: 20%;
     text-align: center;
   }
 
   a {
-    color: $gray;
+    color: $white;
     text-decoration: none;
   }
+
+  div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+
 
   /*
   tr, td {
@@ -298,11 +313,6 @@ input#menu-button {
 }
 
 .contact-link {
-  background-color: $white;
-
-  &:hover {
-    background-color: $green;
-  }
 
   a div {
     position: relative;
@@ -311,7 +321,13 @@ input#menu-button {
   }
 
   i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5rem;
 
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
 
 }
@@ -331,8 +347,12 @@ input#menu-button {
 
 .contact-resume {
   height: 10% !important;
+  /*
+  border: 1px solid $white !important;
+  */
 
   td em a {
+    font-size: 2rem;
     color: $white !important;
   }
 }
