@@ -1,179 +1,295 @@
 /* Created by Sam Bossley. All Rights Reserved. */
 
+/*
+ * VARIABLES
+ */
+
 $green: #50958a;
 $white: #fff;
 $gray: #444;
 $lightgray: #999;
 $darkgray: #222;
 
+$titleglitchcolor1: aqua;
+$titleglitchcolor2: red;
+
+$glitchcolor1: lightgreen;
+// aqua
+$glitchcolor2: indianred;
+// red
+
+$project-1: "../assets/img/maasu";
+$project-2: "../assets/img/maasu";
+$project-3: "../assets/img/maasu";
+$project-4: "../assets/img/aev";
+
 /*
- * TEXT GLITCH EFFECT
- * adapted from Chris Coyer
+ * MIXINS
  */
 
-/*
-  (TEXT) PARAMS
-  =================
-  1. Namespace
-  2. Intensity
-  3. Text color
-  4. Background color (flat)
-  5. Highlight #1 color
-  6. Highlight #2 color
-  7. Width (px)
-  8. Height (px)
-*/
-/*
-@mixin glitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height) {
-
-  color: $textColor;
+@mixin glitch1() {
   position: relative;
-  $steps: $intensity;
+  //background-color: $gray;
 
-  // Ensure the @keyframes are generated at the root level
-  @at-root {
-    // We need two different ones
-    @for $i from 1 through 2 {
-      @-webkit-keyframes #{$name}
-      @keyframes #{$name}-anim-#{$i} {
-        @for $i from 0 through $steps {
-          #{percentage($i*(1/$steps))} {
-            clip: rect(
-              random($height)+px,
-              $width+px,
-              random($height)+px,
-              0
-            );
-          }
-        }
-      }
-    }
-  }
-  &:before,
-  &:after {
+  $nTop: 23%;
+  $nBot: 50%;
+
+  &::before, &::after {
     content: attr(data-text);
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    background: $background;
-    clip: rect(0, 0, 0, 0);
+    z-index: -1;
+    opacity: 0;
   }
-  &:after {
-    left: 2px;
-    text-shadow: -1px 0 $highlightColor1;
-    animation: #{$name}-anim-1 2s infinite linear alternate-reverse;
+  &::before {
+    text-shadow: -4px 0 0 $glitchcolor1;
   }
-  &:before {
+  &::after {
+    text-shadow: 4px 0 0 $glitchcolor2;
+  }
+  &:hover::before {
     left: -2px;
-    text-shadow: 2px 0 $highlightColor2;
-    animation: #{$name}-anim-2 3s infinite linear alternate-reverse;
+    opacity: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% $nTop, 0 $nTop);
+            clip-path: polygon(0 0, 100% 0, 100% $nTop, 0 $nTop);
+  }
+  &:hover::after {
+    left: 2px;
+    opacity: 1;
+    -webkit-clip-path: polygon(0 $nBot, 100% $nBot, 100% 100%, 0 100%);
+            clip-path: polygon(0 $nBot, 100% $nBot, 100% 100%, 0 100%);
   }
 
 }
-*/
+
+@mixin glitch2($bgcolor, $fontcolor) {
+  position: relative;
+
+  $mTop: 50%;
+  $mBot: 50%;
+  $offset: 10;
+
+  &::before, &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    background: $bgcolor;
+    color: $fontcolor;
+  }
+  &:hover::before {
+    left: -$offset+px;
+    opacity: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% $mTop, 0 $mTop);
+            clip-path: polygon(0 0, 100% 0, 100% $mTop, 0 $mTop);
+  }
+  &:hover::after {
+    left: $offset+px;
+    opacity: 1;
+    -webkit-clip-path: polygon(0 $mBot, 100% $mBot, 100% 100%, 0 100%);
+            clip-path: polygon(0 $mBot, 100% $mBot, 100% 100%, 0 100%);
+  }
+}
+
+@mixin title-glitch($fontcolor, $bgcolor) {
+  position: relative;
+
+  &::before, &::after {
+      content: attr(data-text);
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      color: $fontcolor;
+      z-index: -1;
+      background: $bgcolor;
+  }
+
+  &::before {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+            clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+    }
+
+  &::after {
+    -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+            clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  }
+
+  &:hover::before {
+    z-index: 1;
+    text-shadow: -2px 0 0 $titleglitchcolor1;
+    -webkit-animation: nameTitleTop 2s linear;
+            animation: nameTitleTop 2s linear;
+  }
+
+  &:hover::after {
+    z-index: 1;
+    text-shadow: 2px 0 0 $titleglitchcolor2;
+    -webkit-animation: nameTitleBot 2s linear;
+            animation: nameTitleBot 2s linear;
+  }
+}
 
 /*
  * MENU
  */
 
-label[for='menu-button'] {
-  /*
-  font-size: 7rem;
-  */
-  font-size: 3rem;
-}
-
-input#menu-button {
-
-  /*
-   * MENU CLICK
-   */
-
-  &:checked ~ #main-container {
-   top: 10%;
-   left: 25%;
-   height: 80%;
-   width: 75%;
- }
-
-}
-
 #main-menu {
-
-  ol {
-    width: 100%;
-  }
 
   a {
     font-size: 4rem;
   }
-
-
   a li {
     margin: 0;
-  /*  @include glitch("menu-glitch", 15, $white, transparent, red, blue, 450, 115);
-  */
 
-  }
-
-  /*a li::before, a li::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  }
-
-  a li::before {
-    left: 2px;
-    text-shadow: 1px 0 red;
-    clip: rect(44px, 450px, 56px, 0);
-  }
-
-  a li::after {
-    left: -2px;
-    text-shadow: -1px 0 blue;
+    @include glitch2($gray, $green);
   }
 
   a:hover li {
+    color: $green;
+  }
+}
 
-  }*/
-
+label[for='menu-button'] {
+  font-size: 3rem;
 }
 
 /*
  * INDEX.HTML
  */
 
+#landing-page .project-background {
+  background-image: none;
+  //background-image: url("../assets/img/sambossley.jpg");
+}
+
+.name-title {
+  @include title-glitch($gray, $white);
+}
+
+#project-1 .project-background {
+  background-image: url($project-1+".jpg");
+}
+
+#project-2 .project-background {
+  background-image: url($project-2+".jpg");
+}
+
+#project-3 .project-background {
+  background-image: url($project-3+".jpg");
+}
+
+#project-4 .project-background {
+  background-image: url($project-4+".jpg");
+}
+
 .project-number {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 @supports not (clip: rect(auto, auto, auto, auto)) {
   .project-number {
-    opacity: 0.7;
+    opacity: 1;
   }
 }
+
+@supports not (-webkit-clip:rect(auto, auto, auto, auto)) {
+  .project-number {
+    opacity: 1;
+  }
+}
+
+.project-title span {
+      @include glitch1();
+}
+
 /*
-#contact-table {
-  a {
-    color: $gray;
-  }
+ * CONTACT
+ */
+
+#contact-container {
+    em {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
 }
-*/
-.contact-link {
-  /*border: 3px solid $white;
-  */
-  -webkit-box-shadow: 0 0 0px $darkgray;
-          box-shadow: 0 0 0px $darkgray;
 
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+#about .title span {
+  @include title-glitch($gray, $white);
+}
 
-  &:hover {
-    -webkit-box-shadow: 0 0 5px $darkgray;
-            box-shadow: 0 0 5px $darkgray;
-  }
+/*
+ * ANIMATIONS
+ */
+
+@-webkit-keyframes nameTitleTop {
+  0% { left: 0 }
+  5% { left: 0 }
+  6% { left: -100px }
+  10% { left: -100px }
+  11% { left: 0 }
+  16% { left: 0 }
+  17% { left: -20px }
+  20% { left: -20px }
+  21% { left: 3px }
+  23% { left: 3px }
+  24% { left: -37px }
+  28% { left: -37px }
+  29% { left: -3px }
+  100% { left: -3px }
+}
+
+@keyframes nameTitleTop {
+  0% { left: 0 }
+  5% { left: 0 }
+  6% { left: -100px }
+  10% { left: -100px }
+  11% { left: 0 }
+  16% { left: 0 }
+  17% { left: -20px }
+  20% { left: -20px }
+  21% { left: 3px }
+  23% { left: 3px }
+  24% { left: -37px }
+  28% { left: -37px }
+  29% { left: -3px }
+  100% { left: -3px }
+}
+
+@-webkit-keyframes nameTitleBot {
+  0% { left: 0 }
+  1% { left: 5px }
+  3% { left: 0 }
+  10% { left: 0 }
+  11% { left: 50px }
+  16% { left: -60px }
+  17% { left: 0 }
+  30% { left: 0 }
+  31% { left: 14px }
+  100% { left: 14px }
+}
+
+@keyframes nameTitleBot {
+  0% { left: 0 }
+  1% { left: 5px }
+  3% { left: 0 }
+  10% { left: 0 }
+  11% { left: 50px }
+  16% { left: -60px }
+  17% { left: 0 }
+  30% { left: 0 }
+  31% { left: 14px }
+  100% { left: 14px }
 }
