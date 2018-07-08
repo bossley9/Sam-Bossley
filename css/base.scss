@@ -8,10 +8,10 @@ $green: #50958a;
 $white: #fff;
 $gray: #444;
 $lightgray: #999;
-$darkgray: #222;
+$darkgray: #333;
 
 $project-1: "../assets/img/maasu";
-$project-2: "../assets/img/maasu";
+$project-2: "../assets/img/mtd";
 $project-3: "../assets/img/maasu";
 $project-4: "../assets/img/aev";
 
@@ -112,7 +112,7 @@ input#menu-button {
    * MENU CLICK
    */
   &:checked ~ label {
-    color: $green;
+    color: $green !important;
   }
 
   &:checked ~ #main-container {
@@ -148,6 +148,18 @@ input#menu-button {
   display: block;
   height: 100%;
   width: 100%;
+}
+
+#scroll-down {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+
+    font-size: 1.5rem;
+    //text-transform: uppercase;
+
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 /*
@@ -325,6 +337,11 @@ input#menu-button {
     background-color: $white;
     color: $gray;
     z-index: 1;
+    padding-bottom: 4rem;
+}
+
+.menu-about {
+  color: $gray !important;
 }
 
 .main-photo {
@@ -341,11 +358,70 @@ input#menu-button {
 }
 
 #about p {
-  //font-family: 'san-serif';
+  font-size: 1.8rem;
   letter-spacing: 0.1rem;
+  line-height: 2rem;
   margin: 1rem 3rem;
 }
 
 /*
  * PROJECTS
  */
+
+.projectpage .page {
+  height: auto;
+}
+
+.project {
+  //background-color: $darkgray;
+  background-color: $white;
+  color: $gray;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    padding: 25% 0 4rem 0;
+  }
+
+  h4 {
+    margin: 0;
+    font-weight: normal;
+    color: $lightgray;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+
+  p, ol, ul {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+  }
+
+  q {
+    font-style: italic;
+    text-align: inherit;
+    color: $lightgray;
+  }
+
+}
+
+.tags {
+  list-style-type: none;
+  padding: 1rem 0;
+  margin: 0;
+  color: $lightgray;
+  text-align: center !important;
+
+  li {
+    padding: 0 0.2rem;
+    display: inline;
+  }
+}

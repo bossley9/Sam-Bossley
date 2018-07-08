@@ -8,7 +8,7 @@ $green: #50958a;
 $white: #fff;
 $gray: #444;
 $lightgray: #999;
-$darkgray: #222;
+$darkgray: #333;
 
 $titleglitchcolor1: aqua;
 $titleglitchcolor2: red;
@@ -19,7 +19,7 @@ $glitchcolor2: indianred;
 // red
 
 $project-1: "../assets/img/maasu";
-$project-2: "../assets/img/maasu";
+$project-2: "../assets/img/mtd";
 $project-3: "../assets/img/maasu";
 $project-4: "../assets/img/aev";
 
@@ -162,6 +162,14 @@ label[for='menu-button'] {
 }
 
 /*
+ * MAIN
+ */
+
+#scroll-down {
+  font-size: 1rem;
+}
+
+/*
  * INDEX.HTML
  */
 
@@ -174,20 +182,39 @@ label[for='menu-button'] {
   @include title-glitch($gray, $white);
 }
 
-#project-1 .project-background {
+#project-1 .project-background,
+#project-1 .project-background > div {
   background-image: url($project-1+".jpg");
 }
 
-#project-2 .project-background {
+#project-2 .project-background,
+#project-2 .project-background > div {
   background-image: url($project-2+".jpg");
 }
 
-#project-3 .project-background {
+#project-3 .project-background,
+#project-3 .project-background > div {
   background-image: url($project-3+".jpg");
 }
 
-#project-4 .project-background {
+#project-4 .project-background,
+#project-4 .project-background > div {
   background-image: url($project-4+".jpg");
+}
+
+.project-background > div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: -15px;
+
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+
+  -webkit-animation: bgGlitch 3s linear infinite;
+          animation: bgGlitch 3s linear infinite;
 }
 
 .project-number {
@@ -222,12 +249,32 @@ label[for='menu-button'] {
     p {
       font-size: 1.5rem;
       margin: 1.5rem 0;
+      //@include glitch2($green, $white);
     }
 
 }
 
+/*
+ * ABOUT
+ */
+
 #about .title span {
   @include title-glitch($gray, $white);
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+/*
+ * PROJECTS
+ */
+
+.project {
+  p, ol, ul {
+    width: 80%;
+  }
 }
 
 /*
@@ -292,4 +339,35 @@ label[for='menu-button'] {
   30% { left: 0 }
   31% { left: 14px }
   100% { left: 14px }
+}
+
+@-webkit-keyframes bgGlitch {
+  $steps: 10;
+
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+
+      $clipTop: random(100)+%;
+      $clipBot: random(100)+%;
+
+      -webkit-clip-path: polygon(0 $clipTop, 100% $clipTop, 100% $clipBot, 0 $clipBot);
+              clip-path: polygon(0 $clipTop, 100% $clipTop, 100% $clipBot, 0 $clipBot);
+    }
+  }
+}
+
+
+@keyframes bgGlitch {
+  $steps: 10;
+
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+
+      $clipTop: random(100)+%;
+      $clipBot: random(100)+%;
+
+      -webkit-clip-path: polygon(0 $clipTop, 100% $clipTop, 100% $clipBot, 0 $clipBot);
+              clip-path: polygon(0 $clipTop, 100% $clipTop, 100% $clipBot, 0 $clipBot);
+    }
+  }
 }
