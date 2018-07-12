@@ -18,47 +18,21 @@ $glitchcolor1: lightgreen;
 $glitchcolor2: indianred;
 // red
 
-$project-1: "../assets/img/maasu";
-$project-2: "../assets/img/mtd";
-$project-3: "../assets/img/maasu";
-$project-4: "../assets/img/aev";
+$projectNum: 4;
 
 /*
  * MIXINS
  */
 
 @mixin glitch1() {
-  position: relative;
-  //background-color: $gray;
 
-  $nTop: 23%;
-  $nBot: 50%;
+  &::after { content: attr(data-text); }
 
-  &::before, &::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
-  }
-  &::before {
-    text-shadow: -4px 0 0 $glitchcolor1;
-  }
-  &::after {
-    text-shadow: 4px 0 0 $glitchcolor2;
-  }
-  &:hover::before {
-    left: -2px;
-    opacity: 1;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% $nTop, 0 $nTop);
-            clip-path: polygon(0 0, 100% 0, 100% $nTop, 0 $nTop);
-  }
   &:hover::after {
-    left: 2px;
-    opacity: 1;
-    -webkit-clip-path: polygon(0 $nBot, 100% $nBot, 100% 100%, 0 100%);
-            clip-path: polygon(0 $nBot, 100% $nBot, 100% 100%, 0 100%);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation: projectTitle 0.3s linear;
+            animation: projectTitle 0.3s linear;
   }
 
 }
@@ -115,25 +89,31 @@ $project-4: "../assets/img/aev";
   &::before {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
             clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
-    }
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
 
   &::after {
     -webkit-clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
             clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
 
   &:hover::before {
     z-index: 1;
-    text-shadow: -2px 0 0 $titleglitchcolor1;
-    -webkit-animation: nameTitleTop 2s linear;
-            animation: nameTitleTop 2s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation: nameTitleTop 2s;
+            animation: nameTitleTop 2s;
   }
 
   &:hover::after {
     z-index: 1;
-    text-shadow: 2px 0 0 $titleglitchcolor2;
-    -webkit-animation: nameTitleBot 2s linear;
-            animation: nameTitleBot 2s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation: nameTitleBot 2s;
+            animation: nameTitleBot 2s;
   }
 }
 
@@ -182,24 +162,13 @@ label[for='menu-button'] {
   @include title-glitch($gray, $white);
 }
 
-#project-1 .project-background,
-#project-1 .project-background > div {
-  background-image: url($project-1+".jpg");
-}
+@for $i from 1 through $projectNum {
+  $project-i: '#project-#{$i} .project-background,
+              #project-#{$i} .project-background > div';
 
-#project-2 .project-background,
-#project-2 .project-background > div {
-  background-image: url($project-2+".jpg");
-}
-
-#project-3 .project-background,
-#project-3 .project-background > div {
-  background-image: url($project-3+".jpg");
-}
-
-#project-4 .project-background,
-#project-4 .project-background > div {
-  background-image: url($project-4+".jpg");
+  #{$project-i} {
+    background-image: url("../projects/#{$i}/project.jpg");
+  }
 }
 
 .project-background > div {
@@ -213,8 +182,8 @@ label[for='menu-button'] {
   background-repeat: no-repeat;
   background-attachment: local;
 
-  -webkit-animation: bgGlitch 3s linear infinite;
-          animation: bgGlitch 3s linear infinite;
+  -webkit-animation: bgGlitch 4s linear infinite;
+          animation: bgGlitch 4s linear infinite;
 }
 
 .project-number {
@@ -234,8 +203,10 @@ label[for='menu-button'] {
 }
 
 .project-title span {
-      @include glitch1();
+  content: "";
+  @include glitch1();
 }
+
 
 /*
  * CONTACT
@@ -249,7 +220,10 @@ label[for='menu-button'] {
     p {
       font-size: 1.5rem;
       margin: 1.5rem 0;
-      //@include glitch2($green, $white);
+    }
+
+    a:hover p {
+      margin: 1.5rem 0 1.5rem 20px;
     }
 
 }
@@ -263,8 +237,11 @@ label[for='menu-button'] {
 }
 
 #about p {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+  width: 80%;
+}
+
+.socialmedia {
+  padding-left: 10%;
 }
 
 /*
@@ -281,8 +258,37 @@ label[for='menu-button'] {
  * ANIMATIONS
  */
 
+@-webkit-keyframes  projectTitle {
+  0% { content: attr(data-text1); }
+  10% { content: attr(data-text2); }
+  20% { content: attr(data-text3); }
+  30% { content: attr(data-text4); }
+  40% { content: attr(data-text1); }
+  50% { content: attr(data-text2); }
+  60% { content: attr(data-text3); }
+  70% { content: attr(data-text4); }
+  80% { content: attr(data-text1); }
+  90% { content: attr(data-text2); }
+  100% { content: attr(data-text3); }
+}
+
+@keyframes  projectTitle {
+  0% { content: attr(data-text1); }
+  10% { content: attr(data-text2); }
+  20% { content: attr(data-text3); }
+  30% { content: attr(data-text4); }
+  40% { content: attr(data-text1); }
+  50% { content: attr(data-text2); }
+  60% { content: attr(data-text3); }
+  70% { content: attr(data-text4); }
+  80% { content: attr(data-text1); }
+  90% { content: attr(data-text2); }
+  100% { content: attr(data-text3); }
+}
+
 @-webkit-keyframes nameTitleTop {
-  0% { left: 0 }
+  0% { left: 0;
+    text-shadow: -2px 0 0 $titleglitchcolor1; }
   5% { left: 0 }
   6% { left: -100px }
   10% { left: -100px }
@@ -295,11 +301,13 @@ label[for='menu-button'] {
   24% { left: -37px }
   28% { left: -37px }
   29% { left: -3px }
-  100% { left: -3px }
+  100% { left: -3px;
+    text-shadow: -2px 0 0 $titleglitchcolor1; }
 }
 
 @keyframes nameTitleTop {
-  0% { left: 0 }
+  0% { left: 0;
+    text-shadow: -2px 0 0 $titleglitchcolor1; }
   5% { left: 0 }
   6% { left: -100px }
   10% { left: -100px }
@@ -312,11 +320,13 @@ label[for='menu-button'] {
   24% { left: -37px }
   28% { left: -37px }
   29% { left: -3px }
-  100% { left: -3px }
+  100% { left: -3px; text-shadow:
+    -2px 0 0 $titleglitchcolor1; }
 }
 
 @-webkit-keyframes nameTitleBot {
-  0% { left: 0 }
+  0% { left: 0;
+    text-shadow: 2px 0 0 $titleglitchcolor2; }
   1% { left: 5px }
   3% { left: 0 }
   10% { left: 0 }
@@ -325,11 +335,15 @@ label[for='menu-button'] {
   17% { left: 0 }
   30% { left: 0 }
   31% { left: 14px }
-  100% { left: 14px }
+  100% { left: 14px;
+    text-shadow: 2px 0 0 $titleglitchcolor2;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;}
 }
 
 @keyframes nameTitleBot {
-  0% { left: 0 }
+  0% { left: 0;
+    text-shadow: 2px 0 0 $titleglitchcolor2; }
   1% { left: 5px }
   3% { left: 0 }
   10% { left: 0 }
@@ -338,7 +352,10 @@ label[for='menu-button'] {
   17% { left: 0 }
   30% { left: 0 }
   31% { left: 14px }
-  100% { left: 14px }
+  100% { left: 14px;
+    text-shadow: 2px 0 0 $titleglitchcolor2;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;}
 }
 
 @-webkit-keyframes bgGlitch {

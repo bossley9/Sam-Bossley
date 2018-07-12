@@ -10,10 +10,7 @@ $gray: #444;
 $lightgray: #999;
 $darkgray: #333;
 
-$project-1: "../assets/img/maasu";
-$project-2: "../assets/img/mtd";
-$project-3: "../assets/img/maasu";
-$project-4: "../assets/img/aev";
+$projectNum: 4;
 
 /*
  * MIXINS
@@ -30,6 +27,18 @@ $project-4: "../assets/img/aev";
 
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin project-title() {
+
+  &::after { content: attr(data-text); }
+
+  &:hover::after {
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation: projectTitle 0.3s linear;
+            animation: projectTitle 0.3s linear;
+  }
 }
 
 /*
@@ -74,7 +83,7 @@ html, body {
   a {
     color: $white;
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 4rem;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -111,6 +120,7 @@ input#menu-button {
   /*
    * MENU CLICK
    */
+
   &:checked ~ label {
     color: $green !important;
   }
@@ -151,15 +161,14 @@ input#menu-button {
 }
 
 #scroll-down {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
 
-    font-size: 1.5rem;
-    //text-transform: uppercase;
+  font-size: 1.5rem;
 
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /*
@@ -187,7 +196,6 @@ input#menu-button {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: local;
-
 }
 
 #landing-page .project-background {
@@ -226,20 +234,12 @@ input#menu-button {
           clip: rect(auto, auto, auto, auto);
 }
 
-#project-1 .project-background {
-  background-image: url($project-1+"-mobile.jpg");
-}
+@for $i from 1 through $projectNum {
+  $project-i: '#project-#{$i} .project-background';
 
-#project-2 .project-background {
-  background-image: url($project-2+"-mobile.jpg");
-}
-
-#project-3 .project-background {
-  background-image: url($project-3+"-mobile.jpg");
-}
-
-#project-4 .project-background {
-  background-image: url($project-4+"-mobile.jpg");
+  #{$project-i} {
+    background-image: url("../projects/#{$i}/project-mobile.jpg");
+  }
 }
 
 .project-number {
@@ -274,7 +274,7 @@ input#menu-button {
     font-size: 4rem;
     letter-spacing: 1rem;
     text-transform: uppercase;
-
+    @include project-title();
   }
 
 }
@@ -329,19 +329,20 @@ input#menu-button {
   }
 }
 
+.menu-white {
+  color: $gray !important;
+}
+
 /*
  * ABOUT
  */
 
 #about {
-    background-color: $white;
-    color: $gray;
-    z-index: 1;
-    padding-bottom: 4rem;
-}
-
-.menu-about {
-  color: $gray !important;
+  background-color: $white;
+  color: $gray;
+  z-index: 1;
+  padding-bottom: 4rem;
+  height: auto !important;
 }
 
 .main-photo {
@@ -358,14 +359,37 @@ input#menu-button {
 }
 
 #about p {
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  line-height: 2rem;
-  margin: 1rem 3rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: left;
+}
+
+.socialmedia {
+  position: relative;
+  display: block;
+  padding: 1rem 0;
+  padding-left: 5%;
+  list-style-type: none;
+  margin: 0;
+
+  a {
+    color: $lightgray;
+    text-decoration: none;
+
+    @include transitions();
+  }
+
+  a:hover {
+    color: $green;
+  }
+
 }
 
 /*
- * PROJECTS
+ * PROJECTS/
  */
 
 .projectpage .page {
@@ -377,6 +401,7 @@ input#menu-button {
   background-color: $white;
   color: $gray;
   text-align: center;
+  padding-bottom: 3rem;
 
   h2 {
     margin: 0;
@@ -409,6 +434,15 @@ input#menu-button {
     font-style: italic;
     text-align: inherit;
     color: $lightgray;
+  }
+
+  a {
+    color: $green;
+    text-decoration: none;
+  }
+
+  video {
+    padding: 2rem 0;
   }
 
 }
