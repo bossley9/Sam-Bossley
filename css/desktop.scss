@@ -37,7 +37,7 @@ $projectNum: 4;
 
 }
 
-@mixin glitch2($bgcolor, $fontcolor) {
+@mixin menu-glitch($bgcolor, $fontcolor) {
   position: relative;
 
   $mTop: 50%;
@@ -133,7 +133,7 @@ $projectNum: 4;
   a li {
     margin: 0;
 
-    @include glitch2($gray, $green);
+    @include menu-glitch($gray, $green);
   }
 
   a:hover li {
@@ -143,6 +143,17 @@ $projectNum: 4;
 
 label[for='menu-button'] {
   font-size: 3rem;
+}
+
+// iPad
+@media only screen
+       and (min-device-width: 1024px)
+       and (max-device-width: 1024px)
+       and (orientation: portrait)
+       and (-webkit-min-device-pixel-ratio: 2) {
+
+#main-menu a { font-size: 3rem; }
+
 }
 
 /*
@@ -156,11 +167,6 @@ label[for='menu-button'] {
 /*
  * INDEX.HTML
  */
-
-#landing-page .project-background {
-  background-image: none;
-  //background-image: url("../assets/img/sambossley.jpg");
-}
 
 .name-title {
   @include title-glitch($gray, $white);
