@@ -16,9 +16,9 @@ $projectNum: 4;
  * MIXINS
  */
 
-@mixin transitions() {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+@mixin transitions($time) {
+  -webkit-transition: all #{$time}s;
+  transition: all #{$time}s;
 }
 
 @mixin center() {
@@ -108,7 +108,7 @@ label[for='menu-button'] {
       -ms-user-select: none;
           user-select: none;
 
-  @include transitions();
+  @include transitions(0.3);
 
   cursor: pointer;
   z-index: 10;
@@ -150,7 +150,7 @@ input#menu-button {
   color: $white;
   overflow-y: scroll;
 
-  @include transitions();
+  @include transitions(0.3);
 }
 
 .page {
@@ -255,7 +255,7 @@ input#menu-button {
 
   z-index: 0;
 
-  @include transitions();
+  @include transitions(0.1);
 }
 
 .project-title {
@@ -379,7 +379,7 @@ input#menu-button {
     color: $lightgray;
     text-decoration: none;
 
-    @include transitions();
+    @include transitions(0.3);
   }
 
   a:hover {
@@ -443,7 +443,7 @@ input#menu-button {
 
   img {
     padding: 1rem 0;
-    width: 100%;
+    max-width: 100%;
   }
 
   video {

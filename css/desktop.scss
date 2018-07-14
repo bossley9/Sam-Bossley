@@ -102,6 +102,8 @@ $projectNum: 4;
 
   &:hover::before {
     z-index: 1;
+    left: -3px;
+    text-shadow: -2px 0 0 $titleglitchcolor1;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation: nameTitleTop 2s;
@@ -110,6 +112,8 @@ $projectNum: 4;
 
   &:hover::after {
     z-index: 1;
+    left: 14px;
+    text-shadow: 2px 0 0 $titleglitchcolor2;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation: nameTitleBot 2s;
