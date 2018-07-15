@@ -1,0 +1,6 @@
+projects/*
+
+!projects/1/
+!projects/2/
+!projects/3/
+!projects/4/

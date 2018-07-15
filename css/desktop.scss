@@ -122,28 +122,39 @@ $projectNum: 4;
 }
 
 /*
+ * HTML
+ */
+
+html, body {
+  font-size: 20px;
+}
+
+/*
  * MENU
  */
 
 #main-menu {
 
+  li {
+    margin: 0;
+  }
+
   a {
     font-size: 4rem;
-  }
-  a li {
-    margin: 0;
 
     @include menu-glitch($gray, $green);
   }
 
-  a:hover li {
+  a:hover {
     color: $green;
   }
 }
 
+/*
 label[for='menu-button'] {
   font-size: 3rem;
 }
+*/
 
 // iPad
 @media only screen
@@ -152,7 +163,7 @@ label[for='menu-button'] {
        and (orientation: portrait)
        and (-webkit-min-device-pixel-ratio: 2) {
 
-#main-menu a { font-size: 3rem; }
+  #main-menu a { font-size: 3rem; }
 
 }
 
@@ -160,15 +171,19 @@ label[for='menu-button'] {
  * MAIN
  */
 
+/*
 #scroll-down {
   font-size: 1rem;
 }
+*/
 
 /*
  * INDEX.HTML
  */
 
 .name-title {
+  font-size: 4rem;
+
   @include title-glitch($gray, $white);
 }
 
@@ -214,6 +229,8 @@ label[for='menu-button'] {
 
 .project-title span {
   content: "";
+  font-size: 4rem;
+
   @include glitch1();
 }
 
@@ -223,15 +240,17 @@ label[for='menu-button'] {
  */
 
 #contact-container {
+    /*
     em {
-      font-size: 2rem;
+      //font-size: 2rem;
     }
-
+    */
+    /*
     p {
-      font-size: 1.5rem;
+      //font-size: 1.5rem;
       margin: 1.5rem 0;
     }
-
+    */
     a:hover p {
       margin: 1.5rem 0 1.5rem 20px;
     }

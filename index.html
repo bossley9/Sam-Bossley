@@ -1,5 +1,5 @@
 <!-- Created by Sam Bossley. All Rights Reserved. -->
-<!-- This project started on 06/28/18. -->
+<!-- Started on 06/28/18. -->
 <!DOCTYPE html>
 
 <html lang="en-US">
@@ -12,9 +12,7 @@
 
     <meta property="og:title" content="Sam Bossley" />
     <meta property="og:description" content="I am Sam Bossley, a website freelancer, software engineer, and musician." />
-    <!--Change this-->
     <meta property="og:image" content="http://sam.bossley.us/projects/new/assets/img/profile.jpg" />
-    <!--Change this-->
 
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-color-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-color-32x32.png" />
@@ -29,19 +27,21 @@
     <!--MENU-->
     <nav id="main-menu">
       <ol>
-        <a href=""><li data-text="Home">Home</li></a>
-        <a href="about/index.html">
-          <li data-text="About">About</li></a>
-        <a href="projects/1/index.html">
-          <li data-text="MAASU">MAASU</li></a>
-        <a href="projects/2/index.html">
-          <li data-text="Morrill Tower Defense">Morrill Tower Defense</li></a>
-        <a href="projects/3/index.html">
-          <li data-text="Hi-V ver. 2">Hi-V ver. 2</li></a>
-        <a href="projects/4/index.html">
-          <li data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</li></a>
-        <a href="#contact-page" onclick="toggleMenu()">
-          <li data-text="Contact">Contact</li></a>
+        <li><a href=""
+               data-text="Home">Home</a></li>
+        <li><a href="about/index.html"
+               data-text="About">About</a></li>
+        <li><a href="projects/1/index.html"
+               data-text="MAASU">MAASU</a></li>
+        <li><a href="projects/2/index.html"
+               data-text="Morrill Tower Defense">Morrill Tower Defense</a></li>
+        <li><a href="projects/3/index.html"
+               data-text="Hi-V ver. 2">Hi-V ver. 2</a></li>
+        <li><a href="projects/4/index.html"
+               data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</a></li>
+        <li><a href="#contact-page"
+               onclick="toggleMenu()"
+               data-text="Contact">Contact</a></li>
       </ol>
     </nav>
 
@@ -54,7 +54,6 @@
 
       <!--LANDING-->
       <div id="landing-page" class="page">
-        <!--<div class="project-background"></div>-->
         <em class="title landing-title">
           <span class="name-title" data-text="Sam Bossley">Sam Bossley</span>
         </em>
@@ -64,7 +63,7 @@
       </div>
 
       <!--MAASU-->
-      <div name="maasu" id="project-1" class="page">
+      <div data-name="maasu" id="project-1" class="page">
         <div class="page-fixed">
 
           <div class="project-background"><div></div></div>
@@ -84,7 +83,7 @@
       </div>
 
       <!--MTD-->
-      <div name="mtd" id="project-2" class="page project-page">
+      <div data-name="mtd" id="project-2" class="page project-page">
         <div class="page-fixed">
 
           <div class="project-background"><div></div></div>
@@ -104,7 +103,7 @@
       </div>
 
       <!--HI-V-->
-      <div name="hi-v" id="project-3" class="page project-page">
+      <div data-name="hi-v" id="project-3" class="page project-page">
         <div class="page-fixed">
 
           <div class="project-background"><div></div></div>
@@ -124,7 +123,7 @@
       </div>
 
       <!--AEV-->
-      <div name="aev" id="project-4" class="page project-page">
+      <div data-name="aev" id="project-4" class="page project-page">
         <div class="page-fixed">
 
           <div class="project-background"><div></div></div>

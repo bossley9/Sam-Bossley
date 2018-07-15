@@ -50,7 +50,7 @@ html, body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  font-size: 20px;
+  font-size: 15px;
   font-family: Georgia, 'Times New Roman';
   background-color: $gray;
   color: $white;
@@ -81,16 +81,17 @@ html, body {
   }
 
   a {
+    position: relative;
     color: $white;
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 3rem;
     text-decoration: none;
     text-transform: uppercase;
   }
 
-  a li {
+  li {
     position: relative;
-    margin: 1.5rem 0;
+    margin: 0.5rem 0;
   }
 
 }
@@ -100,7 +101,7 @@ label[for='menu-button'] {
   display: block;
   top: 10px;
   left: 10px;
-  font-size: 6rem;
+  font-size: 3rem;
   color: $white;
 
   -webkit-user-select: none;
@@ -165,7 +166,8 @@ input#menu-button {
   bottom: 15px;
   left: 50%;
 
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
 
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -215,7 +217,7 @@ input#menu-button {
 }
 
 .name-title {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .page-fixed {
@@ -266,7 +268,7 @@ input#menu-button {
 
   span {
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 1rem;
     text-transform: uppercase;
     @include project-title();
@@ -309,18 +311,19 @@ input#menu-button {
   em {
     font-style: normal;
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   a {
+    display: block;
     color: $white;
     text-decoration: none;
   }
 
   p {
     padding-left: 40px;
-    font-size: 3rem;
-    margin: 3rem 0;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
 
     @include transitions(0.1);
   }
@@ -345,7 +348,7 @@ input#menu-button {
 .main-photo {
   position: relative;
   display: block;
-  width: 60%;
+  width: 400px;
   padding: 2rem 0;
   margin: 0 auto;
 }
@@ -376,7 +379,7 @@ input#menu-button {
     color: $lightgray;
     text-decoration: none;
 
-    @include transitions(0.3);
+    @include transitions(0.2);
   }
 
   a:hover {
