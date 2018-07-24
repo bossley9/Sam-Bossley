@@ -19,7 +19,7 @@
 
     <title>Sam Bossley</title>
 
-    <link rel="stylesheet" type="text/css" href="css/base.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/desktop.min.css" media="screen and (orientation: landscape)" />
   </head>
   <body>
@@ -54,9 +54,11 @@
 
       <!--LANDING-->
       <div id="landing-page" class="page">
+
         <em class="title landing-title">
           <span class="name-title" data-text="Sam Bossley">Sam Bossley</span>
         </em>
+        <img src="assets/img/profile.jpg" alt="Sam Bossley" />
 
         <span id="scroll-down">Scroll for projects</span>
 
@@ -166,7 +168,7 @@
 
     </div>
 
-    <script>
+    <script async>
       function toggleMenu() {
         var id = document.getElementById('menu-button');
         id.checked = !id.checked;

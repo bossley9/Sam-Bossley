@@ -24,9 +24,7 @@ $projectNum: 4;
  * MIXINS
  */
 
-@mixin glitch1() {
-
-  &::after { content: attr(data-text); }
+@mixin project-title() {
 
   &:hover::after {
     -webkit-animation-fill-mode: forwards;
@@ -121,6 +119,39 @@ $projectNum: 4;
   }
 }
 
+@mixin menu-title-glitch($fontcolor, $bgcolor) {
+
+  span {
+    @include title-glitch($fontcolor, $bgcolor);
+  }
+
+  &:hover span::before {
+    z-index: 1;
+    left: -3px;
+    text-shadow: -2px 0 0 $titleglitchcolor1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation: nameTitleTop 2s;
+            animation: nameTitleTop 2s;
+  }
+
+  &:hover span::after {
+    z-index: 1;
+    left: 14px;
+    text-shadow: 2px 0 0 $titleglitchcolor2;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation: nameTitleBot 2s;
+            animation: nameTitleBot 2s;
+  }
+
+  &:hover ~ img {
+    -webkit-filter: invert(1) !important;
+            filter: invert(1) !important;
+  }
+
+}
+
 /*
  * HTML
  */
@@ -150,12 +181,6 @@ html, body {
   }
 }
 
-/*
-label[for='menu-button'] {
-  font-size: 3rem;
-}
-*/
-
 // iPad
 @media only screen
        and (min-device-width: 1024px)
@@ -167,24 +192,21 @@ label[for='menu-button'] {
 
 }
 
-/*
- * MAIN
- */
-
-/*
-#scroll-down {
-  font-size: 1rem;
-}
-*/
-
-/*
+/* * * * * * * * * * * * * * * * * * * * * * * *
  * INDEX.HTML
- */
+ * * * * * * * * * * * * * * * * * * * * * * * */
+
+#landing-page img {
+  display: block;
+}
 
 .name-title {
   font-size: 4rem;
 
-  @include title-glitch($gray, $white);
+}
+
+.landing-title {
+  @include menu-title-glitch($gray, $white);
 }
 
 @for $i from 1 through $projectNum {
@@ -231,7 +253,7 @@ label[for='menu-button'] {
   content: "";
   font-size: 4rem;
 
-  @include glitch1();
+  @include project-title();
 }
 
 
@@ -240,26 +262,14 @@ label[for='menu-button'] {
  */
 
 #contact-container {
-    /*
-    em {
-      //font-size: 2rem;
-    }
-    */
-    /*
-    p {
-      //font-size: 1.5rem;
-      margin: 1.5rem 0;
-    }
-    */
     a:hover p {
       margin: 1.5rem 0 1.5rem 20px;
     }
-
 }
 
-/*
+/* * * * * * * * * * * * * * * * * * * * * * * *
  * ABOUT
- */
+ * * * * * * * * * * * * * * * * * * * * * * * */
 
 #about .title span {
   @include title-glitch($gray, $white);
@@ -273,9 +283,9 @@ label[for='menu-button'] {
   padding-left: 10%;
 }
 
-/*
+/* * * * * * * * * * * * * * * * * * * * * * * *
  * PROJECTS
- */
+ * * * * * * * * * * * * * * * * * * * * * * * */
 
 .project {
   p, ol, ul {

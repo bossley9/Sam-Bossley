@@ -18,7 +18,7 @@ $projectNum: 4;
 
 @mixin transitions($time) {
   -webkit-transition: all #{$time}s;
-  transition: all #{$time}s;
+          transition: all #{$time}s;
 }
 
 @mixin center() {
@@ -27,18 +27,6 @@ $projectNum: 4;
 
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-}
-
-@mixin project-title() {
-
-  &::after { content: attr(data-text); }
-
-  &:hover::after {
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation: projectTitle 0.3s linear;
-            animation: projectTitle 0.3s linear;
-  }
 }
 
 /*
@@ -173,14 +161,25 @@ input#menu-button {
           transform: translateX(-50%);
 }
 
-/*
+/* * * * * * * * * * * * * * * * * * * * * * * *
  * INDEX.HTML
- */
+ * * * * * * * * * * * * * * * * * * * * * * * */
 
 #landing-page {
   background-color: $white;
   color: $gray;
   z-index: 1;
+}
+
+#landing-page img {
+  position: absolute;
+  display: none;
+  @include center();
+  left: 0;
+  height: 100%;
+
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .project-background {
@@ -247,11 +246,9 @@ input#menu-button {
   font-weight: 800;
   color: $green;
   opacity: 0;
-
   @include center();
 
   z-index: 0;
-
   @include transitions(0.1);
 }
 
@@ -271,7 +268,8 @@ input#menu-button {
     font-size: 3rem;
     letter-spacing: 1rem;
     text-transform: uppercase;
-    @include project-title();
+
+    &::after { content: attr(data-text); }
   }
 
 }
@@ -333,9 +331,9 @@ input#menu-button {
   color: $gray !important;
 }
 
-/*
+/* * * * * * * * * * * * * * * * * * * * * * * *
  * ABOUT
- */
+ * * * * * * * * * * * * * * * * * * * * * * * */
 
 #about {
   background-color: $white;
@@ -388,9 +386,9 @@ input#menu-button {
 
 }
 
-/*
- * PROJECTS/
- */
+/* * * * * * * * * * * * * * * * * * * * * * * *
+ * PROJECTS
+ * * * * * * * * * * * * * * * * * * * * * * * */
 
 .projectpage .page {
   height: auto;
