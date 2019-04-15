@@ -1,180 +1,82 @@
 <!-- Created by Sam Bossley. All Rights Reserved. -->
-<!-- Started on 06/28/18. -->
-<!DOCTYPE html>
+<!-- Started on 04/14/18. -->
+<!doctype html>
 
-<html lang="en-US">
+<html lang="en-us" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Sam Bossley" />
-    <meta name="description" content="I am Sam Bossley, a website freelancer, software engineer, and musician." />
-    <meta name="keywords" content="Sam, Sam Bossley, Bossley, freelance, code, website, developer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="author" content="Sam Bossley">
+    <meta name="description" content="I am Sam Bossley, a website freelancer and software engineer.">
+    <meta name="keywords" content="Sam, Sam Bossley, Bossley, freelance, code, website, developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="Sam Bossley" />
-    <meta property="og:description" content="I am Sam Bossley, a website freelancer, software engineer, and musician." />
+    <meta property="og:title" content="Sam Bossley">
+    <meta property="og:description" content="I am Sam Bossley, a website freelancer and software engineer.">
+    <!--
     <meta property="og:image" content="http://sam.bossley.us/projects/new/assets/img/profile.jpg" />
 
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-color-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-color-32x32.png" />
+    -->
 
     <title>Sam Bossley</title>
 
-    <link rel="stylesheet" type="text/css" href="css/base.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/desktop.min.css" media="screen and (orientation: landscape)" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/css/foundation.min.css" integrity="sha256-xpOKVlYXzQ3P03j397+jWFZLMBXLES3IiryeClgU5og= sha384-gP4DhqyoT9b1vaikoHi9XQ8If7UNLO73JFOOlQV1RATrA7D0O7TjJZifac6NwPps sha512-AKwIib1E+xDeXe0tCgbc9uSvPwVYl6Awj7xl0FoaPFostZHOuDQ1abnDNCYtxL/HWEnVOMrFyf91TDgLPi9pNg==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="public/css/base.min.css">
+    <link rel="stylesheet" type="text/css" href="public/css/media.min.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shivm.js"></script>
+    <![endif]-->
   </head>
   <body>
 
-    <!--MENU-->
-    <nav id="main-menu">
-      <ol>
-        <li><a href=""
-               data-text="Home">Home</a></li>
-        <li><a href="about/index.html"
-               data-text="About">About</a></li>
-        <li><a href="projects/1/index.html"
-               data-text="MAASU">MAASU</a></li>
-        <li><a href="projects/2/index.html"
-               data-text="Morrill Tower Defense">Morrill Tower Defense</a></li>
-        <li><a href="projects/3/index.html"
-               data-text="Hi-V ver. 2">Hi-V ver. 2</a></li>
-        <li><a href="projects/4/index.html"
-               data-text="Advanced Energy Vehicle">Advanced Energy Vehicle</a></li>
-        <li><a href="#contact-page"
-               onclick="toggleMenu()"
-               data-text="Contact">Contact</a></li>
-      </ol>
-    </nav>
+    <!-- main -->
 
-    <!--MENU BUTTON-->
-    <input id="menu-button" type="checkbox" />
-    <label for="menu-button"><b>X</b></label>
+    <section id="main" class="grid-y">
 
-    <!--CONTENT-->
-    <div id="main-container">
-
-      <!--LANDING-->
-      <div id="landing-page" class="page">
-
-        <em class="title landing-title">
-          <span class="name-title" data-text="Sam Bossley">Sam Bossley</span>
-        </em>
-        <!--
-        <img src="assets/img/profile.jpg" alt="Sam Bossley" />
-        -->
-        <span id="scroll-down">Scroll for projects</span>
-
+      <div class="cell small-3 medium-2 grid-x align-middle name">
+        <h1 class="title">Sam Bossley</h1>
       </div>
 
-      <!--MAASU-->
-      <div data-name="maasu" id="project-1" class="page">
-        <div class="page-fixed">
-
-          <div class="project-background"><div></div></div>
-          <span class="project-number">1</span>
-
-          <div class="page">
-            <em class="project-title"><a href="projects/1/index.html">
-              <span data-text="MAASU"
-                    data-text1="M4EXI"
-                    data-text2="MB4QO"
-                    data-text3="MEFLP"
-                    data-text4="M4YHK"></span>
-            </a></em>
-          </div>
-
-        </div>
+      <div class="cell auto hide-for-print art">
+<!-- todo art here -->
+        <img src="" alt="">
       </div>
 
-      <!--MTD-->
-      <div data-name="mtd" id="project-2" class="page project-page">
-        <div class="page-fixed">
+      <nav class="cell small-1 medium-1 grid-x align-center">
+        <ul class="cell shrink menu align-middle">
+          <li><a href="">about</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+      </nav>
 
-          <div class="project-background"><div></div></div>
-          <span class="project-number">2</span>
+    </section>
 
-          <div class="page">
-            <em class="project-title"><a href="projects/2/index.html">
-              <span data-text="Morrill Tower Defense"
-                    data-text1="M0tr1ll fow3r Dyffnsd"
-                    data-text2="Mudryll koqwr Dkfsnge"
-                    data-text3="Mqjrall zower Defense"
-                    data-text4="Mpvr7ll xower Defense"></span>
-            </a></em>
-          </div>
+    <!-- portfolio -->
 
-        </div>
+    <section id="portfolio">
+      <h1 class="title">Portfolio</h1>
+
+      <section class="project">
+        <h2 class="project-title"><span class="outline">Mobile Development</span> AccessU</h2>
+      </section>
+
+      <section class="project">
+        <h2 class="project-title"><span class="outline">RESTful API</span> Leaderboards</h2>
+      </section>
+
+      <div class="textbox">
+        <p>now here's some text in a section or div box.</p>
       </div>
+    </section>
 
-      <!--HI-V-->
-      <div data-name="hi-v" id="project-3" class="page project-page">
-        <div class="page-fixed">
 
-          <div class="project-background"><div></div></div>
-          <span class="project-number">3</span>
-
-          <div class="page">
-            <em class="project-title"><a href="projects/3/index.html">
-              <span data-text="Hi-V ver. 2"
-                    data-text1="H1-l ier. 9"
-                    data-text2="Hl-j ier. 2"
-                    data-text3="Hl-i aer. 5"
-                    data-text4="Hv-i cer. s"></span>
-            </a></em>
-          </div>
-
-        </div>
-      </div>
-
-      <!--AEV-->
-      <div data-name="aev" id="project-4" class="page project-page">
-        <div class="page-fixed">
-
-          <div class="project-background"><div></div></div>
-          <span class="project-number">4</span>
-
-          <div class="page">
-            <em class="project-title"><a href="projects/4/index.html">
-              <span data-text="Advanced Energy Vehicle"
-                    data-text1="edrincrd infrgy Vhhjcle"
-                    data-text2="4dyhncfd lndrgy Vdhlcle"
-                    data-text3="ydbgncpd jnkrgy Vfhkcle"
-                    data-text4="tdxqncad tnargy Vahrcle"></span>
-            </a></em>
-          </div>
-
-        </div>
-      </div>
-
-      <!--CONTACT-->
-      <div id="contact-page" class="page">
-
-        <div id="contact-container">
-          <div class="page">
-            <p><em>Contact Sam Bossley</em></p>
-
-            <a href="tel:1-614-695-2563">
-              <p>+1 (614) 695 2563</p></a>
-            <a href="http://www.github.com/bossley9">
-              <p>github.com/bossley9</p></a>
-            <a href="http://www.linkedin.com/in/bossleysamuel/">
-              <p>linkedin.com/in/bossleysamuel</p></a>
-            <a href="mailto:bossley.samuel@gmail.com">
-              <p>bossley.samuel@gmail.com</p></a>
-            <a href="assets/Sam_Bossley.pdf" download target="_blank">
-              <p>resume</p></a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <script async>
-      function toggleMenu() {
-        var id = document.getElementById('menu-button');
-        id.checked = !id.checked;
-      }
-    </script>
+<!--
+    <script src="https://unpkg.com/jquery@3.4.0/dist/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js" integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg= sha384-9ksAFjQjZnpqt6VtpjMjlp2S0qrGbcwF/rvrLUg2vciMhwc1UJJeAAOLuJ96w+Nj sha512-UMSn6RHqqJeJcIfV1eS2tPKCjzaHkU/KqgAnQ7Nzn0mLicFxaVhm9vq7zG5+0LALt15j1ljlg8Fp9PT1VGNmDw==" crossorigin="anonymous"></script>
+-->
 
   </body>
 </html>

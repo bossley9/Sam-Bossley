@@ -1,0 +1,29 @@
+
+@import 'util';
+
+@media (min-width: 767px) { // tablet
+
+}
+
+@media (min-width: 979px) { // desktop
+
+body { padding: 0 6em }
+
+#main {
+
+  .name { font-size: 1.5em }
+
+  .art { border: 1px solid $color }
+
+  .menu {
+    font-size: inherit;
+    width: 100%;
+  }
+
+}
+
+}
+
+@media (min-width: 1200px) { // large desktop
+
+}
