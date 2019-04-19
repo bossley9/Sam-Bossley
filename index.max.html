@@ -1,5 +1,4 @@
-<!-- Created by Sam Bossley. All Rights Reserved. -->
-<!-- Started on 04/14/18. -->
+<!-- Created by Sam Bossley -->
 <!doctype html>
 
 <html lang="en-us" dir="ltr">
@@ -12,12 +11,12 @@
 
     <meta property="og:title" content="Sam Bossley">
     <meta property="og:description" content="I am Sam Bossley, a website freelancer and software engineer.">
-    <!--
-    <meta property="og:image" content="http://sam.bossley.us/projects/new/assets/img/profile.jpg" />
+<!--
+<meta property="og:image" content="http://sam.bossley.us/projects/new/assets/img/profile.jpg" />
 
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-color-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-color-32x32.png" />
-    -->
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-color-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-color-32x32.png" />
+-->
 
     <title>Sam Bossley</title>
 
@@ -35,13 +34,13 @@
 
     <section id="main" class="grid-y">
 
-      <div class="cell small-3 medium-2 grid-x align-middle name">
+      <header class="cell small-3 medium-2 grid-x align-middle name">
         <h1 class="title">Sam Bossley</h1>
-      </div>
+      </header>
 
       <div class="cell auto hide-for-print art">
-<!-- todo art here -->
-        <img src="" alt="">
+        <i>A 20 year old engineering student <b>and</b> prospective web freelancer.</i>
+        <!-- drawing vector -->
       </div>
 
       <nav class="cell small-1 medium-1 grid-x align-center">
@@ -59,24 +58,106 @@
     <section id="portfolio">
       <h1 class="title">Portfolio</h1>
 
-      <section class="project">
-        <h2 class="project-title"><span class="outline">Mobile Development</span> AccessU</h2>
-      </section>
 
-      <section class="project">
-        <h2 class="project-title"><span class="outline">RESTful API</span> Leaderboards</h2>
-      </section>
+      <!-- project -->
 
-      <div class="textbox">
-        <p>now here's some text in a section or div box.</p>
-      </div>
+      <article class="project">
+        <h2 class="project-title">Mobile Development <strong>AccessU</strong></h2>
+
+        <div class="grid-x">
+
+          <blockquote class="cell small-12 medium-6">
+            <p class="textbox connected">Imagine an accessible map app...</p>
+            <p class="textbox connected">...that locates accessible entrances.</p>
+            <p class="textbox">Do you think we could make that?</p>
+          </blockquote>
+
+          <div class="cell small-12 medium-6">
+          <!-- vector of mobile phone map app -->
+          </div>
+
+        </div>
+
+        <div class="project-details">
+          <p>AccessU is a project a group of friends and I started on in response to the OH/IO Fall 2018 Hackathon. We wanted to build an app to help students on campus locate ADA accessible entrances easier.</p>
+        </div>
+      </article>
+
+      <!-- project -->
+
+      <article class="project">
+        <h2 class="project-title">RESTful API <strong>Leaderboards</strong></h2>
+
+        <div class="grid-x">
+
+          <div class="cell small-12 small-order-2 medium-6 medium-order-1">
+            <!-- vector of relational data -->
+          </div>
+
+          <div class="cell small-12 small-order-1 medium-6 medium-order-2 grid-x align-right">
+            <p class="cell textbox connected right">Let's combine relational data with Sequelize.js.</p>
+            <p class="cell textbox right">Asynchronous SQL calls? No problem!</p>
+          </div>
+
+        </div>
+
+        <div class="project-details">
+          <!--
+          <p>I was given the opportunity to take part in student research at Nationwide Children's Hospital.</p>
+        -->
+        </div>
+      </article>
+
+      <!-- project -->
+
+      <article>
+        <h2 class="project-title">Virtual Reality <strong>Archery</strong></h2>
+
+        <div class="grid-x">
+
+          <blockquote class="cell small-12 medium-6">
+            <p class="textbox">To go where no one has gone before.</p>
+          </blockquote>
+
+          <div class="cell small-12 medium-6">
+            <!-- vector of hmd/controllers -->
+          </div>
+        </div>
+
+        <div class="project-details">
+
+        </div>
+      </article>
+
+      <!-- project -->
+
+      <article>
+        <h2 class="project-title">MAASU <strong>Webmaster</strong></h2>
+        <div class="grid-x">
+          <div class="cell small-12 small-order-2 medium-6 medium-order-1">
+            <!-- vector of maasu logo, community, etc -->
+          </div>
+          <div class="cell small-12 small-order-1 medium-6 medium-order-2 grid-x align-right">
+            <p class="cell textbox connected right">We stand...</p>
+            <p class="cell textbox right">to unite and strengthen the APIDA community‘s stance against all forms of oppression.</p>
+          </div>
+        </div>
+
+
+        <div class="project-details">
+
+        </div>
+      </article>
+
+
     </section>
 
+    <footer>
+      <span class="credit">Created by Sam Bossley. What, you didn't think I made my own website?</span>
+    </footer>
 
-<!--
-    <script src="https://unpkg.com/jquery@3.4.0/dist/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js" integrity="sha256-/PFxCnsMh+nTuM0k3VJCRch1gwnCfKjaP8rJNq5SoBg= sha384-9ksAFjQjZnpqt6VtpjMjlp2S0qrGbcwF/rvrLUg2vciMhwc1UJJeAAOLuJ96w+Nj sha512-UMSn6RHqqJeJcIfV1eS2tPKCjzaHkU/KqgAnQ7Nzn0mLicFxaVhm9vq7zG5+0LALt15j1ljlg8Fp9PT1VGNmDw==" crossorigin="anonymous"></script>
--->
 
   </body>
 </html>

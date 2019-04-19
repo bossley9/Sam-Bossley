@@ -22,7 +22,6 @@ html, body {
 body {
   font-family: Helvetica, Verdana, Arial;
   font-size: 100%;
-  text-transform: uppercase;
   color: $color;
   background-color: $background-color;
 
@@ -45,7 +44,10 @@ h1, h2, h3, h4, h5, h6 {
      1px 1px 0 $color;
 }
 
-.project-title { font-weight: 700 }
+.project-title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 .outline {
   font-weight: 700;
@@ -63,14 +65,21 @@ a:hover {
   text-decoration: underline;
 }
 
-section {
+img { font-size: 0.8rem }
+
+section, article {
   height: 100%;
   width: 100%;
 }
 
 .textbox {
-  display: inline-block;
+  position: relative;
+  // display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 
+  text-transform: uppercase;
   font-style: italic;
   background-color: white;
   -webkit-box-shadow:
@@ -88,13 +97,75 @@ section {
   margin: 1em;
 }
 
+.textbox.connected::after {
+  position: absolute;
+  top: 100%; left: 1em;
+  height: 1em;
+  width: 2px;
+
+  content: '';
+  background-color: $color;
+}
+
+.textbox.right:nth-child(1) { margin:  1em 0 }
+.textbox.right { margin:  0 0 1em 0 }
+
+.textbox.connected.right::after {
+  left: auto; right: 1em;
+}
+
 // main
 
 #main {
 
-  //temp for visualizing the box
-  // .art { border: 1px solid red }
+  .art {
+    position: relative;
+    //temp for visualizing the box
+    // border: 1px solid red;
 
-  .menu { font-size: 0.8em }
+    padding: 1em;
+
+    i { text-transform: uppercase }
+  }
+
+  .menu {
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
 
 }
+
+#portfolio {
+  min-height: 100%;
+  height: auto;
+
+  .project {
+    margin: 4em 0;
+  }
+
+  .project-title {
+    @extend .outline;
+
+    font-size: 1.953em;
+    word-wrap:break-word;
+
+    strong {
+      color: $color;
+    }
+  }
+
+  blockquote {
+    border: none;
+    p { color: $color }
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-details {
+    padding: 1em;
+  }
+
+}
+
+.credit { font-size: 0.7rem }

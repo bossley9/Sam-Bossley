@@ -13,12 +13,32 @@ body { padding: 0 6em }
 
   .name { font-size: 1.5em }
 
-  .art { border: 1px solid $color }
+  .art {
+    border: 1px solid $color;
+    background-color: $background-color;
+  }
+  .art::before {
+    position: absolute;
+    bottom: -1em; left: -1em;
+    height: 100%;
+    width: 100%;
+
+    content:"";
+    border: 1px dashed $color;
+
+    z-index: -1;
+  }
 
   .menu {
     font-size: inherit;
     width: 100%;
   }
+
+}
+
+#portfolio {
+
+  .project-title { font-size: 3.815em }
 
 }
 
