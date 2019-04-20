@@ -9,6 +9,21 @@
 
 body { padding: 0 6em }
 
+.project-title::after {
+  content: attr(data-name);
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  color: $color;
+  font-size: 3em;
+  opacity: 0.1;
+
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 #main {
 
   .name { font-size: 1.5em }

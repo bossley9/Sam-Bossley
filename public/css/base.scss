@@ -28,6 +28,13 @@ body {
   padding: 0 0.4em;
 }
 
+#skrollr-body {
+  height: 100%;
+
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.05em;
 }
@@ -36,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3.157em;
-  color: white;
+  color: $white;
   text-shadow:
     -1px -1px 0 $color,
      1px -1px 0 $color,
@@ -45,6 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-title {
+  position: relative;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -58,6 +66,20 @@ h1, h2, h3, h4, h5, h6 {
     -1px 1px 0 $color,
      1px 1px 0 $color;
 }
+
+.polka-dot {
+  background:
+    radial-gradient(rgba(0, 0, 0, 0.1) 45%, rgba(0, 0, 0, 0) 46%);
+  background-position: 0 0, 80px 80px;
+  background-size:8px 8px, 8px 8px, cover;
+}
+.polka-dot.light {
+  background:
+    radial-gradient(rgba(255, 255, 255, 0.1) 45%, rgba(0, 0, 0, 0) 46%);
+    background-position: 0 0, 80px 80px;
+    background-size:8px 8px, 8px 8px, cover;
+}
+
 
 a { color: $color }
 a:hover {
@@ -81,7 +103,7 @@ section, article {
 
   text-transform: uppercase;
   font-style: italic;
-  background-color: white;
+  background-color: $white;
   -webkit-box-shadow:
     -1px -1px 0 $color,
      1px -1px 0 $color,
@@ -107,16 +129,59 @@ section, article {
   background-color: $color;
 }
 
-.textbox.right:nth-child(1) { margin:  1em 0 }
-.textbox.right { margin:  0 0 1em 0 }
+.textbox.right:nth-child(1) { margin: 1em 0 }
+.textbox.right { margin: 0 0 1em 0 }
 
 .textbox.connected.right::after {
   left: auto; right: 1em;
 }
 
+.panel { padding: 0 1em }
+.panel > div {
+  position: relative;
+  padding-top: 150%;
+
+  > div {
+    position: absolute;
+    top: 0; bottom: 0;
+    left:0; right: 0;
+
+    border: 1.5px solid $color;
+  }
+
+  > div > div { position: relative }
+
+  b {
+    font-size: 1.5em;
+    color: $color2nd;
+    text-shadow:
+      -1px -1px 0 $color,
+       1px -1px 0 $color,
+      -1px 1px 0 $color,
+       1px 1px 0 $color;
+  }
+
+  em { font-weight: 700 }
+
+  p {
+    background-color: $white;
+    font-style: italic;
+    text-transform: uppercase;
+
+    border-bottom: 1.5px solid $color;
+    padding: 0 1em;
+  }
+
+}
+.panel.blue > div { background-color: $blue }
+.panel.orange > div { background-color: $orange }
+.panel.pink > div { background-color: $pink }
+
 // main
 
 #main {
+
+  .name { font-size: 1.2em }
 
   .art {
     position: relative;
@@ -126,6 +191,13 @@ section, article {
     padding: 1em;
 
     i { text-transform: uppercase }
+
+    i b {
+      @extend .outline;
+      color: $white;
+      letter-spacing: 0.1em;
+    }
+
   }
 
   .menu {
