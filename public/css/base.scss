@@ -81,7 +81,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .striped {
-  // $sizeBG + $sizeStripe = $total
   $sizeBG: 15;
   $sizeStripe: 3;
   $total: $sizeBG + $sizeStripe;
@@ -98,6 +97,13 @@ a { color: $color }
 a:hover {
   color: $color;
   text-decoration: underline;
+}
+
+a.hidden {
+
+}
+a.hidden:hover {
+  text-decoration: none;
 }
 
 img { font-size: 0.8rem }
