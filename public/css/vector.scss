@@ -5,15 +5,20 @@ $gray-dark-1: #3c3c3c;
 $gray-light-1: #626262;
 $gray-light-2: #8c8c8c;
 
-.vector { max-width: 100%; padding: 0 10% }
+.vector {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 1%;
+}
 
 /*
 ** accessu-1 (phone)
 */
 
 #accessu-1 {
-
-  * {
+  padding: 10%;
+  
+  path {
     stroke: $black;
     stroke-width: 3;
   }
@@ -34,7 +39,10 @@ $gray-light-2: #8c8c8c;
 
   #phone-screen { fill: $gray-dark-1 }
 
-  #phone-glare { fill: $gray-light-1 }
+  #phone-glare {
+    fill: $gray-light-1;
+    stroke-width: 0;
+  }
 
   #phone-marker {
     fill: $red;
@@ -44,12 +52,35 @@ $gray-light-2: #8c8c8c;
 }
 
 #accessu-2 {
-  padding: 10%;
 
   * {
     fill: #61dafb;
     stroke: $black;
     stroke-width: 3;
   }
+
+}
+
+#accessu-3 {
+
+    #state-bg-3 {
+      fill: #f8ff2d;
+    }
+
+    #state-bg-2 {
+      fill: #08b6bf;
+    }
+
+    #state-bg-1 {
+      fill: #01939a;
+      stroke: $black;
+      stroke-width:1.5;
+    }
+
+    #state-text {
+      fill: #d2d579;
+      stroke: $black;
+      stroke-width: 1.5;
+    }
 
 }

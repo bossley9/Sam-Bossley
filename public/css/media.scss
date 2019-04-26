@@ -24,6 +24,14 @@ body { padding: 0 6em }
           transform: translateY(-50%);
 }
 
+.panel > div { padding-top: 150% }
+
+.vector {
+  padding: 10%;
+}
+
+// main
+
 #main {
 
   .name { font-size: 1.5em }
