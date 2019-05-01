@@ -1,7 +1,13 @@
 
+/*
+** intended for base styles or styles that will be used throughout the site.
+*/
+
 @import 'util';
 
-// older browser support
+/*
+** older browser support
+*/
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -12,255 +18,109 @@ header, section, footer, aside, nav, main, article, figure {
   display: block;
 }
 
-// global styles
+/*
+** defaults
+*/
+
+// core
 
 html, body {
   height: 100%;
   min-height: 100%;
+  margin: 0;
+
+  overflow-x: hidden;
 }
 
 body {
-  font-family: Helvetica, Verdana, Arial;
+  font-family: 'Montserrat', sans-serif;
   font-size: 100%;
   color: $color;
   background-color: $background-color;
 
-  padding: 0 0.4em;
+  padding: 0 $gutter;
 }
 
-#skrollr-body {
-  height: 100%;
+// containers
 
-  -ms-touch-action: none;
-      touch-action: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  letter-spacing: 0.05em;
-}
-
-.title {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 3.157em;
-  color: $white;
-  text-shadow:
-    -1px -1px 0 $color,
-     1px -1px 0 $color,
-    -0.1em 0.1em 0 $color,
-     1px 1px 0 $color;
-}
-
-.project-title {
+header, section, footer {
   position: relative;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.outline {
-  font-weight: 700;
-  color: $background-color;
-  text-shadow:
-    -1px -1px 0 $color,
-     1px -1px 0 $color,
-    -1px 1px 0 $color,
-     1px 1px 0 $color;
-}
-
-.polka-dot {
-  background:
-    radial-gradient(rgba(0, 0, 0, 0.1) 45%, rgba(0, 0, 0, 0) 46%);
-  background-position: 0 0, 80px 80px;
-  background-size:8px 8px, 8px 8px, cover;
-}
-.polka-dot.light {
-  background:
-    radial-gradient(rgba(255, 255, 255, 0.1) 45%, rgba(0, 0, 0, 0) 46%);
-    background-position: 0 0, 80px 80px;
-    background-size:8px 8px, 8px 8px, cover;
-}
-
-.striped {
-  $sizeBG: 15;
-  $sizeStripe: 3;
-  $total: $sizeBG + $sizeStripe;
-  $stripeColor: rgba(50, 50, 50, 0.3);
-  background: repeating-linear-gradient(
-    45deg,
-    transparent, transparent $sizeBG + px,
-    $stripeColor $sizeStripe + px,
-    $stripeColor $total + px
-  );
-}
-
-a { color: $color }
-a:hover {
-  color: $color;
-  text-decoration: underline;
-}
-
-a.hidden {
-
-}
-a.hidden:hover {
-  text-decoration: none;
-}
-
-img { font-size: 0.8rem }
-
-section, article {
   height: 100%;
   width: 100%;
 }
 
-.textbox {
-  position: relative;
-  // display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+// headers
 
-  text-transform: uppercase;
-  font-style: italic;
-  background-color: $white;
-  -webkit-box-shadow:
-    -1px -1px 0 $color,
-     1px -1px 0 $color,
-    -0.3em 0.3em 0 $color,
-     1px 1px 0 $color;
-  box-shadow:
-    -1px -1px 0 $color,
-     1px -1px 0 $color,
-    -0.3em 0.3em 0 $color,
-     1px 1px 0 $color;
-
-  padding: 1em;
-  margin: 1em;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  font-family: 'Bangers', cursive;
 }
 
-.textbox.connected::after {
-  position: absolute;
-  top: 100%; left: 1em;
-  height: 1em;
-  width: 2px;
+/*
+** common styles
+*/
 
-  content: '';
-  background-color: $color;
+// backdrop elements
+
+.polka-dot {
+  background-image:
+    radial-gradient(rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0) 44%);
+  background-position: 0 0, 100% 100%;
+  background-size: 6px 6px, 6px 6px, cover;
 }
 
-.textbox.right:nth-child(1) { margin: 1em 0 }
-.textbox.right { margin: 0 0 1em 0 }
+// formats
 
-.textbox.connected.right::after {
-  left: auto; right: 1em;
+@mixin outline($fontColor, $outlineColor) {
+  color: $fontColor;
+  text-shadow:
+    -2.0px -2.0px 0 $outlineColor,
+     2.0px -2.0px 0 $outlineColor,
+    -0.08em  0.08em 0 $outlineColor,
+     2.0px  2.0px 0 $outlineColor;
 }
 
-.panel { padding: 0 1em }
-.panel > div {
-  position: relative;
-  padding-top: 175%;
+@mixin textbox($bgColor, $outlineColor) {
+  &::before {
+    @extend .polka-dot;
 
-  > div {
+    content: "";
     position: absolute;
-    top: 0; bottom: 0;
-    left:0; right: 0;
+    width: 200%;
+    height: 400%;
+    top: -150%;
+    left: -50%;
+    z-index: -1;
 
-    border: 1.5px solid $color;
+    background-color: $bgColor;
+
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
   }
 
-  > div > div {
-    position: relative;
-    height: 100%;
-  }
+  position: relative;
+  display: inline-block;
+  padding: 0.2em 2em;
 
-  b {
-    font-size: 1.5em;
-    color: $color2nd;
-    text-shadow:
-      -1px -1px 0 $color,
-       1px -1px 0 $color,
-      -1px 1px 0 $color,
-       1px 1px 0 $color;
-  }
+  border: 4px solid $outlineColor;
+  -webkit-box-shadow: -6px 6px 0 $outlineColor;
+          box-shadow: -6px 6px 0 $outlineColor;
 
-  em { font-weight: 700 }
+  overflow: hidden;
 
   p {
-    background-color: $white;
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
     font-style: italic;
-    text-transform: uppercase;
-
-    border-bottom: 1.5px solid $color;
-    padding: 0 1em;
-    margin: 0;
-  }
-
-}
-.panel.blue > div { background-color: $blue }
-.panel.orange > div { background-color: $orange }
-.panel.pink > div { background-color: $pink }
-
-// main
-
-#main {
-
-  .name { font-size: 1.2em }
-
-  .art {
-    position: relative;
-    //temp for visualizing the box
-    // border: 1px solid red;
-
-    padding: 1em;
-
-    i { text-transform: uppercase }
-
-    i b {
-      @extend .outline;
-      color: $white;
-      letter-spacing: 0.1em;
-    }
-
-  }
-
-  .menu {
-    font-size: 0.8em;
+    font-weight: 700;
+    color: $outlineColor;
     text-transform: uppercase;
   }
-
 }
 
-#portfolio {
-  min-height: 100%;
-  height: auto;
+.textbox { @include textbox($white, $gray) }
 
-  .project {
-    margin: 4em 0;
-  }
+// hidden links
 
-  .project-title {
-    @extend .outline;
-
-    font-size: 1.953em;
-    word-wrap:break-word;
-
-    strong {
-      color: $color;
-    }
-  }
-
-  blockquote {
-    border: none;
-    p { color: $color }
-
-    margin: 0;
-    padding: 0;
-  }
-
-  .project-details {
-    padding: 1em;
-  }
-
-}
-
-.credit { font-size: 0.7rem }
+a.hidden { color: inherit }

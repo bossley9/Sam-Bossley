@@ -1,72 +1,56 @@
 
 @import 'util';
 
-@media (min-width: 767px) { // tablet
+/*
+** tablet
+*/
+
+@media (min-width: $min-width-tablet) {
 
 }
 
-@media (min-width: 979px) { // desktop
+/*
+** desktop
+*/
 
-body { padding: 0 6em }
+@media (min-width: $min-width-desktop) {
 
-.project-title::after {
-  content: attr(data-name);
+body { padding: 0 $gutter-desktop }
 
-  position: absolute;
-  top: 50%;
-  right: 0;
+header {
+  height: $bar-height-desktop;
+  padding: 0 $gutter-desktop;
 
-  color: $color;
-  font-size: 3em;
-  opacity: 0.1;
-
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.panel > div { padding-top: 150% }
-
-.vector {
-  padding: 10%;
-}
-
-// main
-
-#main {
-
-  .name { font-size: 1.5em }
-
-  .art {
-    border: 1px solid $color;
-    background-color: $background-color;
-  }
-  .art::before {
-    position: absolute;
-    bottom: -1em; left: -1em;
-    height: 100%;
-    width: 100%;
-
-    content:"";
-    border: 2px dashed rgba(0, 0, 0, 0.3);
-
-    z-index: -1;
-  }
-
-  .menu {
-    font-size: inherit;
-    width: 100%;
+  h1 {
+    font-size: $bar-height-desktop * 0.8;
+    line-height: $bar-height-desktop;
   }
 
 }
 
-#portfolio {
+.project {
+  padding: $bar-height-desktop 0;
 
-  .project-title { font-size: 3.815em }
+  h2 {
+    top: $bar-height-desktop;
+
+    & > p { font-size: 3em }
+
+    div {
+      font-size: 0.4em;
+      width: 50%;
+    }
+
+  }
 
 }
 
 }
 
-@media (min-width: 1200px) { // large desktop
+/*
+** large desktop
+*/
+
+@media (min-width: $min-width-large-desktop) {
 
 }

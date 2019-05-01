@@ -1,0 +1,101 @@
+
+@import 'base';
+
+/*
+** navigation bar
+*/
+
+header {
+  position: fixed;
+  top: 0; left: 0;
+  height: $bar-height;
+  width: 100%;
+  padding: 0 $gutter;
+
+
+  z-index: 10;
+
+  h1 {
+    margin: 0;
+    font-size: $bar-height * 0.8;
+    line-height: $bar-height;
+    letter-spacing: 0.05em;
+  }
+
+}
+
+.project {
+  padding: $bar-height 0;
+
+  /*
+  ** project title
+  */
+
+  h2 {
+    position: absolute;
+    top: $bar-height;
+    width: 100%;
+
+    z-index: 1;
+
+    & > p {
+      margin: 0;
+
+      @include outline($white, $gray);
+      word-wrap: break-word;
+      letter-spacing: 0.1em;
+      font-size: 2.4em;
+      line-height: 1em;
+    }
+
+    div {
+      font-size: 0.6em;
+      width: 100%;
+    }
+
+  }
+
+}
+
+/*
+** accessu
+*/
+
+#accessu {
+
+  h2 > p { @include outline($red, $gray) }
+
+  .grid-x { height: 100% }
+  .cell {
+    height: auto;
+    padding: 1em;
+  }
+
+  .cell div {
+    height: 100%;
+    width: 100%;
+
+    border: 2px solid $gray;
+  }
+
+}
+
+/*
+** leaderboards
+*/
+
+#leaderboards {
+
+  h2 > p { @include outline($blue, $gray) }
+
+}
+
+/*
+** archery
+*/
+
+#archery {
+
+  h2 > p { @include outline($brown, $gray) }
+
+}
