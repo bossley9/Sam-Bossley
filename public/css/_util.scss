@@ -8,17 +8,20 @@
 $black: #000;
 $blue: #1998cb;
 $brown: #a23700;
-$gray: #111;
+$gray-dark: #111;
+$gray: #555;
+$green: #0CBD42;
 $pink: #f2a28d;
 $peach: #f8ded7;
+$purple: #451DAF;
 $red: #ec3c37;
 $yellow: #ffda10;
 $white: #fff;
 
 // globals
 
-$background-color: $yellow;
-$color: $black;
+$background-color: $white;
+$color: $gray-dark;
 
 $gutter: 0.4em;
 $gutter-desktop: 2em;

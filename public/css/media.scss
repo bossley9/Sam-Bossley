@@ -15,8 +15,6 @@
 
 @media (min-width: $min-width-desktop) {
 
-body { padding: 0 $gutter-desktop }
-
 header {
   height: $bar-height-desktop;
   padding: 0 $gutter-desktop;
@@ -29,7 +27,7 @@ header {
 }
 
 .project {
-  padding: $bar-height-desktop 0;
+  padding: $bar-height-desktop $gutter-desktop;
 
   h2 {
     top: $bar-height-desktop;
@@ -39,6 +37,26 @@ header {
     div {
       font-size: 0.4em;
       width: 50%;
+    }
+
+  }
+
+}
+
+.background-vector {
+  height: auto;
+  width: 100%;
+}
+
+#accessu {
+
+  .cell {
+    padding: 0.7em;
+
+    div img {
+      height: auto;
+      width: 100%;
+      max-height: none;
     }
 
   }
