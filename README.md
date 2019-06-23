@@ -10,3 +10,4 @@ I've additionally gotten better at compressing media (pngs, jpegs, and videos). 
 ## Timeline
 
  - 04/14/19: Begin planning a new website design
+ - 06/23/19: Convert project to React
