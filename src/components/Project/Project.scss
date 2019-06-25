@@ -1,5 +1,25 @@
+@import 'src/util';
 
 .project {
   height: 100%;
   width: 100%;
+}
+
+.project header {
+  margin: 0 var(--spacing);
+  padding: calc(var(--spacing) / 2);
+}
+
+.project header h1 {
+  margin: 0;
+}
+
+// media
+
+@media #{$sm-down} {
+
+.project header {
+  margin: var(--spacing) 0;
+}
+
 }

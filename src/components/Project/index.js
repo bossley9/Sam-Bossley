@@ -4,10 +4,10 @@ import './Project.scss';
 
 class Project extends Component {
   render() {
-    const { background } = this.props;
+    const { backgroundColor } = this.props;
 
     return (
-      <section className='project' style={{ background }}>
+      <section className='project' style={{ backgroundColor }}>
         {this.props.children}
       </section>
     );
@@ -15,11 +15,11 @@ class Project extends Component {
 }
 
 Project.propTypes = {
-  background: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string,
 }
 
 Project.defaultProps = {
-  background: 'var(--palette-background)',
+  backgroundColor: 'var(--palette-background)',
 }
 
 export default Project;

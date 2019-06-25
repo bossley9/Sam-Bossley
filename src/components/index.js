@@ -1,10 +1,12 @@
+import AH from './AHidden';
 import Cell from './Grid/Cell';
 import Grid from './Grid';
 import Project from './Project';
 import ProjectTitle from './ProjectTitle';
+import TextBox from './TextBox';
 import ThemeProvider from './ThemeProvider';
-import Typography from './Typography';
+import Type from './Typography';
 
 export {
-  Cell, Grid, Project, ProjectTitle, ThemeProvider, Typography
+  AH, Cell, Grid, Project, ProjectTitle, TextBox, ThemeProvider, Type
 }

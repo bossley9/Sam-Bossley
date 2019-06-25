@@ -7,8 +7,6 @@ export default {
     background: '#fbfbfb',
 
     primary: {
-      // main: '',
-      // contrastText: '#111',
     },
 
     secondary: {
@@ -35,5 +33,7 @@ export default {
     fontSize: '16px',
 
   },
+
+  spacing: '2rem',
 
 }

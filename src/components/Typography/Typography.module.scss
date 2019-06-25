@@ -2,6 +2,7 @@ $scale: 2;
 
 h1, h2, h3, h4, h5, h6, em {
   font-family: var(--typography-fontFamily-primary);
+  font-weight: 400;
   letter-spacing: 0.1em;
   text-shadow: -2px -2px 0 var(--palette-foreground),
                 2px -2px 0 var(--palette-foreground),

@@ -1,28 +1,23 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Typography as Type } from '../';
-import './ProjectTitle.scss';
+import { AH, Type } from '../';
 
 class ProjectTitle extends Component {
   render() {
     const { children, color, url } = this.props;
+    let title = <Type variant='heading1' style={{ color }}>{children}</Type>;
 
-    return (
-      <a className='hidden' href={url}>
-        <Type variant='heading1' style={{ color }}>{children}</Type>
-      </a>
-    );
+    return url ? <AH url={url}>{title}</AH> : title;
   }
 }
 
 ProjectTitle.propTypes = {
-  color: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  color: PropTypes.string,
+  url: PropTypes.string,
 }
 
 ProjectTitle.defaultProps = {
-  color: 'var(--palette-foreground)',
-  url: '',
+  color: 'var(--palette-background)',
 }
 
 export default ProjectTitle;
