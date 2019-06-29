@@ -1,17 +1,31 @@
 @import 'src/util';
 
 .project {
+  position: relative;
   height: 100%;
   width: 100%;
 }
 
 .project header {
+  position: absolute;
+
   margin: 0 var(--spacing);
   padding: calc(var(--spacing) / 2);
+
+  z-index: 1;
 }
 
 .project header h1 {
   margin: 0;
+}
+
+.project .container {
+  position: relative;
+
+  height: calc(100% - calc(var(--spacing) * 2));
+  width: calc(100% - calc(var(--spacing) * 2));
+
+  padding: var(--spacing);
 }
 
 // media

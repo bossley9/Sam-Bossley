@@ -1,0 +1,14 @@
+.dashboard {
+  height: 100%;
+
+  // 
+  // border: 5px solid black;
+}
+
+// .dashboard > * {
+//     // padding: var(--spacing);
+// }
+
+.dashboard > *:nth-child(n) { background-color: blue }
+.dashboard > *:nth-child(2n) { background-color: red }
+.dashboard > *:nth-child(3n) { background-color: green }

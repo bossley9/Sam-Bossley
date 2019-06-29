@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import { GarageStatus, Pylon } from './site';
+import { About, Archery, GarageStatus, Leaderboards, Pylon } from './site';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
-
         <GarageStatus />
         <Pylon />
-
+        <Leaderboards />
+        <Archery />
+        <About />
       </div>
     );
   }

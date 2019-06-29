@@ -10,7 +10,7 @@ class Cell extends Component {
     classes.push(`${modules.cell}`);
 
     const addBreakpoint = (k, v) => {
-      if (v > 0) {
+      if (v >= 0) {
         classes.push(`${modules[k + '-' + v]}`);
       }
     }
@@ -43,10 +43,10 @@ Cell.propTypes = {
 
 Cell.defaultProps = {
   auto: false,
-  lg: 0,
-  md: 0,
+  lg: -1,
+  md: -1,
   shrink: false,
-  sm: 0,
+  sm: -1,
 }
 
 export default Cell;

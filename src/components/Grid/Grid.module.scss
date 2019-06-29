@@ -62,7 +62,7 @@ $map: (
 @each $key, $query in $map {
 @media #{$query} {
     
-  @for $i from 1 through $numGridCells {
+  @for $i from 0 through $numGridCells {
 
     .gridX > .#{$key}-#{$i},
     .gridY > .#{$key}-#{$i} {
