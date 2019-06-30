@@ -36,4 +36,8 @@ export default {
 
   spacing: '2rem',
 
+  zIndex: {
+    menu: 1000,
+  },
+
 }

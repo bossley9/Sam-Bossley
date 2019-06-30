@@ -5,7 +5,7 @@ class About extends Component {
   render() {
     return (
       <Project backgroundColor='#ffda10'>
-        <p>hello.</p>
+        <span>hello.</span>
       </Project>
     );
   }

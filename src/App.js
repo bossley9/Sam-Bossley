@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { About, Archery, GarageStatus, Leaderboards, Pylon } from './site';
+import { About, Archery, GarageStatus, Leaderboards, Menu, Pylon } from './site';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
+        <Menu />
         <GarageStatus />
         <Pylon />
         <Leaderboards />

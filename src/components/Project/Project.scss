@@ -10,7 +10,7 @@
   position: absolute;
 
   margin: 0 var(--spacing);
-  padding: calc(var(--spacing) / 2);
+  padding: var(--spacing) calc(var(--spacing) / 2);
 
   z-index: 1;
 }
