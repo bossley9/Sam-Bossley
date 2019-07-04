@@ -7,6 +7,7 @@ class Menu extends React.Component {
     return (
       <nav className={`${modules.menu}`}>
         {/* resume(paper?), linkedin, instagram, github, soundcloud */}
+        <br className={`${modules.displayOnSmall}`} />
         <Type variant='subtitle4'>Sam Bossley</Type>
       </nav>
     );

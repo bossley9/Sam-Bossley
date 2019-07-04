@@ -1,0 +1,8 @@
+@import 'src/util';
+
+.hiddenOnSmall { display: none }
+
+@media #{$sm-down} {
+  .hiddenOnSmall { display: block }
+}
+

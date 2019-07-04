@@ -1,10 +1,21 @@
+@import 'src/util';
+
 .menu {
   position: fixed;
-  right: 0;
   top: 0;
+  right: 0;
+  left: 0;
 
   text-align: right;
   padding: 0 var(--spacing);
 
   z-index: var(--zIndex-menu);
+}
+
+.displayOnSmall { display: none }
+
+@media #{$sm-down} {
+  .menu { text-align: center }
+
+  .displayOnSmall { display: block }
 }
