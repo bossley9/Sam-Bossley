@@ -4,10 +4,12 @@
   border: 5px solid black;
 }
 
-// .dashboard > * {
+.dashboard > * {
   // background-color: red;
-// }
+  // padding: 1em;
+  // border-spacing: 10px;
+}
 
-// .dashboard > *:nth-child(n) { background-color: blue }
-// .dashboard > *:nth-child(2n) { background-color: red }
-// .dashboard > *:nth-child(3n) { background-color: green }
+.dashboard > *:nth-child(n) { background-color: blue }
+.dashboard > *:nth-child(2n) { background-color: red }
+.dashboard > *:nth-child(3n) { background-color: green }

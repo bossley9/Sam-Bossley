@@ -9,7 +9,7 @@ class Leaderboards extends Component {
         <header>
           <ProjectTitle color='#0cbd42'>Leader<br className={`${modules.hiddenOnSmall}`} />boards</ProjectTitle>
           <TextBox>
-            An <abbr title='model-view-controller'>MVC</abbr>-driven API built with MySQL, Node and Sequelize.js
+            A <abbr title='model-view-controller'>MVC</abbr>-driven API built with MySQL, Node, and Sequelize.js
           </TextBox>
         </header>
       </Project>

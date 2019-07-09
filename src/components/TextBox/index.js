@@ -4,12 +4,10 @@ import modules from './TextBox.module.scss';
 
 class TextBox extends React.Component {
   render() {
-    const { backgroundColor, children } = this.props;
+    const { backgroundColor, children, className, props } = this.props;
     return (
-      <div className={`${modules.textbox}`} style={{ backgroundColor }}>
-
+      <div {...props} className={`${className} ${modules.textbox}`} style={{ backgroundColor }}>
         {children}
-
       </div>
     );
   }

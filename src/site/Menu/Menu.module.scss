@@ -3,19 +3,50 @@
 .menu {
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
+  right: var(--spacing);
+  left: var(--spacing);
 
   text-align: right;
-  padding: 0 var(--spacing);
+  padding: calc(var(--spacing) / 4);
 
   z-index: var(--zIndex-menu);
 }
 
-.displayOnSmall { display: none }
+.menuTextBox {
+  width: 100%;
+  padding: 0;
+}
+
+.menuContent {
+  $paddingH: 2em;
+
+  display: table;
+  width: calc(100% - calc(#{$paddingH} * 2));
+  padding: 0.5em $paddingH;
+
+  & * {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+}
+
+.title {
+  text-shadow: none;
+  font-size: calc(2 * var(--typography-fontSize));
+  font-style: normal;
+}
+
+// media
 
 @media #{$sm-down} {
-  .menu { text-align: center }
+  .menu {
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
 
-  .displayOnSmall { display: block }
+  .menuContent * { display: block }
+
+  .title { margin: calc(var(--spacing) / 4) 0 }
 }

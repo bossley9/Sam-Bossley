@@ -1,14 +1,17 @@
 import React from 'react';
-import { Type } from '../../components';
+import { TextBox, Type } from '../../components';
 import modules from './Menu.module.scss';
 
 class Menu extends React.Component {
   render() {
     return (
       <nav className={`${modules.menu}`}>
-        {/* resume(paper?), linkedin, instagram, github, soundcloud */}
-        <br className={`${modules.displayOnSmall}`} />
-        <Type variant='subtitle4'>Sam Bossley</Type>
+        <TextBox className={`${modules.menuTextBox}`}>
+          <div className={`${modules.menuContent}`}>
+            <span>resume(paper?), linkedin, instagram, github, soundcloud</span>
+            <Type variant='h3' className={`${modules.title}`}>Sam Bossley</Type>
+          </div>
+        </TextBox>
       </nav>
     );
   }
