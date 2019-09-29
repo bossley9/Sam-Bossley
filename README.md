@@ -13,5 +13,6 @@ I have also been reading into [Material Design](https://material.io/design/intro
 
 ## Timeline
 
- - 04/14/19: Begin planning a new website design
- - 06/23/19: Convert project to React
+- 09/29/19: Redesign in Typescript
+- 04/14/19: Begin planning a new website design
+- 06/23/19: Convert project to React
