@@ -1,0 +1,12 @@
+@import 'src/util';
+
+.container {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media #{$md-up} {
+}
