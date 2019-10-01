@@ -2,9 +2,46 @@
 
 .container {
   width: 100%;
+  height: 50%;
+  display: table;
 
-  img {
+  img { width: 100% }
+
+  ul {
+    display: table-cell;
+    vertical-align: middle;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  a {
+    color: initial;
+    text-decoration: none;
+    transition: 0.1s;
+  }
+
+  a:hover, a:active {
+    color: $color-2;
+  }
+
+  $vPadding: calc(#{$spacing} / 8);
+
+  li:last-child {
+    padding-bottom: calc(#{$vPadding} + #{$spacing});
+  }
+
+  .link {
     width: 100%;
+    border-bottom: 2px solid $color;
+  }
+
+  .link > * {
+    vertical-align: middle;
+  }
+
+  .link svg {
+    font-size: 1.5em;
+    padding: $vPadding;
   }
 }
 
