@@ -3,13 +3,16 @@ import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaSoundcloud } from '
 import { FaIdBadge } from 'react-icons/fa';
 import './App.scss';
 
-// {/* TODO favicons */}
-
 const App: React.FC = () => {
   return (
     <React.Fragment>
       <div className='container'>
-        <img src={`${process.env.PUBLIC_URL}/profile.jpg`} alt='profile' />
+        <div className='imgContainer'>
+          <svg className='title'>
+            <text x='0' y='90%'>Sam Bossley</text>
+          </svg>
+          <img src={`${process.env.PUBLIC_URL}/profile.jpg`} alt='profile' />
+        </div>
       </div>
       <div className='container'>
         <ul>

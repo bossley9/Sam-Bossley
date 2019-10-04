@@ -16,7 +16,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "deploy": "react-scripts build && firebase use dev && firebase deploy",
+    "deploy": "react-scripts build && firebase use default && firebase deploy",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "test": "react-scripts test --watchAll --coverage || exit 0"
