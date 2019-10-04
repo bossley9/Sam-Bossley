@@ -47,6 +47,10 @@ $border: 2px solid $color;
   }
 }
 
+@media #{$md-up} {
+  .title { font-size: 2.2em }
+}
+
 @media #{$lg-up} {
 
   $img-width: 40%;
