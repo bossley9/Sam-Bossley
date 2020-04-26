@@ -1,0 +1,64 @@
+:root {
+    --bg: #7baaf7;
+    --bg1: #3b85ff;
+    --fg: #333;
+    --mid: #fbfbfb;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    margin: 1em;
+    color: var(--fg);
+    background: var(--bg);
+    font-size: 25pt;
+}
+
+.name {
+    margin: 0;
+    color: var(--mid);
+    font-family: 'Bangers';
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    font-size: 5em;
+    text-shadow: -2px -2px 0 var(--fg),
+                 2px -2px 0 var(--fg),
+                 -0.08em 0.08em 0 var(--fg),
+                 2px 2px 0 var(--fg);
+}
+
+.links {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Bangers';
+}
+
+.links li {
+    font-size: 3.5em;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--bg1);
+    transition: all 0.1s;
+}
+
+.links a:hover {
+    text-shadow: -2px -2px 0 var(--fg),
+                 2px -2px 0 var(--fg),
+                 -0.08em 0.08em 0 var(--fg),
+                 2px 2px 0 var(--fg);
+    /*
+    padding-left: 0.5em;
+    color: var(--mid);
+    */
+}
+
+/*
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+*/
