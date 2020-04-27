@@ -1,8 +1,7 @@
 :root {
-    --bg: #7baaf7;
-    --bg1: #3b85ff;
+    --bg: #fbfbfb;
     --fg: #333;
-    --mid: #fbfbfb;
+    --ac: #fb5d89;
 }
 
 html, body {
@@ -18,9 +17,22 @@ body {
     font-size: 24pt;
 }
 
+.bg::before {
+    content: '';
+    position: fixed;
+    width: 200%;
+    height: 400%;
+    top: -150%;
+    left: -50%;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.1) 45%, rgba(0, 0, 0, 0) 44%);
+    background-position: 0 0, 100% 100%;
+    background-size: 6px 6px, 6px 6px, cover;
+    z-index: -1;
+}
+
 .name {
     margin: 0;
-    color: var(--mid);
+    color: var(--ac);
     font-family: 'Bangers';
     font-weight: 400;
     letter-spacing: 0.1em;
@@ -40,11 +52,12 @@ body {
 .links a {
     text-decoration: none;
     font-size: 4em;
-    color: var(--bg1);
+    color: var(--fg);
     transition: all 0.1s;
 }
 
 .links a:hover {
+    color: var(--ac);
     text-shadow: -2px -2px 0 var(--fg),
                  2px -2px 0 var(--fg),
                  -0.08em 0.08em 0 var(--fg),
