@@ -2,6 +2,7 @@
     --bg: #fbfbfb;
     --fg: #333;
     --ac: #fb5d89;
+    --ac-light: #ffd3d3;
 }
 
 html, body {
@@ -24,9 +25,9 @@ body {
     height: 400%;
     top: -150%;
     left: -50%;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.1) 45%, rgba(0, 0, 0, 0) 44%);
-    background-position: 0 0, 100% 100%;
+    background-image: radial-gradient(var(--ac-light) 45%, rgba(0, 0, 0, 0) 44%);
     background-size: 6px 6px, 6px 6px, cover;
+    background-position: 0 0, 100% 100%;
     z-index: -1;
 }
 
