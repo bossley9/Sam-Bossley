@@ -1,6 +1,7 @@
 # Sam-Bossley
 History of my website code
 
+[![Release 2020](https://img.shields.io/badge/release-2020-informational?style=flat)](https://github.com/bossley9/sam-bossley/releases)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ff4a7296-2bf7-43fe-95f0-ace4556e5e43/deploy-status)](https://app.netlify.com/sites/sam-bossley/deploys)
 
 This is a working history of my website throughout the years. It's continually a work in progress and I'm always learning new things about good web development practices along the way.
