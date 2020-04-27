@@ -11,10 +11,11 @@ html, body {
 }
 
 body {
-    margin: 1em;
+    margin: 0;
+    padding: 0 1em;
     color: var(--fg);
     background: var(--bg);
-    font-size: 25pt;
+    font-size: 24pt;
 }
 
 .name {
@@ -36,12 +37,9 @@ body {
     font-family: 'Bangers';
 }
 
-.links li {
-    font-size: 3.5em;
-}
-
 .links a {
     text-decoration: none;
+    font-size: 4em;
     color: var(--bg1);
     transition: all 0.1s;
 }
@@ -51,14 +49,10 @@ body {
                  2px -2px 0 var(--fg),
                  -0.08em 0.08em 0 var(--fg),
                  2px 2px 0 var(--fg);
-    /*
-    padding-left: 0.5em;
-    color: var(--mid);
-    */
 }
 
-/*
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+@media screen and (max-width: 900px) {
+    .links a {
+        font-size: 6em;
+    }
 }
-*/
