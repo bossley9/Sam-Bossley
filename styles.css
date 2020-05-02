@@ -15,7 +15,10 @@ body {
     padding: 0 1em;
     color: var(--fg);
     background: var(--bg);
-    font-size: 24pt;
+    font-size: 20pt;
+    font-family: 'Helvetica', 'Arial';
+    text-transform: uppercase;
+    font-style: italic;
 }
 
 .bg::before {
@@ -37,14 +40,21 @@ body {
     font-family: 'Bangers';
     font-weight: 400;
     letter-spacing: 0.1em;
-    font-size: 5em;
+    font-size: 7em;
     text-shadow: -2px -2px 0 var(--fg),
                  2px -2px 0 var(--fg),
                  -0.08em 0.08em 0 var(--fg),
                  2px 2px 0 var(--fg);
 }
 
+#tag {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 0;
+}
+
 .links {
+    margin: 0;
     list-style-type: none;
     padding: 0;
     font-family: 'Bangers';
@@ -52,7 +62,7 @@ body {
 
 .links a {
     text-decoration: none;
-    font-size: 4em;
+    font-size: 5em;
     color: var(--fg);
     transition: all 0.1s;
 }
@@ -66,7 +76,11 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+    .name {
+        font-size: 4em;
+    }
+
     .links a {
-        font-size: 6em;
+        font-size: 4em;
     }
 }
