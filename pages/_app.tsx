@@ -1,5 +1,5 @@
 import { FC, ComponentClass } from 'react'
-import 'css/styles.css'
+import 'css/styles.scss'
 
 type AppProps = {
   Component: ComponentClass
