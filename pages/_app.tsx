@@ -1,5 +1,6 @@
 import { FC, ComponentClass } from 'react'
 import 'css/styles.scss'
+import 'css/styles-old.scss'
 
 type AppProps = {
   Component: ComponentClass
