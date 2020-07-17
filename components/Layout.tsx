@@ -1,4 +1,4 @@
-import { FC, Fragment, ReactNode } from 'react'
+import React, { FC, Fragment, ReactNode } from 'react'
 import { APP_NAME } from 'constants/strings'
 import Head from 'next/head'
 

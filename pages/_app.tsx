@@ -1,4 +1,4 @@
-import { FC, ComponentClass } from 'react'
+import React, { FC, ComponentClass } from 'react'
 import 'css/styles.scss'
 import 'css/styles-old.scss'
 
