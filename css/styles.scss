@@ -12,17 +12,36 @@ body {
   @extend .ff-open;
   line-height: 1.2; // no units for multiplier
 
+  @extend .ma0;
+
   @extend .c-text-main;
   @extend .bg-bg-main;
 }
 
-// TODO
+h1 {
+  @extend .title1;
+}
+h2 {
+  @extend .title2;
+}
+h3 {
+  @extend .title3;
+}
+h4 {
+  @extend .title4;
+}
+h5 {
+  @extend .title5;
+}
+h6 {
+  @extend .title6;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  font-size: 1rem;
+  @extend .ff-libre;
 }

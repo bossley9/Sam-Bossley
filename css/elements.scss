@@ -1,7 +1,7 @@
 .container {
-  @extend .mx2;
-  @extend .mx3-ns;
+  @extend .mxa;
   max-width: $containerWidth;
+  @extend .px3-nl;
 }
 
 @keyframes Skeleton {
