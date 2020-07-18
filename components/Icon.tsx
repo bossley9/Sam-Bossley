@@ -10,11 +10,12 @@ export type IconName = IName
 export type IconPrefix = IPrefix
 
 interface Props {
-  className?: string
   prefix?: IconPrefix
   icon: IconName
+  className?: string
+  style?: object
 }
 
-export const Icon: FC<Props> = ({ className = '', prefix = 'fas', icon }) => {
-  return <FontAwesomeIcon className={className} icon={[prefix, icon]} />
+export const Icon: FC<Props> = ({ prefix = 'fas', icon, ...props }) => {
+  return <FontAwesomeIcon icon={[prefix, icon]} {...props} />
 }
