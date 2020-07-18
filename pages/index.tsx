@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { Layout } from 'components/Layout'
 import { Icon, IconName, IconPrefix } from 'components/Icon'
-import { Link } from 'components/Link'
+// import { Link } from 'components/Link'
 import { SOCIAL } from 'constants/strings'
 import 'constants/iconLibrary'
 
@@ -31,9 +31,7 @@ const Main: FC = () => {
             </li>
           ))}
         </ul>
-        <div>
-          <Link href="/thoughts">Arbitrary thoughts</Link>
-        </div>
+        <div>{/* <Link href="/thoughts">Arbitrary thoughts</Link> */}</div>
       </section>
     </Layout>
   )

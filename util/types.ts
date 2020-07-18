@@ -1,4 +1,4 @@
-export type Thought = {
+export type ThoughtMeta = {
   id: string
   title: string
   date: string

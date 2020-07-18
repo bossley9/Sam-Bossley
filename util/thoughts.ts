@@ -1,10 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-
-type ThoughtMatter = {
-  date: string
-}
+import { ThoughtMeta } from 'util/types'
 
 const dir = path.join(process.cwd(), 'thoughts')
 
@@ -20,13 +17,34 @@ export const getThoughtsData = () => {
 
     return {
       id,
-      ...(res.data as ThoughtMatter),
-    }
+      ...res.data,
+    } as ThoughtMeta
   })
 
   return thoughtsData.sort((a, b) => (a.date < b.date ? 1 : -1))
 }
 
-export const getThought = (thought: string) => {
-  return thought
+export const getThoughtIds = () => {
+  const filenames = fs.readdirSync(dir)
+
+  return filenames.map((filename) => {
+    return {
+      params: {
+        id: filename.replace(/\.md/, ''),
+      },
+    }
+  })
+}
+
+export const getThoughtData = (id: string) => {
+  const fullPath = path.join(dir, `${id}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+
+  const res = matter(fileContents)
+
+  return {
+    id,
+    ...res.data,
+    content: res.content,
+  } as ThoughtMeta & { content: string }
 }

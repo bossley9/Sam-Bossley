@@ -3,7 +3,7 @@ import { Layout } from 'components/Layout'
 import { BLink, Link } from 'components/Link'
 import { useDocumentTitle } from 'hooks/meta'
 import { getThoughtsData } from 'util/thoughts'
-import { Thought } from 'util/types'
+import { ThoughtMeta } from 'util/types'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 type Props = StaticProps & {}
@@ -17,7 +17,7 @@ const ThoughtsContainer: FC<Props> = ({ thoughtsData }) => {
         <h3>Arbitrary Thoughts.</h3>
         <BLink />
         <ul>
-          {thoughtsData.map(({ id, date, title }: Thought) => {
+          {thoughtsData.map(({ id, date, title }: ThoughtMeta) => {
             return (
               <li key={id}>
                 <Link href="/thoughts/[slug]" as={`/thoughts/${id}`}>

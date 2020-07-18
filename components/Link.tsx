@@ -15,7 +15,7 @@ export const Link: FC<LinkProps> = ({
   as,
   href,
   children,
-  className,
+  className = '',
   style,
 }) => (
   <NextLink href={href} as={as}>
@@ -33,7 +33,7 @@ type BLinkProps = {
 
 export const BLink: FC<BLinkProps> = ({
   children = 'Go Back',
-  className,
+  className = '',
   style,
 }) => (
   <button
