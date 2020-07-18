@@ -10,7 +10,7 @@ const Main: FC = () => {
         <h3>404</h3>
         <span>The page you're looking for doesn't seem to exist.</span>
         <br />
-        <BLink />
+        <BLink className="mt3" />
       </section>
     </Layout>
   )

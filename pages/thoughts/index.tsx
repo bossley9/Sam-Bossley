@@ -13,14 +13,16 @@ const ThoughtsContainer: FC<Props> = ({ thoughtsData }) => {
 
   return (
     <Layout>
-      <section className="container my5 mt9 tc">
+      <section className="container tc">
+        <Link href="/" className="mt3 mb7 fs1">
+          Sam Bossley
+        </Link>
         <h3>Arbitrary Thoughts.</h3>
-        <BLink />
         <ul>
           {thoughtsData.map(({ id, date, title }: ThoughtMeta) => {
             return (
               <li key={id}>
-                <Link href="/thoughts/[slug]" as={`/thoughts/${id}`}>
+                <Link href="/thoughts/[id]" as={`/thoughts/${id}`}>
                   {title}
                   <br />
                   {id}
@@ -31,6 +33,7 @@ const ThoughtsContainer: FC<Props> = ({ thoughtsData }) => {
             )
           })}
         </ul>
+        <BLink />
       </section>
     </Layout>
   )

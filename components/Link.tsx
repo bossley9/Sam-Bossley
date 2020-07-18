@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from 'react'
 import NextLink from 'next/link'
 
-const buttonClassNames = 'clearall mt3 ff-libre pointer hov-tdu'
+const buttonClassNames = 'clearall ff-libre pointer hov-tdu'
 
 type LinkProps = {
   as?: string
