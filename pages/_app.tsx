@@ -3,7 +3,7 @@ import 'css/styles.scss'
 
 const App: FC<{
   Component: ComponentClass
-  props: object
-}> = ({ Component, props }) => <Component {...props} />
+  pageProps: object
+}> = ({ Component, pageProps }) => <Component {...pageProps} />
 
 export default App

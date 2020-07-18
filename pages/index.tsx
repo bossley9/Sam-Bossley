@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { Layout } from 'components/Layout'
 import { Icon, IconName, IconPrefix } from 'components/Icon'
+import { Link } from 'components/Link'
 import { SOCIAL } from 'constants/strings'
 import 'constants/iconLibrary'
 
@@ -9,8 +10,8 @@ const Main: FC = () => {
   return (
     <Layout>
       <section className="container my5 mt9 tc">
-        <h3>Sam Bossley.</h3>
-        <ul className="df fd-c-s pa0 lstn jc-c">
+        <h3 className="mb5">Sam Bossley.</h3>
+        <ul className="df fd-c-s pa0 lstn jc-c mb5">
           {SOCIAL.map((s, i: number) => (
             <li key={i} className="mx4 tc my3-s" style={{ height }}>
               <a
@@ -30,6 +31,9 @@ const Main: FC = () => {
             </li>
           ))}
         </ul>
+        <div>
+          <Link href="/thoughts">Arbitrary thoughts</Link>
+        </div>
       </section>
     </Layout>
   )

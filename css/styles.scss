@@ -26,21 +26,27 @@ body {
 
 h1 {
   @extend .title1;
+  @extend .my1;
 }
 h2 {
   @extend .title2;
+  @extend .my2;
 }
 h3 {
   @extend .title3;
+  @extend .my3;
 }
 h4 {
   @extend .title4;
+  @extend .my4;
 }
 h5 {
   @extend .title5;
+  @extend .my5;
 }
 h6 {
   @extend .title6;
+  @extend .my6;
 }
 
 h1,

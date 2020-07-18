@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { Layout } from 'components/Layout'
+import { BLink } from 'components/Link'
 import 'constants/iconLibrary'
 
 const Main: FC = () => {
@@ -9,12 +10,7 @@ const Main: FC = () => {
         <h3>404</h3>
         <span>The page you're looking for doesn't seem to exist.</span>
         <br />
-        <button
-          onClick={() => window.history.back()}
-          className="clearall mt3 ff-libre pointer hov-tdu"
-        >
-          go back
-        </button>
+        <BLink />
       </section>
     </Layout>
   )
