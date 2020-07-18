@@ -15,9 +15,11 @@ $colors: (
   'grey2': #222,
   'grey3': #404040,
   'grey4': #464646,
-  'grey5': #aaa,
-  'grey6': #cbcbcb,
-  'grey7': #fbfbfb,
+  'grey5': #555,
+  'grey7': #777,
+  'greya': #aaa,
+  'greyc': #cbcbcb,
+  'greyf': #fbfbfb,
   'white': #fff,
   'red1': #980000,
   'red2': #d12329,
@@ -34,9 +36,9 @@ $colors: (
 
 $theme: (
   'bg-light': map-get($colors, 'white'),
-  'bg-main': map-get($colors, 'grey7'),
-  'bg-dark': map-get($colors, 'grey6'),
-  'text-light': map-get($colors, 'grey4'),
+  'bg-main': map-get($colors, 'greyf'),
+  'bg-dark': map-get($colors, 'greyc'),
+  'text-light': map-get($colors, 'grey7'),
   'text-main': map-get($colors, 'grey3'),
   'text-dark': map-get($colors, 'grey2'),
 );

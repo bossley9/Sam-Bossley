@@ -3,9 +3,21 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 import {
   faFacebookF,
+  faGithub,
   faInstagram,
   faLinkedinIn,
+  faSoundcloud,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
+import { faAddressCard, faDotCircle } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faFacebookF, faInstagram, faLinkedinIn, faTwitter)
+library.add(
+  faAddressCard,
+  faDotCircle,
+  faFacebookF,
+  faGithub,
+  faInstagram,
+  faLinkedinIn,
+  faSoundcloud,
+  faTwitter
+)

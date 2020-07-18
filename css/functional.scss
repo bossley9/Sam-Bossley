@@ -244,6 +244,9 @@
   .br#{$media} {
     border-radius: $borderRadius !important;
   }
+  .br-50#{$media} {
+    border-radius: 50% !important;
+  }
   .border#{$media} {
     border-width: $borderWidth !important;
     // defaults
@@ -340,6 +343,9 @@
       .hov-#{$id}-#{$name}#{$media}:hover {
         #{$prop}: $value !important;
       }
+      .foc-#{$id}-#{$name}#{$media}:focus {
+        #{$prop}: $value !important;
+      }
     }
 
     @each $name, $value in $theme {
@@ -347,6 +353,9 @@
         #{$prop}: $value !important;
       }
       .hov-#{$id}-#{$name}#{$media}:hover {
+        #{$prop}: $value !important;
+      }
+      .foc-#{$id}-#{$name}#{$media}:focus {
         #{$prop}: $value !important;
       }
     }

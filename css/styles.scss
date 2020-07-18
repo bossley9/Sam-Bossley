@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline-style: dotted;
+  outline-width: 2px;
+  outline-color: map-get($colors, 'grey4');
+}
+
 body {
   font-size: 16px;
   @extend .ff-open;
