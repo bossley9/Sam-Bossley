@@ -1,36 +1,35 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
 import { Layout } from 'components/Layout'
+import { Icon, IconName, IconPrefix } from 'components/Icon'
+import { SOCIAL } from 'constants/strings'
+import 'constants/iconLibrary'
 
 const Main: FC = () => {
   return (
     <Layout>
-      <div className="bg"></div>
-      <h1 className="name">Sam Bossley</h1>
-      <p id="tag"></p>
-      <ul className="links">
-        <li>
-          <a
-            download
-            target="_blank"
-            rel="noopener noreferrer"
-            href="/Sam_Bossley.pdf"
-          >
-            Resume
-          </a>
-        </li>
-        <li>
-          <a href="mailto:bossley.samuel@gmail.com">Email</a>
-        </li>
-        <li>
-          <a href="https://github.com/bossley9">Github</a>
-        </li>
-        <li>
-          <a href="https://github.com/bossley9/dotfiles">Dotfiles</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/bossley9/">Linkedin</a>
-        </li>
-      </ul>
+      <section className="container my5 mt9">
+        <h3 className="tc">Sam Bossley.</h3>
+        <ul className="df fd-c-s pa0 lstn jc-c">
+          {SOCIAL.map((s, i: number) => (
+            <li key={i} className="mx4 tc my3-s" style={{ height: 35 }}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={s.url}
+                aria-label={s.name}
+                title={s.name}
+                className="c-inh hov-c-text-light"
+              >
+                <Icon
+                  className="h-100"
+                  prefix={(s.prefix as IconPrefix) || 'fab'}
+                  icon={s.icon as IconName}
+                />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
     </Layout>
   )
 }

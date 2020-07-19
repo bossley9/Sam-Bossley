@@ -1,3 +1,9 @@
+# dependencies
 node_modules/
+
+# build
 .next/
 out/
+
+# log
+yarn-error.log

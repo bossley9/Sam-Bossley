@@ -1,11 +1,9 @@
-import { FC, ComponentClass } from 'react'
-import 'css/styles.css'
+import React, { FC, ComponentClass } from 'react'
+import 'css/styles.scss'
 
-type AppProps = {
+const App: FC<{
   Component: ComponentClass
   props: object
-}
-
-const App: FC<AppProps> = ({ Component, props }) => <Component {...props} />
+}> = ({ Component, props }) => <Component {...props} />
 
 export default App
