@@ -1,7 +1,7 @@
 ---
-title: 'House of Leaves by Mark Z. Danielewski (2000)'
-date: '11/11/19'
-lastUpdated: '04/12/20'
+title: House of Leaves by Mark Z. Danielewski (2000)
+date: 11/11/19
+lastUpdated: 04/12/20
 tags:
   - review
   - book
