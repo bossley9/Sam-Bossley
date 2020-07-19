@@ -35,6 +35,8 @@
 }
 
 .markdown {
+  line-height: 1.5;
+
   h1 {
     @extend .fs2;
   }
@@ -70,8 +72,17 @@
     }
   }
 
+  blockquote {
+    @extend .mx0;
+    @extend .pl5;
+    border-left-width: 5px;
+    border-left-style: solid;
+    @extend .bc-greyd;
+    @extend .c-grey8;
+  }
+
   a {
-    @extend .c-inh;
+    @extend .c-red3;
     @extend .tdu;
     @extend .hov-tdn;
   }

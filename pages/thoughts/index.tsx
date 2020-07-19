@@ -35,7 +35,7 @@ const ThoughtsContainer: FC<Props> = ({ thoughtMetas }) => {
                   {formatDate(date)}
                 </span>
                 <span className="ff-libre c-text-light-2">
-                  {tags.join(', ')}
+                  {tags.sort((a, b) => a.localeCompare(b)).join(', ')}
                 </span>
               </li>
             )
