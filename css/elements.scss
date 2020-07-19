@@ -81,6 +81,10 @@
     @extend .c-grey8;
   }
 
+  del {
+    @extend .c-grey8;
+  }
+
   a {
     @extend .c-red3;
     @extend .tdu;
