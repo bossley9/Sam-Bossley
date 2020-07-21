@@ -1,7 +1,9 @@
 ---
 title: Bioshock Remastered (2016)
+desc: My thoughts of the game Bioshock
 date: 03/19/20 12:18
 lastUpdated: 03/19/20 12:18
+image: "/thoughts/bioshock-big-daddy.jpg"
 tags:
   - video game
   - review

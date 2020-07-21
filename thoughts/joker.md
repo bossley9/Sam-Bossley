@@ -1,5 +1,6 @@
 ---
 title: Joker (2019)
+desc: My opinion of the movie Joker
 date: 10/14/19 22:59
 lastUpdated: 10/14/19 22:59
 tags:

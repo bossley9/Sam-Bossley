@@ -1,7 +1,9 @@
 ---
 title: "Animal Crossing: New Horizons (2020)"
+desc: My opinions of the new Animal Crossing game, New Horizons
 date: 04/12/20 14:34
 lastUpdated: 05/23/20 23:51
+image: "/thoughts/new-horizons-fishing-tourney.jpg"
 tags:
   - video game
   - review

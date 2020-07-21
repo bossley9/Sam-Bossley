@@ -1,7 +1,9 @@
 ---
 title: Parasite (2019)
+desc: My thoughts on the movie Parasite
 date: 11/27/19 16:16
 lastUpdated: 07/16/20 19:05
+image: "/thoughts/parasite-eyes.jpg"
 tags:
   - review
   - movie

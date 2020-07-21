@@ -1,14 +1,21 @@
-import React, { FC } from 'react'
-import { Layout } from 'components/Layout'
+import React, { FC, Fragment } from 'react'
+import { Head } from 'components/Head'
 import { Icon, IconName, IconPrefix } from 'components/Icon'
 import { Link } from 'components/Link'
-import { SOCIAL } from 'constants/strings'
+import { APP_NAME, SOCIAL } from 'constants/strings'
 import 'constants/iconLibrary'
 
 const Main: FC = () => {
   const height = 35
   return (
-    <Layout>
+    <Fragment>
+      <Head
+        meta={{
+          title: APP_NAME,
+          desc: 'A web developer exploring the world',
+          keywords: ['website', 'sam', 'bossley', 'developer', 'thoughts'],
+        }}
+      />
       <section className="container my5 mt9 tc">
         <h3 className="mb5">Sam Bossley.</h3>
         <ul className="df fd-c-s pa0 lstn jc-c mb5">
@@ -35,7 +42,7 @@ const Main: FC = () => {
           <Link href="/thoughts">Arbitrary thoughts</Link>
         </div>
       </section>
-    </Layout>
+    </Fragment>
   )
 }
 

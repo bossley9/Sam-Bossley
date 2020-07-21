@@ -1,5 +1,6 @@
 ---
 title: Do Androids Dream of Electric Sheep? by Philip K. Dick (1968)
+desc: My thoughts on the book that inspired Blade Runner
 date: 01/10/19
 lastUpdated: 01/10/19
 tags:

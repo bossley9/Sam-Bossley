@@ -1,7 +1,9 @@
 ---
 title: Grand Theft Auto V (2013)
+desc: My thoughts on Grand Theft Auto V
 date: 07/03/20 19:18
 lastUpdated: 07/04/20 12:16
+image: "/thoughts/gta-v-cover-art.jpg"
 tags:
   - review
   - video game

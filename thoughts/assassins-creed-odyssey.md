@@ -1,5 +1,6 @@
 ---
 title: "Assassin's Creed: Odyssey (2018)"
+desc: "My opinion of the latest Assassin's Creed game, Odyssey"
 date: 11/08/18
 lastUpdated: 12/05/18
 tags:

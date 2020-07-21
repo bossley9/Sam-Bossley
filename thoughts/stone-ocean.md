@@ -1,7 +1,9 @@
 ---
 title: "Jojo's Bizarre Adventure: Stone Ocean (2000-2003)"
+desc: My review of the sixth part of Jojo, Stone Ocean
 date: 04/19/20 00:29
 lastUpdated: 04/19/20 12:55
+image: "/thoughts/stone-ocean-end.jpg"
 tags:
   - review
   - manga

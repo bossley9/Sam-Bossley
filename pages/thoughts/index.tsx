@@ -1,5 +1,5 @@
-import React, { FC } from 'react'
-import { Layout } from 'components/Layout'
+import React, { FC, Fragment } from 'react'
+import { Head } from 'components/Head'
 import { BLink, Link } from 'components/Link'
 import { useDocumentTitle } from 'hooks/meta'
 import { getThoughtMetas } from 'util/thoughts'
@@ -14,7 +14,15 @@ const ThoughtsContainer: FC<Props> = ({ thoughtMetas }) => {
   useDocumentTitle('Arbitrary Thoughts.')
 
   return (
-    <Layout>
+    <Fragment>
+      <Head
+        meta={{
+          desc: 'Arbitrary thoughts of mine',
+          href: '/thoughts',
+          keywords: ['blog', 'thoughts', 'ideas', 'tutorials'],
+          title: `Arbitrary Thoughts. - ${APP_NAME}`,
+        }}
+      />
       <section className="container tc mb7">
         <Link href="/" className="mt3 mb7 fs1">
           {APP_NAME}
@@ -43,7 +51,7 @@ const ThoughtsContainer: FC<Props> = ({ thoughtMetas }) => {
         </ul>
         <BLink />
       </section>
-    </Layout>
+    </Fragment>
   )
 }
 

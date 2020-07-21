@@ -1,4 +1,5 @@
 export const APP_NAME = 'Sam Bossley'
+export const APP_BASE_URL = 'https://sam.bossley.us'
 
 export const SOCIAL = [
   {

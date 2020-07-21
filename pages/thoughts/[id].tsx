@@ -1,5 +1,5 @@
-import React, { FC } from 'react'
-import { ThoughtLayout } from 'components/ThoughtLayout'
+import React, { FC, Fragment } from 'react'
+import { Head } from 'components/Head'
 import { getThoughtIds, getThought } from 'util/thoughts'
 import { formatDate } from 'util/date'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
@@ -10,19 +10,20 @@ import { APP_NAME } from 'constants/strings'
 type Props = StaticProps & {}
 
 const ThoughtContent: FC<Props> = ({ thought }) => {
-  const { id, title, date, tags, content } = thought
+  const { id, title, desc, date, image, tags, content } = thought
 
   return (
-    <ThoughtLayout
-      meta={{
-        title: `${title} - Arbitrary Thoughts.`,
-        author: 'Sam Bossley',
-        desc: title,
-        keywords: tags.join(','),
-        image: '',
-        url: `/thoughts/${id}`,
-      }}
-    >
+    <Fragment>
+      <Head
+        meta={{
+          desc,
+          href: `/thoughts/${id}`,
+          image,
+          keywords: tags,
+          title: `${title} - Arbitrary Thoughts.`,
+          type: 'article',
+        }}
+      />
       <article className="container tc mb7">
         <Link href="/" className="mt3 mb7 fs1">
           {APP_NAME}
@@ -36,7 +37,7 @@ const ThoughtContent: FC<Props> = ({ thought }) => {
         </div>
         <BLink />
       </article>
-    </ThoughtLayout>
+    </Fragment>
   )
 }
 

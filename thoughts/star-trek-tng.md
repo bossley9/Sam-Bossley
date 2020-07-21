@@ -1,7 +1,9 @@
 ---
 title: "Star Trek: The Next Generation (1987-1994)"
+desc: "Why I love Star Trek: The Next Generation"
 date: 06/30/20 21:28
 lastUpdated: 07/20/20 01:09
+image: "/thoughts/tng-enterprise-d.jpg"
 tags:
   - review
   - show
