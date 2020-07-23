@@ -2,11 +2,10 @@ import React, { FC, Fragment } from 'react'
 import { Head } from 'components/Head'
 import { Icon, IconName, IconPrefix } from 'components/Icon'
 import { Link } from 'components/Link'
-import { APP_NAME, SOCIAL } from 'constants/strings'
+import { APP_NAME, ICON_SIZE, SOCIAL } from 'constants/strings'
 import 'constants/iconLibrary'
 
 const Main: FC = () => {
-  const height = 35
   return (
     <Fragment>
       <Head
@@ -20,7 +19,7 @@ const Main: FC = () => {
         <h3 className="mb5">Sam Bossley.</h3>
         <ul className="df fd-c-s pa0 lstn jc-c mb5">
           {SOCIAL.map((s, i: number) => (
-            <li key={i} className="mx4 tc my3-s" style={{ height }}>
+            <li key={i} className="mx4 tc my3-s" style={{ height: ICON_SIZE }}>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
