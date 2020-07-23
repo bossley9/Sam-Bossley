@@ -9,7 +9,11 @@ import {
   faSoundcloud,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
-import { faAddressCard, faDotCircle } from '@fortawesome/free-solid-svg-icons'
+import {
+  faAddressCard,
+  faDotCircle,
+  faRss,
+} from '@fortawesome/free-solid-svg-icons'
 
 library.add(
   faAddressCard,
@@ -18,6 +22,7 @@ library.add(
   faGithub,
   faInstagram,
   faLinkedinIn,
+  faRss,
   faSoundcloud,
   faTwitter
 )

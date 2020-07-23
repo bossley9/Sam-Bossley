@@ -1,3 +1,18 @@
+export type FeedMeta = {
+  desc: string
+  href: string
+  image?: string
+  items?: {
+    date?: string
+    desc?: string
+    href: string
+    id?: string
+    tags?: string[]
+    title: string
+  }[]
+  title: string
+}
+
 export type ThoughtMeta = {
   date: string
   desc: string
