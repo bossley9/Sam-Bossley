@@ -6,10 +6,11 @@ import { APP_BASE_URL } from 'constants/strings'
 export const genFeed = (meta: FeedMeta) => {
   const { desc, href, image, items = [], title } = meta
   const link = `${APP_BASE_URL}${href}`
-  const filepath = `/feeds${href}.xml`
-  const feedUrl = path.join(process.cwd(), `public${filepath}`)
+  const feedHref = `/feeds${href}.xml`
+  const feedUrl = path.join(process.cwd(), `public${feedHref}`)
+  const filepath = path.dirname(feedUrl)
 
-  if (!fs.existsSync(feedUrl)) fs.mkdirSync(feedUrl, { recursive: true })
+  if (!fs.existsSync(filepath)) fs.mkdirSync(filepath, { recursive: true })
 
   fs.writeFileSync(
     feedUrl,
@@ -80,5 +81,5 @@ export const genFeed = (meta: FeedMeta) => {
     `
   )
 
-  return filepath
+  return feedHref
 }
