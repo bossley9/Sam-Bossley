@@ -15,13 +15,14 @@ export const genFeed = (meta: FeedMeta) => {
   fs.writeFileSync(
     feedUrl,
     `
-    <rss version="2.0">
+    <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
       <channel>
         <title>${title}</title> 
         <link>${link}</link>
         <description>${desc}</description> 
         <language>en-us</language>
         <pubDate>${new Date().toUTCString()}</pubDate>
+        <atom:link href="${APP_BASE_URL}${feedHref}" rel="self" type="application/rss+xml" />
         ${
           image
             ? `
@@ -36,10 +37,11 @@ export const genFeed = (meta: FeedMeta) => {
         ${items
           .map((item) => {
             const { date, desc, href, id, tags, title } = item
+            const itemLink = `${APP_BASE_URL}${href}`
             return `
         <item>
           <title>${title}</title>
-          <link>${APP_BASE_URL}${href}</link>
+          <link>${itemLink}</link>
           ${
             desc
               ? `
@@ -57,7 +59,7 @@ export const genFeed = (meta: FeedMeta) => {
           ${
             id
               ? `
-          <guid>${id}</guid>
+          <guid isPermaLink="false">${id}</guid>
                 `
               : ''
           }
