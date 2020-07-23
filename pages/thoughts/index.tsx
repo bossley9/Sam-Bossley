@@ -51,9 +51,9 @@ const ThoughtsContainer: FC<Props> = ({ feedUrl, thoughtMetas }) => (
       </ul>
       <BLink className="mb5" />
       <div>
-        <Link href={feedUrl}>
+        <a aria-label="rss feed" href={feedUrl} className="c-inh">
           <Icon icon="rss" style={{ width: RSS_ICON_SIZE }} />
-        </Link>
+        </a>
       </div>
     </section>
   </Fragment>
