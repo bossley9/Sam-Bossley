@@ -1,6 +1,7 @@
 import React, { FC, Fragment } from 'react'
 import { Head } from 'components/Head'
 import { BLink, Link } from 'components/Link'
+import { Header } from 'components/Header'
 import { getThoughtMetas } from 'util/thoughts'
 import { genFeed } from 'util/feeds'
 import { formatDate } from 'util/date'
@@ -23,10 +24,8 @@ const ThoughtsContainer: FC<Props> = ({ feedUrl, thoughtMetas }) => (
     <Head
       meta={{ ...meta, keywords: ['blog', 'thoughts', 'ideas', 'tutorials'] }}
     />
+    <Header />
     <section className="container tc mb7">
-      <Link href="/" className="mt3 mb7 fs1">
-        {APP_NAME}
-      </Link>
       <h3 className="mb8">Arbitrary Thoughts.</h3>
       <ul className="lstn mxa mb5 pl0 tl w-70-ns">
         {thoughtMetas.map(({ id, date, title, tags }: ThoughtMeta) => {
@@ -63,7 +62,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const thoughtMetas = getThoughtMetas()
   const feedUrl = genFeed({
     ...meta,
-    items: thoughtMetas.map(({ id, desc, date, title, tags }: ThoughtMeta) => ({
+    items: thoughtMetas.map(({ desc, date, id, title, tags }: ThoughtMeta) => ({
       date,
       desc,
       href: `${meta.href}/${id}`,

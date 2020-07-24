@@ -10,6 +10,8 @@ export const genFeed = (meta: FeedMeta) => {
   const feedUrl = path.join(process.cwd(), `public${feedHref}`)
   const filepath = path.dirname(feedUrl)
 
+  console.log(image)
+
   if (!fs.existsSync(filepath)) fs.mkdirSync(filepath, { recursive: true })
 
   fs.writeFileSync(
@@ -27,7 +29,7 @@ export const genFeed = (meta: FeedMeta) => {
           image
             ? `
         <image>
-          <url>${image}</url>
+          <url>${APP_BASE_URL}${image}</url>
           <title>${title}</title>
           <link>${link}</link>
         </image>

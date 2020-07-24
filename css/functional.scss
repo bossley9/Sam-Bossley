@@ -29,6 +29,9 @@
     .fs#{$scale}#{$media} {
       font-size: $value !important;
     }
+    .h-fs#{$scale}#{$media} {
+      height: $value !important;
+    }
   }
 
   @each $scale, $value in $letterSpacingMap {

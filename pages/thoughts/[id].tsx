@@ -1,13 +1,13 @@
 import React, { FC, Fragment } from 'react'
 import { Head } from 'components/Head'
+import { Header } from 'components/Header'
 import { getThoughtIds, getThought } from 'util/thoughts'
 import { formatDate } from 'util/date'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { BLink, Link } from 'components/Link'
+import { BLink } from 'components/Link'
 import Markdown from 'react-markdown'
-import { APP_NAME } from 'constants/strings'
 
-type Props = StaticProps & {}
+type Props = StaticProps
 
 const ThoughtContent: FC<Props> = ({ thought }) => {
   const { id, title, desc, date, image, tags, content } = thought
@@ -24,11 +24,9 @@ const ThoughtContent: FC<Props> = ({ thought }) => {
           type: 'article',
         }}
       />
+      <Header hasHistory />
       <article className="container tc mb7">
-        <Link href="/" className="mt3 mb7 fs1">
-          {APP_NAME}
-        </Link>
-        <h3 className="mb5">{title}</h3>
+        <h3 className="my5">{title}</h3>
         <div className="mb5">
           <span className="ff-libre">{formatDate(date)}</span>
         </div>

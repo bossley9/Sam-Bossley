@@ -11,12 +11,14 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faAddressCard,
+  faArrowLeft,
   faDotCircle,
   faRss,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
   faAddressCard,
+  faArrowLeft,
   faDotCircle,
   faFacebookF,
   faGithub,
