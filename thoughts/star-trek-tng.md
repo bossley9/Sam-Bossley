@@ -1,8 +1,10 @@
 ---
 title: "Star Trek: The Next Generation (1987-1994)"
-desc: "Why I love Star Trek: The Next Generation"
+desc: "After watching Star Trek: The Next Generation in its entirety, I have to admit that
+  this show is one of the most impactful shows I have ever seen. If you've never seen it or
+  don't know what Star Trek is, I describe my thoughts of the show and why I hold it so highly."
 date: 06/30/20 21:28
-lastUpdated: 07/20/20 01:09
+lastUpdated: 07/25/20 23:47
 image: "/thoughts/tng-enterprise-d.jpg"
 tags:
   - review
@@ -145,8 +147,14 @@ I would rate the entire show a 8.9/10 for its unique perspectives, powerful imag
 - 6.21 frame of mind
 - 6.23 rightful heir
 - 6.25 timescape
-- 6.26 descent
+- 6.26 descent p1
 - 7.1 descent p2
-- 7.4 gambit
+- 7.4 gambit p1
 - 7.5 gambit p2
 - 7.6 phantasms
+- 7.9 force of nature
+- 7.11 parallels
+- 7.19 genesis
+- 7.20 journey's end
+- 7.25 all good things p1
+- 7.26 all good things p2
