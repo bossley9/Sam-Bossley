@@ -14,19 +14,18 @@ import { APP_NAME, RSS_ICON_SIZE } from 'constants/strings'
 type Props = StaticProps & {}
 
 const meta = {
-  desc: 'my blog of opinions, reviews, and technology',
-  href: '/thoughts',
-  title: `Arbitrary Thoughts. - ${APP_NAME}`,
+  desc:
+    'A stream of my raw unconsciousness through written words, poetry, and storytelling',
+  href: '/log',
+  title: `Emotional Log - ${APP_NAME}`,
 }
 
-const ThoughtsContainer: FC<Props> = ({ feedUrl, thoughtMetas }) => (
+const LogContainer: FC<Props> = ({ feedUrl, thoughtMetas }) => (
   <Fragment>
-    <Head
-      meta={{ ...meta, keywords: ['blog', 'thoughts', 'ideas', 'tutorials'] }}
-    />
+    <Head meta={{ ...meta, keywords: ['emotional', 'thoughts', 'log'] }} />
     <Header />
     <section className="container tc mb7">
-      <h3 className="mb8">Arbitrary Thoughts.</h3>
+      <h3 className="mb8">Emotional Log.</h3>
       <ul className="lstn mxa mb5 pl0 tl w-70-ns">
         {thoughtMetas.map(({ id, date, title, tags }: ThoughtMeta) => {
           return (
@@ -76,4 +75,4 @@ export const getStaticProps: GetStaticProps = async () => {
 
 type StaticProps = InferGetStaticPropsType<typeof getStaticProps>
 
-export default ThoughtsContainer
+export default LogContainer
