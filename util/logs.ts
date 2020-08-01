@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { LogMeta } from 'util/types'
+import { Log, LogMeta } from 'util/types'
 
 const dir = path.join(process.cwd(), 'log')
 
@@ -26,5 +26,30 @@ export const getLogMetas = () => {
     } as LogMeta
   })
 
-  return logMetas.sort((a, b) => a.title.localeCompare(b.title))
+  return logMetas.sort((a, b) => b.title.localeCompare(a.title))
+}
+
+export const getLogIds = () => {
+  const filenames = fs.readdirSync(dir).filter((i) => strEndsWith(i, '.md'))
+
+  return filenames.map((filename) => {
+    return {
+      params: {
+        id: filename.replace(/\.md/, ''),
+      },
+    }
+  })
+}
+
+export const getLog = (id: string) => {
+  const fullPath = path.join(dir, `${id}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+
+  const res = matter(fileContents)
+
+  return {
+    id,
+    ...res.data,
+    content: res.content,
+  } as Log
 }

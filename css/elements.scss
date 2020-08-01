@@ -115,3 +115,9 @@
     @extend .bg-greyd;
   }
 }
+
+.markdown-log {
+  h3 {
+    @extend .mt8;
+  }
+}

@@ -11,6 +11,7 @@ import 'constants/iconLibrary'
 import { Icon } from 'components/Icon'
 import { APP_NAME, RSS_ICON_SIZE } from 'constants/strings'
 import { BasicAuth } from 'components/BasicAuth'
+import key from 'log/key'
 
 type Props = StaticProps & {}
 
@@ -23,7 +24,7 @@ const meta = {
 
 const LogContainer: FC<Props> = ({ feedUrl, logMetas }) => {
   return (
-    <BasicAuth pass="1">
+    <BasicAuth pass={key}>
       <Head meta={{ ...meta, keywords: ['emotional', 'thoughts', 'log'] }} />
       <Header />
       <section className="container tc mb7">
