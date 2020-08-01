@@ -24,3 +24,14 @@ export type ThoughtMeta = {
 }
 
 export type Thought = ThoughtMeta & { content: string }
+
+export type LogMeta = {
+  date: string
+  desc: string
+  id: string
+  image?: string
+  lastUpdated: string
+  title: string
+}
+
+export type Log = LogMeta & { content: string }

@@ -2,7 +2,7 @@ export const APP_NAME = 'Sam Bossley'
 export const APP_BASE_URL = 'https://sam.bossley.us'
 
 export const ICON_SIZE = 35
-export const RSS_ICON_SIZE = 25
+export const RSS_ICON_SIZE = 35
 
 export const SOCIAL = [
   {
