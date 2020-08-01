@@ -32,7 +32,7 @@ const LogContent: FC<Props> = ({ log }) => {
           <span className="ff-libre">{formatDate(date)}</span>
         </div>
         <div className="mb5 tl markdown markdown-log">
-          <Markdown source={content} />
+          <Markdown escapeHtml={false} source={content} />
         </div>
         <BLink />
       </article>
