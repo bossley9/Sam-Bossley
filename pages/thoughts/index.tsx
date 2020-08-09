@@ -2,10 +2,10 @@ import React, { FC, Fragment } from 'react'
 import { Head } from 'components/Head'
 import { BLink, Link } from 'components/Link'
 import { Header } from 'components/Header'
-import { getThoughtMetas } from 'util/thoughts'
+import { getThoughts } from 'util/thoughts'
 import { genFeed } from 'util/feeds'
 import { formatDate } from 'util/date'
-import { ThoughtMeta } from 'util/types'
+import { Thought } from 'util/types'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import 'constants/iconLibrary'
 import { Icon } from 'components/Icon'
@@ -19,7 +19,7 @@ const meta = {
   title: `Arbitrary Thoughts. - ${APP_NAME}`,
 }
 
-const ThoughtsContainer: FC<Props> = ({ feedUrl, thoughtMetas }) => (
+const ThoughtsContainer: FC<Props> = ({ feedUrl, thoughts }) => (
   <Fragment>
     <Head
       meta={{ ...meta, keywords: ['blog', 'thoughts', 'ideas', 'tutorials'] }}
@@ -28,7 +28,7 @@ const ThoughtsContainer: FC<Props> = ({ feedUrl, thoughtMetas }) => (
     <section className="container tc mb7">
       <h3 className="mb8">Arbitrary Thoughts.</h3>
       <ul className="lstn mxa mb5 pl0 tl w-70-ns">
-        {thoughtMetas.map(({ id, date, title, tags }: ThoughtMeta) => {
+        {thoughts.map(({ id, date, title, tags = [] }: Thought) => {
           return (
             <li key={id} className="mb3">
               <Link
@@ -62,19 +62,22 @@ const ThoughtsContainer: FC<Props> = ({ feedUrl, thoughtMetas }) => (
 )
 
 export const getStaticProps: GetStaticProps = async () => {
-  const thoughtMetas = getThoughtMetas()
+  const thoughts = getThoughts()
   const feedUrl = genFeed({
     ...meta,
-    items: thoughtMetas.map(({ desc, date, id, title, tags }: ThoughtMeta) => ({
-      date,
-      desc,
-      href: `${meta.href}/${id}`,
-      id,
-      tags,
-      title,
-    })),
+    items: thoughts.map(
+      ({ content, desc, date, id, title, tags }: Thought) => ({
+        content,
+        date,
+        desc,
+        href: `${meta.href}/${id}`,
+        id,
+        tags,
+        title,
+      })
+    ),
   })
-  return { props: { feedUrl, thoughtMetas } }
+  return { props: { feedUrl, thoughts } }
 }
 
 type StaticProps = InferGetStaticPropsType<typeof getStaticProps>

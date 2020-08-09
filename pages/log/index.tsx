@@ -2,10 +2,10 @@ import React, { FC } from 'react'
 import { Head } from 'components/Head'
 import { BLink, Link } from 'components/Link'
 import { Header } from 'components/Header'
-import { getLogMetas } from 'util/logs'
+import { getLogs } from 'util/logs'
 import { genFeed } from 'util/feeds'
 import { formatDate } from 'util/date'
-import { LogMeta } from 'util/types'
+import { Log } from 'util/types'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import 'constants/iconLibrary'
 import { Icon } from 'components/Icon'
@@ -22,7 +22,7 @@ const meta = {
   title: `Emotional Log - ${APP_NAME}`,
 }
 
-const LogContainer: FC<Props> = ({ feedUrl, logMetas }) => {
+const LogContainer: FC<Props> = ({ feedUrl, logs }) => {
   return (
     <BasicAuth pass={key}>
       <Head meta={{ ...meta, keywords: ['emotional', 'thoughts', 'log'] }} />
@@ -30,7 +30,7 @@ const LogContainer: FC<Props> = ({ feedUrl, logMetas }) => {
       <section className="container tc mb7">
         <h3 className="mb8">Emotional Log.</h3>
         <ul className="lstn mxa mb5 pl0 tl w-70-ns">
-          {logMetas.map(({ id, date, title }: LogMeta) => {
+          {logs.map(({ id, date, title }: Log) => {
             return (
               <li key={id} className="mb3">
                 <Link
@@ -62,10 +62,10 @@ const LogContainer: FC<Props> = ({ feedUrl, logMetas }) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const logMetas = getLogMetas()
+  const logs = getLogs()
   const feedUrl = genFeed({
     ...meta,
-    items: logMetas.map(({ desc, date, id, title }: LogMeta) => ({
+    items: logs.map(({ desc, date, id, title }: Log) => ({
       date,
       desc,
       href: `${meta.href}/${id}`,
@@ -73,7 +73,7 @@ export const getStaticProps: GetStaticProps = async () => {
       title,
     })),
   })
-  return { props: { feedUrl, logMetas } }
+  return { props: { feedUrl, logs } }
 }
 
 type StaticProps = InferGetStaticPropsType<typeof getStaticProps>

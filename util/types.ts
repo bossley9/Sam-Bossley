@@ -1,8 +1,9 @@
-export type FeedMeta = {
+export type Feed = {
   desc: string
   href: string
   image?: string
   items?: {
+    content?: string
     date?: string
     desc?: string
     href: string
@@ -13,7 +14,8 @@ export type FeedMeta = {
   title: string
 }
 
-export type ThoughtMeta = {
+export type Thought = {
+  content: string
   date: string
   desc: string
   id: string
@@ -23,9 +25,8 @@ export type ThoughtMeta = {
   title: string
 }
 
-export type Thought = ThoughtMeta & { content: string }
-
-export type LogMeta = {
+export type Log = {
+  content: string
   date: string
   desc: string
   id: string
@@ -33,5 +34,3 @@ export type LogMeta = {
   lastUpdated: string
   title: string
 }
-
-export type Log = LogMeta & { content: string }

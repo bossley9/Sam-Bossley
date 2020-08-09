@@ -1,9 +1,9 @@
 import fs from 'fs'
 import path from 'path'
-import { FeedMeta } from 'util/types'
+import { Feed } from 'util/types'
 import { APP_BASE_URL } from 'constants/strings'
 
-export const genFeed = (meta: FeedMeta) => {
+export const genFeed = (meta: Feed) => {
   const { desc, href, image, items = [], title } = meta
   const link = `${APP_BASE_URL}${href}`
   const feedHref = `/feeds${href}.xml`
@@ -36,16 +36,18 @@ export const genFeed = (meta: FeedMeta) => {
         }
         ${items
           .map((item) => {
-            const { date, desc, href, id, tags, title } = item
+            const { content, date, desc, href, id, tags, title } = item
             const itemLink = `${APP_BASE_URL}${href}`
+            const body = content || desc
+
             return `
         <item>
           <title>${title}</title>
           <link>${itemLink}</link>
           ${
-            desc
+            body
               ? `
-          <description>${desc}</description>
+          <description><![CDATA[${body}]]></description>
                 `
               : ''
           }
