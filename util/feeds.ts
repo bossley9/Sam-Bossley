@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import marked from 'marked'
 import { Feed } from 'util/types'
 import { APP_BASE_URL } from 'constants/strings'
 
@@ -47,7 +48,7 @@ export const genFeed = (meta: Feed) => {
           ${
             body
               ? `
-          <description><![CDATA[${body}]]></description>
+          <description><![CDATA[${marked(body)}]]></description>
                 `
               : ''
           }
