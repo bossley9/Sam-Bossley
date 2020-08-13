@@ -31,7 +31,7 @@ const ThoughtContent: FC<Props> = ({ thought }) => {
           <span className="ff-libre">{formatDate(date)}</span>
         </div>
         <div className="mb5 tl markdown">
-          <Markdown source={content} />
+          <Markdown escapeHtml={false} source={content} />
         </div>
         <BLink />
       </article>
