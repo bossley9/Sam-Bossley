@@ -124,7 +124,7 @@ saved hundreds of hours putting my time towards more beneficial hobbies and skil
 instinctively glue our minds to our devices and forget about the real world around us. I'm not 
 saying you should never use social media. I'm saying that you can use social media in a healthy
 amount, and change your feed content to reflect your interests. I've gotten used to checking my 
-phone only once or twice per day, then turning it off for the remainder of the day, and in the 
+phone only once or twice per day, then turning it off for the remainder of the day (_yes, completely off_), and in the 
 rare cases I'm expecting a phone call, I'll leave it on. Likewise, I've started to unfollow a 
 lot of accounts and people, and started to follow content more aligned with my interests and 
 values. I know some of these are my friends, but as a minor shoutout and plug, I really 
@@ -136,7 +136,7 @@ appreciate accounts like
 [frankchi](https://www.instagram.com/frankchi),
 and I really appreciate communities such as
 [r/unixporn](https://www.reddit.com/r/unixporn) (it's not actual porn),
-[r/archlinux](https://www.reddit.com/r/archlinux) (it's not actual porn),
+[r/archlinux](https://www.reddit.com/r/archlinux),
 [r/poetry](https://www.reddit.com/r/poetry), and others. People should follow and appreciate
 the things they personally enjoy rather than following what other people enjoy.
 
