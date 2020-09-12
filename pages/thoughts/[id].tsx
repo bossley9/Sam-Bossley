@@ -26,7 +26,7 @@ const ThoughtContent: FC<Props> = ({ thought }) => {
       />
       <Header hasHistory />
       <article className="container tc mb7">
-        <h3 className="my5">{title}</h3>
+        <h3 className="my5 title4-s">{title}</h3>
         <div className="mb5">
           <span className="ff-libre">{formatDate(date)}</span>
         </div>
