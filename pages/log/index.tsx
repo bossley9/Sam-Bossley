@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, Fragment } from 'react'
 import { Head } from 'components/Head'
 import { BLink, Link } from 'components/Link'
 import { Header } from 'components/Header'
@@ -10,8 +10,6 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import 'constants/iconLibrary'
 import { Icon } from 'components/Icon'
 import { APP_NAME, RSS_ICON_SIZE } from 'constants/strings'
-import { BasicAuth } from 'components/BasicAuth'
-import key from 'log/key'
 
 type Props = StaticProps & {}
 
@@ -24,7 +22,7 @@ const meta = {
 
 const LogContainer: FC<Props> = ({ feedUrl, logs }) => {
   return (
-    <BasicAuth pass={key}>
+    <Fragment>
       <Head meta={{ ...meta, keywords: ['emotional', 'thoughts', 'log'] }} />
       <Header />
       <section className="container tc mb7">
@@ -57,7 +55,7 @@ const LogContainer: FC<Props> = ({ feedUrl, logs }) => {
           </a>
         </div>
       </section>
-    </BasicAuth>
+    </Fragment>
   )
 }
 

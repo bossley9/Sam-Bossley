@@ -1,11 +1,9 @@
-import React, { FC } from 'react'
+import React, { FC, Fragment } from 'react'
 import { Head } from 'components/Head'
 import { Header } from 'components/Header'
 import { getLogIds, getLog } from 'util/logs'
 import { formatDate } from 'util/date'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { BasicAuth } from 'components/BasicAuth'
-import key from 'log/key'
 import { BLink } from 'components/Link'
 import Markdown from 'react-markdown'
 
@@ -15,7 +13,7 @@ const LogContent: FC<Props> = ({ log }) => {
   const { id, title, desc, date, image, content } = log
 
   return (
-    <BasicAuth pass={key}>
+    <Fragment>
       <Head
         meta={{
           desc,
@@ -36,7 +34,7 @@ const LogContent: FC<Props> = ({ log }) => {
         </div>
         <BLink />
       </article>
-    </BasicAuth>
+    </Fragment>
   )
 }
 
