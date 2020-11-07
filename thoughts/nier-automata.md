@@ -1,8 +1,8 @@
 ---
 title: 'Nier: Automata (2017)'
 desc: 'After waiting such a long time to write my review on Nier: Automata, I have finally gathered my thoughts in the hopes that this review will be a final send off for the game - where I can encompass all my ideas, praises, and criticisms of the game.'
-date: 10/17/20 22:05
-lastUpdated: 11/31/20 21:38
+date: 10/31/20 21:38
+lastUpdated: 10/31/20 21:38
 tags:
   - review
   - video game
