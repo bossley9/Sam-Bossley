@@ -2,7 +2,7 @@
 title: 'The Right To Monetize'
 desc: 'Youtube has only recently changed their monetizing policy, allowing them to receive revenue from originally "free" content. In this article, I examine whether it is morally justifiable in the present age for Youtube to follow a strictly for-profit business model.'
 date: 11/20/20 14:26
-lastUpdated: 11/20/20 14:26
+lastUpdated: 11/22/20 23:04
 tags:
   - commentary
 ---
@@ -43,6 +43,13 @@ The answer is _money_. By implementing this policy, Youtube will generate even m
 I wanted to talk about this change in Youtube's Terms of Service for two reasons:
 
 1. To bring awareness to the matter. I guarantee that most people _have not even noticed_. I have noticed the steady increase of Youtube ads in the past two weeks alone, beginning with 1-2 ads per video upwards to 4-5 ads per video. They have even incorporated Youtube ads on Chromecast, something they have not done in the past. I find myself disappointed to know that Youtube may be receiving all the revenue from my inconveniences. If you're interested in what creators may have to say about this policy change, I suggesting watching [Chris Were's video](https://youtu.be/3UTHFwH8jmo).
+
+   _EDIT: It seems as though most people have at least noticed a change by looking at recent reviews on the app store._
+
+   |                                                                                               |                                                                                                |
+   | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+   | ![a Youtube app review against the sudden increase in ad frequency](/thoughts/monetize-1.jpg) | ![a Youtube app review against the frantic push for Youtube premium](/thoughts/monetize-2.jpg) |
+
 2. To provide alternatives. I personally have been looking for Youtube alternatives, and this was the final straw. Now that we know Youtube is doing this, how can we stop it? How can we possibly demonstrate our anger against the system?
 
 As many of you may already be aware, one way of circumventing this policy is through some form of ad-blocking. You can easily find [client ad-blocking software](https://adblockultimate.net/), download an [an-blocking browser extension](https://adblockultimate.net/), use [an ad-blocking browser](https://brave.com/), or even manipulate the content being displayed to your screen via [custom user css](https://www.howtogeek.com/334716/how-to-customize-firefoxs-user-interface-with-userchrome.css/). There are even web platforms such as [Invidious](https://invidious.site/) which use Youtube APIs to strip ads and add features. I personally use [youtube-dl](https://youtube-dl.org/) to [automatically download creator videos for viewing in my desktop video player](https://www.funkyspacemonkey.com/mpv-youtube-dl).
@@ -52,3 +59,5 @@ You can also use services such as [Peertube](https://peer.tube/) which aim to pr
 Finally, if none of the alternatives listed above suite your needs, you can support your favorite content in other ways. Most creators are aware of their financial instability on the Youtube platform and have looked to other means of revenue. This includes things such as merchandise, patreon, paypal, or liberapay. However, I recommend using this alternative in coordination with another alternative listed above, since this alone does not prevent ad revenue from being generated for Youtube.
 
 It's important for us as non-corporate entities to fully question all policy changes that may maliciously target us. We need to remain vigilant in the software world and actively protest what we believe to be immoral or unjust. Even if you plan to continue watching Youtube unrestricted from your phone or laptop, I hope you remember that it is important to stand up for what you believe in.
+
+_EDIT: I tried uninstalling Youtube from my phone today only to discover that [you can't uninstall Youtube from an Android phone](https://www.malavida.com/en/soft/youtube/android/q/how-to-uninstall-youtube-from-android.html). Talk about malicious. Maybe I'll get a [Pine phone](https://www.pine64.org/pinephone/) or something in the future._
