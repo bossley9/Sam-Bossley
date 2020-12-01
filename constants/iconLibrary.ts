@@ -2,12 +2,9 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 import {
-  faFacebookF,
   faGithub,
-  faInstagram,
-  faLinkedinIn,
+  faMastodon,
   faSoundcloud,
-  faTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faAddressCard,
@@ -20,11 +17,8 @@ library.add(
   faAddressCard,
   faArrowLeft,
   faDotCircle,
-  faFacebookF,
   faGithub,
-  faInstagram,
-  faLinkedinIn,
+  faMastodon,
   faRss,
   faSoundcloud,
-  faTwitter
 )

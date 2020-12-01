@@ -23,8 +23,8 @@ const Main: FC = () => {
           {SOCIAL.map((s, i: number) => (
             <li key={i} className="mx4 tc my3-s" style={{ height: ICON_SIZE }}>
               <a
-                target="_blank"
-                rel="noopener noreferrer"
+                // for mastodon linking
+                rel="me"
                 href={s.url}
                 aria-label={s.name}
                 title={s.name}
