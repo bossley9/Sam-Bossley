@@ -2,7 +2,7 @@
 title: "The Muad'Dib"
 desc: This review encompasses my thoughts after reading the famous scifi novel Dune by Frank Herbert. While it was not at all what I expected, There were a lot of beautiful pieces of the book I'd like to discuss before the movie adaptation releases.
 date: 01/19/21 12:01
-lastUpdated: 01/19/21 12:01
+lastUpdated: 01/19/21 14:09
 image: '/thoughts/muaddib-cover.jpg'
 tags:
   - book
@@ -17,11 +17,11 @@ Since I will be discussing topics that pertain to the plot and entire story of t
 
 ## Plot
 
-Since I want to place more focus on themes my thoughts of the novel, I will describe a very brief outline of the plot before delving into ideas.
+Since I want to place more focus on themes and my thoughts of the novel, I will describe a very brief outline of the plot before delving into ideas.
 
 Paul Atreides is the son of a Duke Leto and a Bene Gesserit Jessica. The Bene Gesserit are a group of female mysticals who are claimed to have supernatural powers over the human mind. Paul has been trained since he was young in combat, sciences, and arts - unknowingly to be used as a weapon. Paul has always had prescient visions, reading the future from his dreams - and now, he sees a girl with blue eyes on a sand planet, Arrakis.
 
-The galactic empire, comprised of the emperor and various noble houses, place more political pressure on Paul's father, the Duke Leto, to move his entire workforce to the desert planet of Arrakis to control the trade and production of Melange, the addictive spice that "runs the galaxy" only found on Arrakis. Unbeknownst to him, the house Harkonnen led by a pompous and plump Baron and the emperor himself have conspired to eradicate the Atreides bloodline and control the spice themselves. The Duke and his company move to the desert planet and learn about the scarcity and value of water on Arrakis, as well as the Fremen - the mysterious desert people who know the ways of spice harvesting and survival. The addiction to the spice has turned the color of the fremen's eyes blue, and Paul recalls that his vision must depict a female fremen on Arrakis. In addition, they learn of the dangers of the open desert and the sandworms (Makers) - massive worm creatures that burrow deep in the sane and cannot be killed, destroying and consuming everything in their path. There is also an old prophecy among the fremen of a Bene Gesserit and her son becoming the savior of the fremen.
+The galactic empire, comprised of the emperor and various noble houses, place more political pressure on Paul's father, the Duke Leto, to move his entire workforce to the desert planet of Arrakis to control the trade and production of Melange, the addictive spice that "runs the galaxy" only found on Arrakis. Unbeknownst to him, the house Harkonnen led by a pompous and plump Baron and the emperor himself have conspired to eradicate the Atreides bloodline and control the spice themselves. The Duke and his company move to the desert planet and learn about the scarcity and value of water on Arrakis, as well as the Fremen - the mysterious desert people who know the ways of spice harvesting and survival. The addiction to the spice has turned the color of the fremen's eyes blue, and Paul recalls that his vision must depict a female fremen on Arrakis. In addition, they learn of the dangers of the open desert and the sandworms (Makers) - massive worm creatures that burrow deep in the sand and cannot be killed, destroying and consuming everything in their path. There is also an old prophecy among the fremen of a Bene Gesserit and her son becoming the savior of the fremen.
 
 The Harkonnens under the Baron make their attack on the family Atreides in a twist of betrayal and massacre, leaving Paul and his mother Jessica running in the open desert for their lives. Paul's father, the Duke Leto, is capture and dies in an attempt to kill the Baron. While in the desert, Paul's mind opens and his prescient perception increases, learning that he has been trained and conditioned from his birth to become a weapon of destruction. After wandering the desert and pushing survival, they are captured by a fremen group and in a test of strength are accepted among the ranks of fremen. At this moment, Paul meets the girl of his visions, Chani, the fremen daughter of one of the leaders of the fremen. He begins to see a new vision - one of religious jihad destruction in the name of Atreides. He vows to never let the vision become a reality.
 
@@ -79,11 +79,11 @@ In every interaction, the fremen save water when available. They even withdraw t
 
 > "I was a friend of Jamis," Paul whispered. He felt tears burning his eyes, forced more volume into his voice.
 >
-> "Jamis taught me... that... when you kill... you py for it. I wish I'd known Jamis better."
+> "Jamis taught me... that... when you kill... you pay for it. I wish I'd known Jamis better."
 >
 > Blindly, he groped his way back to his place in the circle, sank to the rock floor. A voice hissed: "He sheds tears!"
 >
-> It was taken up around the ring: "Usual gives moisture to the dead!"
+> It was taken up around the ring: "Usul gives moisture to the dead!"
 
 Even the lifestyle of the fremen revolves around water. The gear they wear constantly, the _stillsuits_, are bodily regulators which conserve and recycle the sweat the body produces. In addition, the all use face masks and sinus condensers to conserve and use as little moisture as possible.
 
