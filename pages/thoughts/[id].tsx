@@ -4,7 +4,7 @@ import { Header } from 'components/Header'
 import { getThoughtIds, getThought } from 'util/thoughts'
 import { formatDate } from 'util/date'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { BLink } from 'components/Link'
+import { Link } from 'components/Link'
 import Markdown from 'react-markdown'
 
 type Props = StaticProps
@@ -12,12 +12,14 @@ type Props = StaticProps
 const ThoughtContent: FC<Props> = ({ thought }) => {
   const { id, title, desc, date, image, tags, content } = thought
 
+  const BASE_URL = '/thoughts'
+
   return (
     <Fragment>
       <Head
         meta={{
           desc,
-          href: `/thoughts/${id}`,
+          href: `${BASE_URL}/${id}`,
           image,
           keywords: tags,
           title: `${title} - Arbitrary Thoughts.`,
@@ -33,7 +35,7 @@ const ThoughtContent: FC<Props> = ({ thought }) => {
         <div className="mb5 tl markdown">
           <Markdown escapeHtml={false} source={content} />
         </div>
-        <BLink />
+        <Link href={BASE_URL}>Go Back</Link>
       </article>
     </Fragment>
   )

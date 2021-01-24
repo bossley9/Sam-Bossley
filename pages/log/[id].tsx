@@ -4,7 +4,7 @@ import { Header } from 'components/Header'
 import { getLogIds, getLog } from 'util/logs'
 import { formatDate } from 'util/date'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
-import { BLink } from 'components/Link'
+import { Link } from 'components/Link'
 import Markdown from 'react-markdown'
 
 type Props = StaticProps
@@ -12,12 +12,14 @@ type Props = StaticProps
 const LogContent: FC<Props> = ({ log }) => {
   const { id, title, desc, date, image, content } = log
 
+  const BASE_URL = '/log'
+
   return (
     <Fragment>
       <Head
         meta={{
           desc,
-          href: `/log/${id}`,
+          href: `${BASE_URL}/${id}`,
           image,
           title: `${title} - Emotional Log.`,
           type: 'article',
@@ -32,7 +34,7 @@ const LogContent: FC<Props> = ({ log }) => {
         <div className="mb5 tl markdown markdown-log">
           <Markdown escapeHtml={false} source={content} />
         </div>
-        <BLink />
+        <Link href={BASE_URL}>Go Back</Link>
       </article>
     </Fragment>
   )
