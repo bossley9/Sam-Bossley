@@ -28,22 +28,24 @@ const LogContainer: FC<Props> = ({ feedUrl, logs }) => {
       <section className="container tc mb7">
         <h3 className="mb8">Emotional Log.</h3>
         <ul className="lstn mxa mb5 pl0 tl w-70-ns">
-          {logs.map(({ id, date, title }: Log) => {
-            return (
-              <li key={id} className="mb3">
-                <Link
-                  href={`${meta.href}/[id]`}
-                  as={`${meta.href}/${id}`}
-                  className="db tl mb1"
-                >
-                  <h5 className="ma0">{title}</h5>
-                </Link>
-                <span className="db mb1 fw700 c-text-light">
-                  {formatDate(date)}
-                </span>
-              </li>
-            )
-          })}
+          {logs
+            .sort((a: Log, b: Log) => a.title.localeCompare(b.title))
+            .map(({ id, date, title }: Log) => {
+              return (
+                <li key={id} className="mb3">
+                  <Link
+                    href={`${meta.href}/[id]`}
+                    as={`${meta.href}/${id}`}
+                    className="db tl mb1"
+                  >
+                    <h5 className="ma0">{title}</h5>
+                  </Link>
+                  <span className="db mb1 fw700 c-text-light">
+                    {formatDate(date)}
+                  </span>
+                </li>
+              )
+            })}
         </ul>
         <BLink className="mb5" />
         <div>
