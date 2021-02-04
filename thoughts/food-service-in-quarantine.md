@@ -1,5 +1,5 @@
 ---
-title: Food Service in Quarantine
+title: 'Food Service in Quarantine'
 desc: "After working in the food industry for nearly a year in quarantine, I thought it might be prudent to give my thoughts on what it's like to work in the industry during COVID-19 - as well as provide some general information and tips to customers and delivery drivers about experiences from the perspective of a restaurant employee."
 date: 02/04/21 00:19
 lastUpdated: 02/04/21 00:19
@@ -13,7 +13,7 @@ I have had the fortunate privilege of working a food service serving job amidst 
 
 ## Tip.
 
-I hate that I have to even bring this up. In America, _tipping_ is the act of contributing additional bonus payment to a food bill because you wish to show your appreciation for the food and service. However, most people do not realize that in the standard American food industry, servers (otherwise known as waiters or waitresses) _depend_ on tips as payment. The federal minimum wage is $7.25 for hourly employees, but $2.13/hr for servers as determined by the [Fair Labor Standards Act](<[https://www.dol.gov/agencies/whd/state/minimum-wage/tipped](https://www.dol.gov/agencies/whd/state/minimum-wage/tipped)>). In other words, if I received no tips from a night of work, I would only make $2.13/hr of _taxed_ income.
+I hate that I have to even bring this up. In America, _tipping_ is the act of contributing additional bonus payment to a food bill because you wish to show your appreciation for the food and service. However, most people do not realize that in the standard American food industry, servers (otherwise known as waiters or waitresses) _depend_ on tips as payment. The federal minimum wage is $7.25 for hourly employees, but $2.13/hr for servers as determined by the [Fair Labor Standards Act](https://www.dol.gov/agencies/whd/state/minimum-wage/tipped). In other words, if I received no tips from a night of work, I would only make $2.13/hr of _taxed_ income.
 
 Would you say those are reasonable wages for a comfortable life?
 
