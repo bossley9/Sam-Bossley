@@ -70,9 +70,7 @@ I'm personally not a huge fan of notification-based or system-wide messaging sys
 
 Dbus on OpenBSD cannot be accessed normally with "dbus" or "dbus-daemon" as on most Unix systems. Instead, it uses OpenBSD's "messagebus" init service to propogate its notification system according to its manual page:
 
-```sh
-The systemwide daemon is normally launched by an init script, standardly called simply "messagebus".
-```
+> The systemwide daemon is normally launched by an init script, standardly called simply "messagebus".
 
 I find the reason behind this convention unapparent. Using this information, I disabled dbus using `rcctl` with `doas` for elevated privileges:
 
