@@ -25,7 +25,7 @@ const LogContent: FC<Props> = ({ log }) => {
           type: 'article',
         }}
       />
-      <Header hasHistory />
+      <Header />
       <article className="container tc mb7">
         <h3 className="my5">{title}</h3>
         <div className="mb5">
