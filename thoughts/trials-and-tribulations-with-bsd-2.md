@@ -159,15 +159,17 @@ To put it plainly - Microsoft produces terrible products. And Zoom too, apparent
 
 ## Biber
 
-[Latex](https://www.latex-project.org/) is single-handedly one of the greatest typing skills I have picked up in the past year (other than Vim) due to its versatility and ease of bibliography management when writing papers.
+[LaTeX](https://www.latex-project.org/) is single-handedly one of the greatest typing skills I have picked up in the past year (other than Vim) due to its versatility and ease of bibliography management when writing papers.
 
-> In fact, I now use Latex to generate [my resume](/Sam_Bossley.pdf) instead of Google Docs because it gives me more creative control over the content. You can create macros, include comments - the possibilities are endless.
+> In fact, I now use LaTeX to generate [my resume](/Sam_Bossley.pdf) instead of Google Docs because it gives me more creative control over the content. You can create macros, include comments - the possibilities are endless.
 
 I have noticed that I heavily rely on [Biber](http://biblatex-biber.sourceforge.net/) for bibliography management. However, it is not included in the default package system nor the ports for OpenBSD. The only way to integrate Biber into OpenBSD is to compile the package manually with gmake or to run the perl binaries raw.
 
 I attempted both. First, I tried compiling the sources with gmake only to run into a multitude of compiler errors. I decided it would be a headache to solve on my own and tried the more viable approach with the perl binaries. Perl, however, requires a lot of dependencies in order to run the Biber package. I could quite seem to get all the dependencies properly installed and I wasn't exactly sure what dependencies perl required me to use. Eventually I gave up and decided to do without Biber and use the native BibTex.
 
 If you happen to also use OpenBSD and know what flags successfully compile Biber or how to install all perl dependencies for Biber, let me know :)
+
+> Retrospective edit: I've decided to scrap using Biber altogether. The native BibTex binary preinstalled with LaTeX works perfectly fine for my needs. It can easily generate an APA-like formatting style which is all I really need for bibliographies. In other words - Biber only provides what I already have, so I have no reason to use it anymore.
 
 ## Proprietary Codecs
 
