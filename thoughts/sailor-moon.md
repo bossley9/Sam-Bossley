@@ -1,8 +1,8 @@
 ---
 title: Sailor Moon (1992-1993)
 desc: I decided to officially watch the original Sailor Moon show after being virtually perplexed by its popularity and influence in my life.
-date: 02/28/21 16:05
-lastUpdated: 02/28/21 16:05
+date: 02/28/21 23:11
+lastUpdated: 03/01/21 07:00
 image: '/thoughts/sailor-poster.jpg'
 tags:
   - review
@@ -39,7 +39,7 @@ I have to say right from the start that I absolutely love the music of Sailor Mo
 
 I initially was put off by the overzealous nature of [Sailor Moon's transformation sequence theme](https://youtu.be/o6HAHogcHFI?t=5), but after the first few episodes, it really grew on me. It's a very catchy tune that you learn to appreciate as it is played in every episode (Just like the [Usagi intro](https://www.youtube.com/watch?v=H18Pbn4Zix0) or [Moon Tiara Action](https://www.youtube.com/watch?v=DJFuGbXEMEk)). The theme is supposed to be exactly that - catchy and recognizeable. When you create a superhero who consistently defeats enemies, a reoccurring theme helps the audience understand the stakes of the situation: if the Avengers theme plays when the Avengers are fighting Thanos, it means the Avengers have the upper hand. If a dark theme plays when the Avengers are fighting Thanos, it means they are losing.
 
-The same musical concept follows for any superhero franchise containing a reoccuring theme such as the Spiderman cartoons, the original Batman shows, and almost all Superman media. By creating a uniquely identifiable theme, you empower the audience with the feeling of satisfaction as heroes destroy the enemies and save the day. It's the reason the Marvel Cinematic Universe has grown so popular in the last decade alone: _people want to see evil being destroyed_. People like the idea that a magical force can destroy all evil and "make everything better". Sailor Moon's theme is no different, and the fact that it is paired with virtually the same transformation sequence every episode adds a sense of familiarity and allows the reader to relax knowing that the enemy will be destroyed in the end.
+The same musical concept follows for any superhero franchise containing a reoccuring theme such as the Spiderman cartoons, the original Batman shows, and almost all Superman media. By creating a uniquely identifiable theme, you empower the audience with the feeling of satisfaction as heroes destroy the enemies and save the day. It's the reason the Marvel Cinematic Universe has grown so popular in the last decade alone: _people want to see evil being destroyed_. People like the idea that a magical force can destroy all evil and "make everything better". Sailor Moon's theme is no different, and the fact that it is paired with virtually the same transformation sequence every episode adds a sense of familiarity and allows the audience to relax knowing that the enemy will be destroyed in the end.
 
 > Someone sent me this meme 3D model replica animation of the Sailor Moon transformation sequence and I could not help but share it. Thanks Josephine.
 
@@ -50,21 +50,21 @@ The same musical concept follows for any superhero franchise containing a reoccu
 
 I also like many of the other reoccurring themes within Sailor Moon. After participating in both concert band and a bit of jazz band for most of my time at middle school and high school, I absolutely love themes that use brassy or jazzy sounds. For example, Sailor Moon's [Moon Tiara Action theme](https://youtube.com/watch?v=DJFuGbXEMEk) and [Fighting the Enemy](https://youtube.com/watch?v=MWxJgokMkAQ) both have just the right amount of funky vibe and [big band](https://en.wikipedia.org/wiki/Big_band) brass. Similarly, I loved [Relaxing on the Beach](https://youtube.com/watch?v=iW2c3cyudVI) because of its feature of the alto saxophone. It's not as common to find animated shows with the same sounds anymore - most of this kind of music is now only featured in Pixar movies.
 
-A lot of the original Sailor Moon's soundtrack is used for modern lofi hip-hop remixes (which I was not aware until I heard the original Sailor Moon themes and recognized the tune). Here are a few examples I've heard of:
+A lot of the original Sailor Moon soundtrack is used in modern lofi hip-hop remixes, which I was not aware until I heard the original Sailor Moon themes and recognized the tune. Here are a few examples I've heard of:
 
-- [original](https://youtube.com/watch?v=3Vtrqoe-QzY) and [lofi](https://youtu.be/i7TNv5O_678?t=386)
-- [original](https://www.youtube.com/watch?v=To8J45VxzQU) and [lofi](https://youtu.be/nALHb4hJMeg)
-- [original](https://www.youtube.com/watch?v=3bBpiHJm3t0) and [lofi](https://www.youtube.com/watch?v=GNieyTX-UzM)
+- _Just An Ordinary Girl_ [original](https://youtube.com/watch?v=3Vtrqoe-QzY) and [lofi](https://youtu.be/i7TNv5O_678?t=386)
+- _Luna's Theme_ [original](https://www.youtube.com/watch?v=To8J45VxzQU) and [lofi](https://youtu.be/nALHb4hJMeg)
+- _Moonlight Densetsu_ [original](https://www.youtube.com/watch?v=3bBpiHJm3t0) and [lofi](https://www.youtube.com/watch?v=GNieyTX-UzM)
 
-The last song, [Moonlight Densetsu](https://www.youtube.com/watch?v=3bBpiHJm3t0), is the opening theme of the show. The significance is not immediately apparent (of course, why would the opening theme be significant?) until Tuxedo Mask gives Usagi a star locket which plays the [exact same theme](https://www.youtube.com/watch?v=bjRzavKVljY). After hearing that the first time and realizing that is the song that Endymion played for Princess Serenity on the moon, the mood of the song shifts. When Tuxedo Mask is brainwashed and hurts Usagi, she plays the song sadly. My attitude towards the opening theme instantly changed from one of positive excitement to one of sadness and nostalgia as a result. I think it's absolutely incredible that they can change the atmosphere of a theme simply with plot.
+The last song, [Moonlight Densetsu](https://www.youtube.com/watch?v=3bBpiHJm3t0), is the opening theme of the show. The significance is not immediately apparent (of course, why would the opening theme be significant?) until Tuxedo Mask gives Usagi a star locket which plays the [exact same theme](https://www.youtube.com/watch?v=bjRzavKVljY). After hearing that the first time and realizing that is the song that Endymion played for Princess Serenity on the moon, the mood of the song shifts. When Tuxedo Mask is brainwashed and hurts Usagi, she plays the locket song sadly. My attitude towards the opening theme instantly changed from one of positive excitement to one of sadness and nostalgia as a result. I think it's absolutely incredible that they can change the atmosphere of a theme simply with plot.
 
 > I'm a bit concerned with the fact that in [one of the songs](https://youtube.com/watch?v=vws9UuQmCi0) I immediately recognized the melody as the exact same melody as the chorus from [Bobby Womack's _Across 110th Street_](https://www.youtube.com/watch?v=vACdT7rLY2U). I'm not saying anything or pointing any fingers but...
 >
-> (Sailor Moon definitely copied their melody from this song)
+> (Sailor Moon definitely copied their melody from Bobby's song and I can't believe they did him dirty like that)
 
 ### Artstyle
 
-One of the main reasons I was attracted to watching this show in the first place (above my massive list of shows and movies to watch) was for the time period in which it was created. The 1980s and 1990s gave rise to the first legitimate debut of animated shows, and the concept of animated content was fairly new. There's a certain degree of charm to watching older animated cartoons because you can see how animation has changed over the years to represent physical motion such as running, walking, talking, and moving objects. I love the usage of unvibrant paler colors to paint a picture. I love seeing overexaggerated eyes and facial features. I love the fact that depicted females have adult bodies and depicted males have overly muscular bodies. Modern cartoons no longer follow a rigid hard-lined artstyle and have adapted a more motion-based animation technique with more boastful curves and thinner lines. Additionally, newer cartoons now have the creative freedom to incorporate intricate shading on objects and faces. The older animations generally have less detail than newer animations and it's so interesting to see what they choose to animate and draw out - what is essential? What's the significance of this specifc feature of a character?
+One of the main reasons I was attracted to watching this show in the first place (above my massive list of shows and movies to watch) was for the time period in which it was created. The 80s and 90s gave rise to the first legitimate debut of animated shows, and the concept of animated content on television was fairly new. There's a certain degree of charm to watching older animated cartoons because you can see how animation has changed over the years - especially with regard to physical motion such as running, walking, talking, and moving objects. I love the usage of unvibrant paler colors to paint a picture. I love seeing overexaggerated eyes and facial features. I love the fact that most depicted females have adult bodies and most depicted males have overly muscular bodies. Modern cartoons no longer follow a rigid hard-lined artstyle and have adapted a more motion-based animation technique with more boastful curves and thinner lines. Additionally, newer cartoons now have the creative freedom to incorporate intricate shading on objects and faces. The older animations generally have less detail than newer animations and it's so interesting to see what they choose to animate and draw out - what is essential? What's the significance of this specifc feature of a character?
 
 Here is a wonderful comparison of artstyles from the oldest to the most recent.
 
@@ -74,8 +74,8 @@ Here is a wonderful comparison of artstyles from the oldest to the most recent.
 
 But there's always a nostalgia behind older forms of art to see how far technology has come since then.
 
-> [Kohei Ashiya](https://twitter.com/asikoh009), a David Production animator, once created a JoJo artstyle representation of Sailor Moon. Looks like Jolyne Cujoh.
-> <img width=500 alt="An image of Sailor Moon made to look like the artstyle of Jojo's Bizarre Adventures" src="sailor-jojo.jpg" />
+> [Kohei Ashiya](https://twitter.com/asikoh009), a David Production animator, once created a JoJo artstyle representation of Sailor Moon that I thought looked interesting. Looks like Jolyne Cujoh.
+> <img width=300 alt="An image of Sailor Moon made to look like the artstyle of Jojo's Bizarre Adventures" src="sailor-jojo.jpg" />
 
 ### Crybaby Usagi
 
@@ -83,7 +83,7 @@ Usagi (aka Sailor Moon) is by far the worst character in the series.
 
 I'm not exaggerating.
 
-She is always irritable, crying, or complaining. She even explains at the intro of episodes that she is "clumsier than others and a bit of a crybaby". She always fights with Rei and only dreams about dates with Tuxedo Mask or Motoki. She is [_constantly_ crying](https://youtu.be/dYgW6M7s4O4?t=559).
+She is always irritable, crying, or complaining. She even explains at the intro of episodes that she is "clumsier than others and a bit of a crybaby". She always fights with Rei and only dreams about dates with Tuxedo Mask or Motoki. She is _constantly_ crying, even [in the first episode](https://youtu.be/dYgW6M7s4O4?t=559).
 
 <video width="500" height="350" controls>
   <source src="sailor-intro.mp4" type="video/mp4">
