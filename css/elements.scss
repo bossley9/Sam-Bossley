@@ -98,6 +98,13 @@
     max-width: 100%;
   }
 
+  video {
+    @extend .db;
+    @extend .mxa;
+    @extend .br;
+    max-width: 100%;
+  }
+
   table {
     @extend .mxa;
     border-collapse: collapse;
