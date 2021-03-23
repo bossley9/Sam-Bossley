@@ -1,5 +1,5 @@
 [build]
-  command = "npm run deploy"
+  command = "yarn deploy"
   publish = "out"
 
 [build.processing]
