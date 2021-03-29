@@ -1,8 +1,8 @@
 ---
 title: Little Nightmares (2017)
 desc: In this article, I review why I think Little Nightmares is a fantastic horror game, as well as what makes a good horror game.
-date: 03/21/21 11:58
-lastUpdated: 03/21/21 11:58
+date: 03/28/21 16:50
+lastUpdated: 03/28/21 16:50
 image: '/thoughts/little-nightmares-cover.jpg'
 tags:
   - review
