@@ -59,7 +59,7 @@ I don't plan on following any strict format or organization of ideas with my ref
 
   - **What happens if students block essential emails?**
 
-    That should be the student's fault. It's the same as if student don't check Carmen, OSU's online learning platform. If students choose to block emails, they take that risk themselves. If student miss their own deadlines, it's the student's fault. If students don't submit homework on
+    That should be the student's fault. It's the same as if student don't check Carmen, OSU's online learning platform. If students choose to block emails, they take that risk themselves. If student miss their own deadlines, it's the student's fault. If students don't submit homework on carmen, they are completely held responsible, so if they block important emails, shouldn't they also be held accountable with the same standard?
 
   - **What if essential emails are marked as spam by accident and a student never sees a critically important email?**
 
