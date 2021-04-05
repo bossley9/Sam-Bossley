@@ -22,6 +22,8 @@ body {
 
   @extend .c-text-main;
   @extend .bg-bg-main;
+  @extend .d-bg-text-dark;
+  @extend .d-c-bg-dark;
 }
 
 h1 {

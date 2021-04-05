@@ -362,6 +362,20 @@
         #{$prop}: $value !important;
       }
     }
+
+    @each $name, $value in $theme {
+      @media (prefers-color-scheme: dark) {
+        .d-#{$id}-#{$name}#{$media} {
+          #{$prop}: $value !important;
+        }
+        .d-hov-#{$id}-#{$name}#{$media}:hover {
+          #{$prop}: $value !important;
+        }
+        .d-foc-#{$id}-#{$name}#{$media}:focus {
+          #{$prop}: $value !important;
+        }
+      }
+    }
   }
 }
 @include colors();
