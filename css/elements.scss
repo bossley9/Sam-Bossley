@@ -63,6 +63,7 @@
   }
 
   pre {
+    @extend .d-bg-text-main;
     @extend .bg-greyd;
     @extend .pa3;
     @extend .br;
