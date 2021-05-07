@@ -6,6 +6,7 @@ import { formatDate } from 'util/date'
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { Link } from 'components/Link'
 import Markdown from 'react-markdown'
+import gfm from 'remark-gfm'
 
 type Props = StaticProps
 
@@ -33,7 +34,7 @@ const ThoughtContent: FC<Props> = ({ thought }) => {
           <span className="ff-libre">{formatDate(date)}</span>
         </div>
         <div className="mb5 tl markdown">
-          <Markdown escapeHtml={false} source={content} />
+          <Markdown remarkPlugins={[gfm]}>{content}</Markdown>
         </div>
         <Link href={BASE_URL}>Go Back</Link>
       </article>

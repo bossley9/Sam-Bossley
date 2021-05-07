@@ -97,7 +97,9 @@
     @extend .db;
     @extend .mxa;
     @extend .br;
-    max-width: 100%;
+
+    max-width: 800px;
+    max-height: 800px;
   }
 
   video {
@@ -108,7 +110,9 @@
   }
 
   table {
+    @extend .db;
     @extend .mxa;
+    max-width: 100%;
     border-collapse: collapse;
   }
 

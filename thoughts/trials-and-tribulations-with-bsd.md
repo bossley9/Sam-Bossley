@@ -19,11 +19,7 @@ _"sometimes this program is so frustrating"_, or even
 
 _"my computer keeps crashing"_ - to which I usually respond with -
 
-<br />
-
 _"then why are you still using it?"_
-
-<br />
 
 This is where I draw the line. If a program, system, or library is causing me pain and anguish, I will resort to finding a better alternative. It boggles my mind how people enjoy using extremely inefficient, glitchy programs, then complain about how awful they are.
 
@@ -149,9 +145,16 @@ I've given two clear examples of cases where OpenBSD resolves security concerns 
 Where do I even begin? Let me preface by saying that software developers have a serious deficiency in graphic design.
 Here are the modern logos for Archlinux, FreeBSD, MacOS, OpenBSD, and Windows side by side.
 
-| Archlinux                                                       | FreeBSD                                                     | MacOS/Apple                                                   | OpenBSD                                                     | Windows                                                        |
-| --------------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------- |
-| ![The Archlinux logo](/thoughts/trials-trib-archlinux-logo.png) | ![The FreeBSD logo](/thoughts/trials-trib-freebsd-logo.png) | ![The MacOS Apple logo](/thoughts/trials-trib-apple-logo.png) | ![The OpenBSD logo](/thoughts/trials-trib-openbsd-logo.jpg) | ![The Windows 10 logo](/thoughts/trials-trib-windows-logo.jpg) |
+**Archlinux**
+![The Archlinux logo](/thoughts/trials-trib-archlinux-logo.png)
+**FreeBSD**
+![The FreeBSD logo](/thoughts/trials-trib-freebsd-logo.png)
+**MacOS/Apple**
+![The MacOS Apple logo](/thoughts/trials-trib-apple-logo.png)
+**OpenBSD**
+![The OpenBSD logo](/thoughts/trials-trib-openbsd-logo.jpg)
+**Windows**
+![The Windows 10 logo](/thoughts/trials-trib-windows-logo.jpg)
 
 In the words of Linguini from Ratatouille: ["It's not much, but... it's not much."](https://youtu.be/y2n5dLpETbM?t=200)
 

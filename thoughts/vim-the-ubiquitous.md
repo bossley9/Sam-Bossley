@@ -45,47 +45,77 @@ In these examples I will use Google Docs/VS Code and Vim side by side to show th
 
 1. From the bottom of the document, move the cursor to the very start of the document.
 
-| Google Docs                                                                                              | Vim                                                                                          |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| Scroll to the top, move the cursor to the start of the first pragraph, then click.                       | Type `gg` to move to the first column of the first line.                                     |
-| ![Google Docs scrolling to the top and clicking at the start of the document](/thoughts/vim-doc-top.gif) | ![Vim scrolling to the top of a document using the gg keybinding](/thoughts/vim-vim-top.gif) |
+   **Google Docs**
+
+   Scroll to the top, move the cursor to the start of the first pragraph, then click.
+   ![Google Docs scrolling to the top and clicking at the start of the document](/thoughts/vim-doc-top.gif)
+
+   **Vim**
+
+   Type `gg` to move to the first column of the first line.
+   ![Vim scrolling to the top of a document using the gg keybinding](/thoughts/vim-vim-top.gif)
 
 2. Replace all instances of "MCU" with "DCEU".
 
-| Google Docs                                                                                                                     | Vim                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| Search for MCU, then double click and type DCEU for each instance of MCU.                                                       | Type `:%s/MCU/DCEU/g` to go into command mode and substitute every global instance of MCU with DCEU. |
-| ![Google Docs using ctrl-f to search for MCU, then double-clicking and typing for each instance](/thoughts/vim-doc-replace.gif) | ![Vim using an ex command to replace all text instances](/thoughts/vim-vim-replace.gif)              |
+   **Google Docs**
+
+   Search for MCU, then double click and type DCEU for each instance of MCU.
+   ![Google Docs using ctrl-f to search for MCU, then double-clicking and typing for each instance](/thoughts/vim-doc-replace.gif)
+
+   **Vim**
+
+   Type `:%s/MCU/DCEU/g` to automatically switch into command mode and substitute every global instance of MCU with DCEU.
+   ![Vim using an ex command to replace all text instances](/thoughts/vim-vim-replace.gif)
 
 3. Delete an entire sentence.
 
-| Google Docs                                                                               | Vim                                                                                                 |
-| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Move the cursor to the end of the sentence, highlight the sentence, then press backspace. | Type `v)hx` to go into visual mode, select the sentence object, move back a character, then delete. |
-| ![Google docs performing the specified action](/thoughts/vim-doc-sentence.gif)            | ![Vim performing the specified action](/thoughts/vim-vim-sentence.gif)                              |
+   **Google Docs**
+
+   Move the cursor to the end of the sentence, highlight the sentence, then press backspace.
+   ![Google docs performing the specified action](/thoughts/vim-doc-sentence.gif)
+
+   **Vim**
+
+   Type `v)hx` to go into visual mode, select the sentence object, move back a character, then delete.
+   ![Vim performing the specified action](/thoughts/vim-vim-sentence.gif)
 
 4. Remove all args from a async handler function definition.
 
-| Code                                                                                                           | Vim                                                                                              |
-| -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| Move the cursor to the end of the parenthesis, highlight content within the parenthesis, then press backspace. | Type `f(di(` to find the parenthesis, then delete everything inside the parentheses text object. |
-| ![VS Code performing the specified action](/thoughts/vim-code-args.gif)                                        | ![Vim performing the specified action](/thoughts/vim-vim-args.gif)                               |
+   **Code**
 
-4. Find the file which contains the definition for "HERO_BANNER_IMG".
+   Move the cursor to the end of the parenthesis, highlight content within the parenthesis, then press backspace.
+   ![VS Code performing the specified action](/thoughts/vim-code-args.gif)
 
-| Code                                                                                             | Vim                                                                                                 |
-| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| Use Code's file search pane to search for the specified string, the click on the specified file. | Using Ripgrep and fzf, parse files for the string, then use Vim tags to jump to the specified file. |
-| ![VS Code performing the specified action](/thoughts/vim-code-find.gif)                          | ![Vim performing the specified action](/thoughts/vim-vim-find.gif)                                  |
+   **Vim**
+
+   Type `f(di(` to find the parenthesis, then delete everything inside the parentheses text object.
+   ![Vim performing the specified action](/thoughts/vim-vim-args.gif)
+
+5. Find the file which contains the definition for "HERO_BANNER_IMG".
+
+   **Code**
+
+   Use Code's file search pane to search for the specified string, the click on the specified file.
+   ![VS Code performing the specified action](/thoughts/vim-code-find.gif)
+
+   **Vim**
+
+   Using Ripgrep and fzf, parse files for the string, then use Vim tags to jump to the specified file.
+   ![Vim performing the specified action](/thoughts/vim-vim-find.gif)
 
 _Someone could argue that if I clicked on the correct file for VS Code first it would have been faster. I agree, but this test takes into account the file searching algorithms as well._
 
 5. Surround a word with quotes.
 
-| Code                                                                        | Vim                                                                                                                                                |
-| --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Click and type quotation marks at the start and end of the word.            | Type `ysiw` using `vim-surround` to surround an inner text object with some character. This can be done in Vim a number of ways, including macros. |
-| ![VS Code performing the specified action](/thoughts/vim-code-surround.gif) | ![Vim performing the specified action](/thoughts/vim-vim-surround.gif)                                                                             |
+   **Code**
+
+   Click and type quotation marks at the start and end of the word.
+   ![VS Code performing the specified action](/thoughts/vim-code-surround.gif)
+
+   **Vim**
+
+   Type `ysiw` using `vim-surround` to surround an inner text object with some character. This can be done in Vim a number of ways, including macros.
+   ![Vim performing the specified action](/thoughts/vim-vim-surround.gif)
 
 I haven't even provided any examples using Vim macros or complex text objects. Vim is an objectively more powerful editor than most text editors because it focuses on editing rather than drafting and provides powerful tools such as macros and text objects to improve editing workflows.
 

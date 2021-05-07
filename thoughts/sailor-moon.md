@@ -17,7 +17,7 @@ It came to my attention that although I knew about Sailor Moon as a character, I
 
 So at the start of February I decided to rewatch (or, shall I say, watch) the original Sailor Moon that aired in 1992.
 
-<img width=500 alt="a Sailor Moon poster depicting all of the original Sailor Soliders" src="sailor-poster.jpg" />
+![a Sailor Moon poster depicting all of the original Sailor Soliders](sailor-poster.jpg)
 
 While I could go into detail analyzing every single feature I liked and disliked about the show, I'll try to keep my thoughts relatively brief. I'll start by describing the plot (spoiler alert!), then continue with other significant topics of discussion that peaked my interest.
 
@@ -43,10 +43,7 @@ The same musical concept follows for any superhero franchise containing a reoccu
 
 > Someone sent me this meme 3D model replica animation of the Sailor Moon transformation sequence and I could not help but share it. Thanks Josephine.
 
-> <video width="500" height="500" controls>
->   <source src="sailor-3d.mp4" type="video/mp4">
->   Your browser does not support the video tag.
-> </video>
+> Edit: I've actually removed it due to video rendering complications. If you really want to see the meme I guess you can message me and I'll send it to you personally?
 
 I also like many of the other reoccurring themes within Sailor Moon. After participating in both concert band and a bit of jazz band for most of my time at middle school and high school, I absolutely love themes that use brassy or jazzy sounds. For example, Sailor Moon's [Moon Tiara Action theme](https://youtube.com/watch?v=DJFuGbXEMEk) and [Fighting the Enemy](https://youtube.com/watch?v=MWxJgokMkAQ) both have just the right amount of funky vibe and [big band](https://en.wikipedia.org/wiki/Big_band) brass. Similarly, I loved [Relaxing on the Beach](https://youtube.com/watch?v=iW2c3cyudVI) because of its feature of the alto saxophone. It's not as common to find animated shows with the same sounds anymore - most of this kind of music is now only featured in Pixar movies.
 
@@ -68,9 +65,13 @@ One of the main reasons I was attracted to watching this show in the first place
 
 Here is a wonderful comparison of artstyles from the oldest to the most recent.
 
-| Sailor Moon (1992)                                         | Sailor Moon Crystal (2014)                                           |
-| ---------------------------------------------------------- | -------------------------------------------------------------------- |
-| ![The original Sailor Moon from 1992](sailor-old-anim.jpg) | ![The new Sailor Moon from Sailor Moon Crystal](sailor-new-anim.jpg) |
+**Sailor Moon (1992)**
+
+![The original Sailor Moon from 1992](sailor-old-anim.jpg)
+
+**Sailor Moon Crystal (2014)**
+
+![The new Sailor Moon from Sailor Moon Crystal](sailor-new-anim.jpg)
 
 But there's always a nostalgia behind older forms of art to see how far technology has come since then.
 
@@ -85,10 +86,7 @@ I'm not exaggerating.
 
 She is always irritable, crying, or complaining. She even explains at the intro of episodes that she is "clumsier than others and a bit of a crybaby". She always fights with Rei and only dreams about dates with Tuxedo Mask or Motoki. She is _constantly_ crying, even [in the first episode](https://youtu.be/dYgW6M7s4O4?t=559).
 
-<video width="500" height="350" controls>
-  <source src="sailor-intro.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+> Edit: I've also removed this video due to rendering complications. You can find the original Sailor Moon online somewhere if you watch the beginning of any of the episodes.
 
 This image is a perfect representation of the average atmosphere of the sailor soldiers in a given episode.
 

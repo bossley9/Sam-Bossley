@@ -46,9 +46,9 @@ I wanted to talk about this change in Youtube's Terms of Service for two reasons
 
    _EDIT: It seems as though most people have at least noticed a change by looking at recent reviews on the app store._
 
-   |                                                                                               |                                                                                                |
-   | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-   | ![a Youtube app review against the sudden increase in ad frequency](/thoughts/monetize-1.jpg) | ![a Youtube app review against the frantic push for Youtube premium](/thoughts/monetize-2.jpg) |
+   ![a Youtube app review against the sudden increase in ad frequency](monetize-1.jpg)
+
+   ![a Youtube app review against the frantic push for Youtube premium](monetize-2.jpg)
 
 2. To provide alternatives. I personally have been looking for Youtube alternatives, and this was the final straw. Now that we know Youtube is doing this, how can we stop it? How can we possibly demonstrate our anger against the system?
 

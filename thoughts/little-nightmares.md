@@ -49,7 +49,7 @@ Hunger once again takes hold of the character and you are [forced to eat a rat t
 
 Continuing forth, you arrive in a kitchen filled with [pompous hideous beings who prepare large quantities of food into meals](https://youtu.be/YYMx7RU0Igc?t=4007) (presumably gathered from the wrapped bodies mentioned previously).
 
-<img height=550 alt="The two chefs side by side. Both are abnormally large with drooping faces and dead expressions" src="little-nightmares-chefs.jpg" />
+![The two chefs side by side. Both are abnormally large with drooping faces and dead expressions](little-nightmares-chefs.jpg)
 
 Thwarting the throes of the hidious beings, the main character eventually finds [a way outside the compound](https://youtu.be/YYMx7RU0Igc?t=5432), and the player learns they have been on a massive iron ship the entire game. The ship is [loading large people who make their way onto the ship](https://youtu.be/YYMx7RU0Igc?t=5552) to [eat all the food the chefs prepare](https://youtu.be/YYMx7RU0Igc?t=5660).
 
@@ -97,7 +97,7 @@ The Janitor is one of the best horror antagonists I have had the opportunity of 
 
 I love the way the Janitor is introduced because he makes his appearances with progression as mentioned previously, going from a distant view, to a room avoidance, to proximity encounters and chases. It allows the player to slowly grow more and more uncomfortable with an antagonist over time rather than screaming at the first sight of a character. Then, once the player has reached a sufficient threshold of unsettling discomfort, the game can then reasonably [throw in subtle jump scares](https://youtu.be/YYMx7RU0Igc?t=3583) and [terrifying chase sequences](https://youtu.be/YYMx7RU0Igc?t=3608) such as the [one depicted below](https://youtu.be/YYMx7RU0Igc?t=2565):
 
-<img width="100%" alt="Six running as the Janitor suddenly appears by opening a door" src="little-nightmares-janitor-chase.gif" />
+![Six running as the Janitor suddenly appears by opening a door](little-nightmares-janitor-chase.gif)
 
 > He just appears out of nowhere from the ceiling. In the blink of an eye my anxiety went from 0 to 9000 and I almost cried.
 
@@ -115,7 +115,7 @@ Furthermore, the game uses lighting to emphasize anticipation and plot. In the c
 
 In some cases, the total absence of light adds terror because the player cannot see their surroundings. This is especially unsettling in cases where [the lights all turn off at once](https://youtu.be/YYMx7RU0Igc?t=1307), or [the player falls into a dark pit](https://youtu.be/YYMx7RU0Igc?t=394).
 
-<img width="100%" alt="The main character pulling a switch down as all light in the room turns off" src="little-nightmares-switch.gif" />
+![The main character pulling a switch down as all light in the room turns off](little-nightmares-switch.gif)
 
 This pattern of selective lighting enhances important areas while hiding others, effectively adding anticipation for events that may happen inside or outside of the light.
 
@@ -181,7 +181,7 @@ In addition, the utilization of depth in a 2D setting can be both a blessing and
 
 I haven't even mentioned the complicated hand coordination required to perform simple tasks such as jumping, climbing, and grabbing.
 
-<img width="700" alt="the button layout of a standard PS4 controller" src="little-nightmares-ps4.png" />
+![the button layout of a standard PS4 controller](little-nightmares-ps4.jpg)
 
 I played the game using a PS4 controller and it seemed like basic motions were made more complicated than necessary. For example, to jump from a platform and grab onto a hanging object, you have to perform the following presses:
 
@@ -212,8 +212,6 @@ The core message the game is trying to unveil is this - **luxury corrupts**. The
 
 Is this seen in the world today?
 
-<br />
-
 Is that even a question? Of course!
 
 Everyone is motivated by their own selfish and personal gain. Even now, I'm writing this simply because I enjoy writing and I want to make satisfactory work for others to consume. We're all motivated by greed, luxury, and self-worth. I think this game was made to highlight that fact as a form of introspection. As we play the game, we imbue the main character's motivations as our own. Then, at the end, once the main character begins to kill her captors, we begin to question: _"Is the main character morally justified for her actions? Is this selfish?"_, subconsciously questioning their own attitudes. We are all despicable, selfish, and greedy individuals, and learning to recognize that and care for others is one of the most important lessons we can learn from this game.
@@ -224,15 +222,15 @@ You're probably thinking that the above title has no place here in a video game 
 
 While hunger is a huge propelling force of the game, I believe that the underlying message of the game is appearance. The symbol of an eye is used quite frequently throughout the game on doors, objects, and even as [enemies](https://youtu.be/YYMx7RU0Igc?t=1421). Even the logo encompasses an eye.
 
-<img height="500" alt="The Little Nightmares logo depicting an eye with the main character drawn in the center as the pupil" src="little-nightmares-logo.png" />
+![The Little Nightmares logo depicting an eye with the main character drawn in the center as the pupil](little-nightmares-logo.jpg)
 
 But why appearances? Because that is the culmination of the story. A geisha in traditional Japanese culture is intended to be a standard of Asian beauty, acting as a performer, speaker, and dancer. This is the leader, or overseer, of all the ship's inhabitants, because she is naturally the physical embodiment of perfection. Even within the game's world, she is the _only_ character to have a perfectly thin form. All of the other inhabitants are fat, ugly, and facially disfigured.
 
-<img width="100%" alt="The main character climbing a wall in the foreground as the geisha stands over the large inhabitants in the background" src="little-nightmares-geisha-overseeing.gif" />
+![The main character climbing a wall in the foreground as the geisha stands over the large inhabitants in the background](little-nightmares-geisha-overseeing.gif)
 
 Every encounter with the geisha demonstrates to the player her concern for her appearance. When we first enter the same room as her, she is looking in a mirror and combing her hair. Again, later, we see her manakins everywhere - an obvious symbol of beauty or appearance.
 
-<img width="100%" alt="A dark room filled with manakins" src="little-nightmares-manakins.gif" />
+![A dark room filled with manakins](little-nightmares-manakins.gif)
 
 To defeat her, you must use a mirror to reflect her own gaze. This is indicative of the ridiculousness of the Asian beauty standard - when carefully examining how unattainable and unreasonable the beauty standard is, we take a step back and reexamine ourselves.
 
@@ -252,4 +250,4 @@ I am completely aware that a [sequel](https://store.steampowered.com/app/860510/
 
 That's it! I hope you enjoyed reading this even if you didn't play the game. And with that, I'll close with a wonderful review another player made of Little Nightmares.
 
-<img width="500" alt="A review of Little Nightmares endorsing cannibalism" src="little-nightmares-review-1.png" />
+![A review of Little Nightmares endorsing cannibalism](little-nightmares-review-1.jpg)

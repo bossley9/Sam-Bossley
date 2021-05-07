@@ -60,11 +60,11 @@ I've already explained [why I believe Vim is a superior editor to Google Docs](/
 
 And then there's LaTeX. LaTeX is extensible because of it's programming functionality. I am able to create command macros to uniformly format each section of my resume. This gives me the upper hand over Google Docs (where you are forced to format each section individually). As a demonstration, here is me changing the color of every instance of a subheading immediately.
 
-<img height="550" alt="a demonstration of me editing a single line in my LaTeX resume file to update the color of every instance of that text in the output pdf file" src="why-unix-zathura-color.gif" />
+![a demonstration of me editing a single line in my LaTeX resume file to update the color of every instance of that text in the output pdf file](why-unix-zathura-color.gif)
 
 In addition, I can change the formatting of each resume entry uniformly as a whole:
 
-<img height="600" alt="a demonstration of me editing a single line in my LaTeX resume file to update the bullet point appearance of every bullet point in the output pdf file" src="why-unix-zathura-bullet-change.gif" />
+![a demonstration of me editing a single line in my LaTeX resume file to update the bullet point appearance of every bullet point in the output pdf file](why-unix-zathura-bullet-change.gif)
 
 The point of this drawn out demonstration is that _each of these programs are modular units_. I can use Vim to edit any text file, not just my resume. I can use LaTeX to format any document (including powerpoints and flowcharts), not just text documents. Finally, I can use Zathura to display any document, not just my resume.
 
@@ -82,17 +82,17 @@ In Unix, programs should work together and be able to interact with each other. 
 
 What makes a fuzzy finder different from a regular search bar is that it uses pattern matching, meaning it is case insensitive and fills in the blanks for misspelled or missing phrases. Fzf does all this through text streams, simply displaying inputs through a fuzzy finder interface and returning the chosen item. Because Fzf can take any input and return an output, it can be paired with _virtually any program_ to make a more pleasant searching experience. For example, I use Fzf as my own "spotlight search" to find and launch any program.
 
-<img height="600" alt="using my fzf launcher script to first open gimp image editor, then the spotify client" src="why-unix-fzf-launcher.gif" />
+![using my fzf launcher script to first open gimp image editor, then the spotify client](why-unix-fzf-launcher.gif)
 
 I also use it to navigate the folders in my file system.
 
 I additionally use Fzf to search for files in my coding projects to quickly switch to new files without ever having to think about the location of the files I'm looking for.
 
-<img height="600" alt="using Fzf in Vim to open a script from another folder simply by typing in the name" src="why-unix-fzf-file-search.gif" />
+![using Fzf in Vim to open a script from another folder simply by typing in the name](why-unix-fzf-file-search.gif)
 
 That's only half of Fzf's power. Because I can input any data stream into Fzf, I can even search _individual file contents_. This is truly a game-changer for development projects containing many text files or code modules.
 
-<img height="600" alt="using Fzf in Vim to open a file at a specific line number by typing in keywords" src="why-unix-fzf-ripgrep.png" />
+![using Fzf in Vim to open a file at a specific line number by typing in keywords](why-unix-fzf-ripgrep.png)
 
 Modular programs are so powerful because they can be combined and connected to other programs to produce wonderful tools. If given the choice between a bin of Legos and a hotglued Lego set, which would you pick?
 
@@ -102,7 +102,7 @@ This is where most programs fall short. Text is the most accessible interface be
 
 A poor example of this is [NCKU's graduation application portal](http://140.116.165.83/~lou/leave/), where text is baked into an image. This is absolutely inaccessible by screenreaders because they cannot parse images. Additionally, if the image is scaled incorrectly like it is on the website, it can ruin the readability of the content.
 
-<img alt="a website button image reading 'get adobe' in stretched font baked into the image" src="why-unix-get-adobe.png" />
+![button image reading 'get adobe' in stretched font baked into the image](why-unix-get-adobe.png)
 
 But it's not just displaying data that creates issues - it's the storage of data that also creates issues. Imagine that you create a powerpoint with Microsoft Powerpoint. If you were to try to access that powerpoint file 30 years from now, do you think you could do it?
 

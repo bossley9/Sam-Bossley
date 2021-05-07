@@ -44,7 +44,7 @@ I don't plan on following any strict format or organization of ideas with my ref
 
   One. Only one. Some of the emails are spam companies that send emails to every [osu.edu](http://osu.edu) domain (_NOBULL_). Others are confirmations or reminders for events that are sent every week and cannot be disabled (_OSU Workday_, _MyChart_). Some are about my major that do not pertain to me. Some are classwork emails. My point is that the administration itself perpetuates the idea that students should ignore most of their emails. If fact, the administration even _knows_ that people don't carefully read their emails because they have to send out emails labeled "please read" - instead of begging students to read specific emails, why not make it so that the emails each student receives are more significant and relevant?
 
-  <img width=600 alt="an engineering email with the subject 'please read'" src="refl-undergrad-please-read.png" />
+  ![an engineering email with the subject 'please read'](refl-undergrad-please-read.jpg)
 
   Because I care so much about this issue, I'm not just going to complain about it - I'll actually propose my own solution to the problem.
 
@@ -131,7 +131,7 @@ I don't plan on following any strict format or organization of ideas with my ref
 
     Furthermore, the university does not seem to take depression and suicide seriously (something I am clearly very passionate about). Every year, students tragically take their lives by jumping off of the various parking garages on campus. In 2018, this happened twice consecutively and was publicly proclaimed around the university as a sign that the mental health services needed to change (in addition to student protests on the Oval). In response, the president issued a university email explaining that changes would be made to ensure that this would not happen again. Would you like to know what they did?
 
-    <img width=700 alt="parking garage sign stating 'feeling hopeless? Remember, you matter' in addition to a hotline" src="refl-undergrad-feeling-hopeless.png" />
+    ![parking garage sign stating 'feeling hopeless? Remember, you matter' in addition to a hotline](refl-undergrad-feeling-hopeless.png)
 
     Yeah. They put up signs in parking garages. These will definitely stop suicidal thoughts and tendencies.
 
@@ -143,7 +143,7 @@ I don't plan on following any strict format or organization of ideas with my ref
 
     - Add guard fences with pronged edges to the roof of every university parking garage. This may seem like an unobtainable goal due to costs and implementation but _it has already been done for one of the campus parking garages_. Why can't we do this for all of the parking garages? This will physically reduce the effectiveness of suicidal attempts.
 
-      <img width=700 alt="a steep metal bar fence with inward curved edges encasing the roof floor of a parking garage" src="refl-undergrad-parking-fence.png" />
+      ![a steep metal bar fence with inward curved edges encasing the roof floor of a parking garage](refl-undergrad-parking-fence.jpg)
 
     - Allocate more funds to the Wilce Students Health Center with the intent of hiring more staff. This is self explanatory. As the university student body grows every year, the university will always need more student counselors, therapists, and health care professionals.
 
@@ -163,11 +163,11 @@ I don't plan on following any strict format or organization of ideas with my ref
 
     Ohio State has also decided to start social media campaigns to help students find reasons to stay safe (because we all know how effective social media campaigns are). One of my personal favorites is called "What's your why?" in which a case study displays a quote of someone explaining why they actively choose to social distance and wear a mask. Students took the creative liberty of making their own versions of this compaign, and here are a few of my favorites:
 
-    |                                                                                                     |                                                                                             |
-    | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-    | ![because OSU has too many red carts](refl-undergrad-red-carts.png)                                 | ![so I can get trashed at bulls](refl-undergrad-trashed-at-bulls.png)                       |
-    | ![because I don't want to hear students complain that zoom is a scam](refl-undergrad-zoom-scam.png) | ![because it's easier to hide depression behind a mask](refl-undergrad-depression-mask.png) |
-    | ![because I can show Youtube videos instead of lecturing](refl-undergrad-youtube-lecture.png)       |                                                                                             |
+    ![because OSU has too many red carts](refl-undergrad-red-carts.png)
+    ![so I can get trashed at bulls](refl-undergrad-trashed-at-bulls.png)
+    ![because I don't want to hear students complain that zoom is a scam](refl-undergrad-zoom-scam.png)
+    ![because it's easier to hide depression behind a mask](refl-undergrad-depression-mask.png)
+    ![because I can show Youtube videos instead of lecturing](refl-undergrad-youtube-lecture.png)
 
     To worsen matters further, the university seems to believe that blaming students for the rates of rising COVID-19 cases will scare students into testing, and they could not be further from the truth. Every time someone from the administration sends an email, students publicly speak out against them on social media for doing a terrible job. Here is a [great example of criticism against the most recent email the administration has sent out](https://www.reddit.com/r/OSU/comments/lxzu1h/dear_melissa_shivers/). I'm still waiting for the moment that the university begins to care about the students and help them through the pandemic, not blame them for it.
 
@@ -202,7 +202,7 @@ I don't plan on following any strict format or organization of ideas with my ref
 
   At every campus garbage disposal area, we have the following signs:
 
-  <img width=600 alt="A recycling graphic on all OSU trash cans" src="refl-undergrad-recycle.png" />
+  ![A recycling graphic on all OSU trash cans](refl-undergrad-recycle.jpg)
 
   informational recycling sticker specifying what that glass, plastic jugs, paper, cardboard, and metal can be recycled.
 
@@ -236,9 +236,8 @@ I don't plan on following any strict format or organization of ideas with my ref
 
     The environment in which memes thrive is best described as failure. The clocktower, a small failure on the part of the university administration, paved the way for the student body to generate clocktower memes in an unholy amount. These memes ranged in topic from complaints about the placement, the blinding brightness, the broken display, the amount of funds involved, "Thank you Tom", and more [[1](https://www.reddit.com/r/OSU/comments/78sgek/2017_annual_tom_w_davis_clock_tower_naruto_run)] [[2](https://www.reddit.com/r/OSU/comments/av0q8g/me_when_im_on_north_campus/)] [[3](https://www.reddit.com/r/OSU/comments/f011mq/hes_just_laying_there_seductively/)] [[4](https://www.reddit.com/r/OSU/comments/c4r6kg/alright_which_one_of_yall_did_this/)] [[5](https://www.reddit.com/r/OSU/comments/av0q8g/me_when_im_on_north_campus/)] [[6](https://www.reddit.com/r/OSU/comments/bfhve7/so_i_made_the_clocktower_in_smash/)] [[7](https://m.imgur.com/a/TrWjV)].
 
-    |                                                                                                                                        |                                                                                        |     |
-    | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | --- |
-    | <img width=700 alt="Google maps displaying the clocktower as a religious destination" src="refl-undergrad-clocktower-religious.png" /> | ![The clocktower can jokingly be seen from space](refl-undergrad-clocktower-space.png) |     |
+    ![Google maps displaying the clocktower as a religious destination](refl-undergrad-clocktower-religious.jpg)
+    ![The clocktower can jokingly be seen from space](refl-undergrad-clocktower-space.png)
 
   - The toothbrush incident. I really don't want to say any more than that so I'll just link the two source posts [here](https://www.reddit.com/r/OSU/comments/8ehpxr/i_caught_my_roomate_masturbating_over_my) and [here](https://www.reddit.com/r/OSU/comments/8elkqf/so_my_roommate_walked_in_on_me). It's NSFW so don't say I didn't warn you.
 
@@ -248,7 +247,7 @@ I don't plan on following any strict format or organization of ideas with my ref
 
   - Campus alerts. OSU has an automated alert messaging system which will push notifications and send texts to every student and faculty on campus if an emergency arises. More often than not, they accidentally send out tons of test messages. The tests are with good intention but they're still funny to joke about. [[1](https://www.reddit.com/r/OSU/comments/lhvj2m/this_is_a_test_of_the_buckeye_alert_system_for/)] [[2](https://www.reddit.com/r/OSU/comments/l76fqo/every_2_weeks_on_indianola/)]
 
-    <img width=700 alt="A picture of a phone buckeye alert and kermit the frog shooting a gun rapidly with the title 'every two weeks on indianola'" src="refl-undergrad-buckeye-alert.png" />
+    ![A picture of a phone buckeye alert and kermit the frog shooting a gun rapidly with the title 'every two weeks on indianola'](refl-undergrad-buckeye-alert.jpg)
 
   - The "the" in _The Ohio State University_. Our university's official title is _The Ohio State University_ and students like to brag about it whenever a non-OSU student refers to our university as "Ohio State", or "Ohio State University". [[1](https://www.reddit.com/r/OSU/comments/k1vtau/is_this_blasphemy)] [[2](https://www.reddit.com/r/OSU/comments/jhwjd0/uninstalling_grammarly/)] [[3](https://www.reddit.com/r/OSU/comments/e3xmi3/when_someone_asks_you_where_you_went_to_college/)] [[4](https://www.reddit.com/r/OSU/comments/fgiogp/this_might_be_the_baby_name_of_the_year/)]
 
@@ -258,14 +257,14 @@ I don't plan on following any strict format or organization of ideas with my ref
 
   - College of Engineering emails. For some reason, both the administration and the students seem to not understand how emails and listservs work. More often than not, I receive random emails meant as a personal reply but was sent to everyone in the entire college of engineering. It's quite funny if I'm being honest, but it should be embarrassing on the administration's part. [[1](https://www.reddit.com/r/OSU/comments/ikbnwz/seems_like_this_happens_every_time_an_email_about/)] [[2](https://www.reddit.com/r/OSU/comments/lvmfmz/to_the_person_who_emailed_the_entire_college_of/)]
 
-    |                                                                                                                                       |                                                                                                                |                                                                                                               |
-    | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-    | ![an unprofessional administration email without a header, a subject, or a closing statement](refl-undergrad-professional-emails.png) | ![a reply sent to every student saying "who are you and why did you do this?"](refl-undergrad-who-and-why.png) | ![a reply meant for only Brittany but sent to the entire college of engineering](refl-undergrad-brittany.png) |
-    |                                                                                                                                       | ![an email sent to every student with the body "sure"](refl-undergrad-sure.png)                                |                                                                                                               |
+    ![an unprofessional administration email without a header, a subject, or a closing statement](refl-undergrad-professional-emails.jpg)
+    ![a reply sent to every student saying "who are you and why did you do this?"](refl-undergrad-who-and-why.jpg)
+    ![a reply meant for only Brittany but sent to the entire college of engineering](refl-undergrad-brittany.jpg)
+    ![an email sent to every student with the body "sure"](refl-undergrad-sure.jpg)
 
   While there are so many other memes I could talk about, such as the Oval construction, [Xerxes](https://www.reddit.com/r/OSU/comments/exero9/someone_stopped_by_to_say_hi_at_morrill/), the [electronic scooters](https://www.reddit.com/r/OSU/comments/j0gh75/the_best_parking_location_ive_seen_to_date), [SEIs](https://www.reddit.com/r/OSU/comments/jxs6n5/getting_ready_for_seis_like/), [weird dorm interactions](https://www.reddit.com/r/OSU/comments/ljquid/to_the_girl_hollering_at_me_from_the_top_floor_of/) and supposed "ghosts", or even [Scott](https://www.reddit.com/r/OSU/comments/kep7j0/title/) or its legendary grilled cheese, I simply don't have enough time to discuss it all.
 
-  <img width=600 alt="scott grilled cheese is vandalized on the sidewalk" src="refl-undergrad-grilled-cheese.png" />
+  ![scott grilled cheese is vandalized on the sidewalk](refl-undergrad-grilled-cheese.jpg)
 
 - **It's not always about you.** I've had to learn this lesson the hard way both in high school and again multiple times. I've never been attention seeking or arrogant, but I have always been looking out for myself above others. I think it's very natural for people to do this - we always prioritize our own agenda above others. However, I've learned through experience that sometimes we need to put our own agenda on hold and care for other first before ourselves. Sometimes we need to put our opportunities and goals on hold to help someone else. When we do that, we learn more about our peers and we learn the most about ourselves. And who knows? On occasion, I have started new friendships or opened new opportunities I would have never thought possible simply by stopping a busy schedule to help someone in need or open myself up to another person. This is how every person should act: putting others above themselves, _even_ when it comes at a cost. If everyone in the world was selfless, the world would be a much better place.
 

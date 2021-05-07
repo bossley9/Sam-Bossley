@@ -34,3 +34,10 @@ export type Log = {
   lastUpdated: string
   title: string
 }
+
+export type ImageProps = {
+  alt: string
+  src: string
+  width: string | null
+  height: string | null
+}
