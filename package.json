@@ -50,7 +50,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn type-check && yarn lint"
+      "pre-commit": "yarn prepare && yarn type-check && yarn lint"
     }
   },
   "license": "ISC"
